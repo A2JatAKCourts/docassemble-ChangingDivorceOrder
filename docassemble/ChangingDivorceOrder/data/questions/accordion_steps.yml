@@ -96,7 +96,7 @@ code: |
     add_unique_image({'image': service_cert_modify_image, 'text': "Certificate of Service at the bottom of a Motion to Modify."}, images_list)
     add_unique_step((cert_of_service_step, "cert_of_service_idx"), step_list)
     file_step_heading = 'File your Motion to Modify'
-    file_modify_filing_fee = '<li>Pay the $75 fee to file your Motion to Modify.</br>If you cannot afford the filing fee, you can ask the court to waive the fee:<ul><li>Call the <a href="https://courts.alaska.gov/shc/family">Family Law Self-HelpCenter</a><br>(907)264-0851, or<br>(866)279-0851,<br>or</li><li>Use <strong>Exemption From the Payment of Fees, TF-920</strong>[<a href="https://public.courts.alaska.gov/web/forms/docs/tf-920.pdf">Fill-In PDF</a>]</li></ul>'
+    file_modify_filing_fee = '<li>Pay the $75 fee to file your Motion to Modify.</br>If you cannot afford the filing fee, you can ask the court to waive it:<ul><li>Call the <a href="https://courts.alaska.gov/shc/family">Family Law Self-HelpCenter</a><br>(907)264-0851, or<br>(866)279-0851,<br>or</li><li>Use <strong>Exemption From the Payment of Fees, TF-920</strong>[<a href="https://public.courts.alaska.gov/web/forms/docs/tf-920.pdf">Fill-In PDF</a>]</li></ul>'
     add_unique_step((file_step, "file_idx"), step_list)
     add_unique_step((serve_step, "serve_idx"), step_list)
     motion_type = 'Motion to Modify'
@@ -222,12 +222,12 @@ code: |
           and why_change in('review', 'schedule')) \
         and (type_of_final_order.any_true('property or debt', 'spousal support') \
           and why_change_divorce_order == 'changed circumstances'):
-        file_modify_filing_fee = '<li>Pay one $75 fee to file both Motions to Modify at the same time. If you file your motions on different days, you must pay a $75 filing fee for each Motion to Modify.</br>If you cannot afford the filing fee, you can ask the court to waive the fee:</li><ul><li>Call the <a href="https://courts.alaska.gov/shc/family">Family Law Self-HelpCenter</a><br>(907)264-0851, or<br>(866)279-0851,<br>or</li><li>Use <strong>Exemption From the Payment of Fees, TF-920</strong>[<a href="https://public.courts.alaska.gov/web/forms/docs/tf-920.pdf">Fill-In PDF</a>]</li></ul>'
+        file_modify_filing_fee = '<li>Pay one $75 fee to file both Motions to Modify at the same time. If you file your motions on different days, you must pay a $75 filing fee for each Motion to Modify.</br>If you cannot afford the filing fee, you can ask the court to waive it:</li><ul><li>Call the <a href="https://courts.alaska.gov/shc/family">Family Law Self-HelpCenter</a><br>(907)264-0851, or<br>(866)279-0851,<br>or</li><li>Use <strong>Exemption From the Payment of Fees, TF-920</strong>[<a href="https://public.courts.alaska.gov/web/forms/docs/tf-920.pdf">Fill-In PDF</a>]</li></ul>'
       elif (type_of_final_order['custody order'] \
           and why_change in('review', 'schedule')) \
         or (type_of_final_order.any_true('property or debt', 'spousal support') \
           and why_change_divorce_order == 'changed circumstances'):
-        file_modify_filing_fee = '<li>Pay the $75 fee to file your Motion to Modify.</li><ul><li>Call the <a href="https://courts.alaska.gov/shc/family">Family Law Self-HelpCenter</a><br>(907)264-0851, or<br>(866)279-0851,<br>or</li><li>Use <strong>Exemption From the Payment of Fees, TF-920</strong>[<a href="https://public.courts.alaska.gov/web/forms/docs/tf-920.pdf">Fill-In PDF</a>]</li></ul>'
+        file_modify_filing_fee = '<li>Pay the $75 fee to file your Motion to Modify.</br>If you cannot afford the filing fee, you can ask the court to waive it:</li><ul><li>Call the <a href="https://courts.alaska.gov/shc/family">Family Law Self-HelpCenter</a><br>(907)264-0851, or<br>(866)279-0851,<br>or</li><li>Use <strong>Exemption From the Payment of Fees, TF-920</strong>[<a href="https://public.courts.alaska.gov/web/forms/docs/tf-920.pdf">Fill-In PDF</a>]</li></ul>'
       
       if parents_agree:
         add_unique_step((pick_a_step_step, "pick_a_step_idx"), step_list)
