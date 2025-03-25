@@ -1,7 +1,7 @@
 @morethan1order
 Feature: User paths
 
-Background:
+Background: 
   Given the maximum seconds for each Step is 90
 
 @row92  
@@ -17,7 +17,7 @@ Scenario: Row #92
     | why_change_divorce_order               | changed circumstances |         | 
     | parents_agree                          | True                  |         | 
 # And I take a screenshot
-    And I should see the phrase "Your Personal Action Plan for changing a court order from your divorce case in 14 steps"
+    And I should see the phrase "Your Action Plan for changing a court order from your divorce case in 14 steps"
     And I should see the phrase "Learn about a Motion to Modify your Parenting Plan"
     And I should see the phrase "Find out if you and your ex agree"
     And I should see the phrase "Tell the court about your agreement"
@@ -51,7 +51,7 @@ Scenario: Row #95
     | why_change_divorce_order                | changed circumstances |         | 
     | parents_agree                           | False                 |         | 
 # And I take a screenshot
-    And I should see the phrase "Your Personal Action Plan for changing a court order from your divorce case in 11 steps"
+    And I should see the phrase "Your Action Plan for changing a court order from your divorce case in 11 steps"
     And I should see the phrase "Learn about a Motion to Modify your Parenting Plan"
     And I should see the phrase "Fill out the Motion to Modify Custody forms"
     And I should see the phrase "Fill out your child support forms"
@@ -83,7 +83,7 @@ Scenario: Row #97
     | why_change_divorce_order                | changed circumstances |         | 
     | parents_agree                           | False                 |         | 
 # And I take a screenshot
-    And I should see the phrase "Your Personal Action Plan for changing a court order from your divorce case in 11 steps"
+    And I should see the phrase "Your Action Plan for changing a court order from your divorce case in 11 steps"
     And I should see the phrase "Learn about a Motion to Modify your Parenting Plan"
     And I should see the phrase "Fill out the Motion to Modify Custody forms"
     And I should see the phrase "Fill out your child support forms"
@@ -115,7 +115,7 @@ Scenario: Row #99
     | parents_agree                          | False                |         | 
     | final_order_date                       | today - 9            |         | 
 # And I take a screenshot
-    And I should see the phrase "Your Personal Action Plan for changing a court order from your divorce case in 12 steps"
+    And I should see the phrase "Your Action Plan for changing a court order from your divorce case in 12 steps"
     And I should see the phrase "Learn about a Motion to Modify your Parenting Plan"
     And I should see the phrase "Fill out the Motion to Modify Custody forms"
     And I should see the phrase "Fill out your child support forms"
@@ -148,7 +148,7 @@ Scenario: Row #100
     | parents_agree                          | True                 |         | 
     | final_order_date                       | today - 25           |         | 
 # And I take a screenshot
-    And I should see the phrase "Your Personal Action Plan for changing a court order from your divorce case in 15 steps"
+    And I should see the phrase "Your Action Plan for changing a court order from your divorce case in 15 steps"
     And I should see the phrase "Decide the steps you want to take"
     And I should see the phrase "Find out if you and your ex agree"
     And I should see the phrase "Tell the court about your agreement"
@@ -186,7 +186,7 @@ Scenario: Row #102
     | parents_agree                          | True                 |         | 
     | final_order_date                       | today - 42           |         | 
 # And I take a screenshot
-    And I should see the phrase "Your Personal Action Plan for changing a court order from your divorce case in 14 steps"
+    And I should see the phrase "Your Action Plan for changing a court order from your divorce case in 14 steps"
     And I should see the phrase "Decide the steps you want to take"
     And I should see the phrase "Find out if you and your ex agree"
     And I should see the phrase "Tell the court about your agreement"
@@ -225,7 +225,7 @@ Scenario: Row #104
     | unknown_final_date['appeal']           | False                |         | 
     | unknown_final_date['set aside']        | False                |         | 
 # And I take a screenshot
-    And I should see the phrase "Your Personal Action Plan for changing a court order from your divorce case in 15 steps"
+    And I should see the phrase "Your Action Plan for changing a court order from your divorce case in 15 steps"
     And I should see the phrase "Decide the steps you want to take"
     And I should see the phrase "Find out if you and your ex agree"
     And I should see the phrase "Tell the court about your agreement"
@@ -265,7 +265,7 @@ Scenario: Row #107
     | unknown_final_date['appeal']           | True                 |         | 
     | unknown_final_date['set aside']        | False                |         | 
 # And I take a screenshot
-    And I should see the phrase "Your Personal Action Plan for changing a court order from your divorce case in 16 steps"
+    And I should see the phrase "Your Action Plan for changing a court order from your divorce case in 16 steps"
     And I should see the phrase "Decide the steps you want to take"
     And I should see the phrase "Find out if you and your ex agree"
     And I should see the phrase "Tell the court about your agreement"
@@ -307,7 +307,7 @@ Scenario: Row #109
     | unknown_final_date['appeal']           | False                |         | 
     | unknown_final_date['set aside']        | True                 |         | 
 # And I take a screenshot
-    And I should see the phrase "Your Personal Action Plan for changing a court order from your divorce case in 17 steps"
+    And I should see the phrase "Your Action Plan for changing a court order from your divorce case in 17 steps"
     And I should see the phrase "Decide the steps you want to take"
     And I should see the phrase "Find out if you and your ex agree"
     And I should see the phrase "Tell the court about your agreement"
@@ -349,7 +349,7 @@ Scenario: Row #112
     | unknown_final_date['appeal']           | False                |         | 
     | unknown_final_date['set aside']        | True                 |         | 
 # And I take a screenshot
-    And I should see the phrase "Your Personal Action Plan for changing a court order from your divorce case in 15 steps"
+    And I should see the phrase "Your Action Plan for changing a court order from your divorce case in 15 steps"
     And I should see the phrase "Decide the steps you want to take"
     And I should see the phrase "Learn about a Motion to Modify your Parenting Plan"
     And I should see the phrase "Fill out the Motion to Modify Custody forms"
@@ -389,7 +389,7 @@ Scenario: Row #113
     | unknown_final_date['appeal']           | False                |         | 
     | unknown_final_date['set aside']        | True                 |         | 
 # And I take a screenshot
-    And I should see the phrase "Your Personal Action Plan for changing a court order from your divorce case in 11 steps"
+    And I should see the phrase "Your Action Plan for changing a court order from your divorce case in 11 steps"
     And I should see the phrase "Learn about a Motion to Modify your Parenting Plan"
     And I should see the phrase "Fill out the Motion to Modify Custody forms"
     And I should see the phrase "Fill out your child support forms"
@@ -425,7 +425,7 @@ Scenario: Row #115
     | unknown_final_date['appeal']           | True                 |         | 
     | unknown_final_date['set aside']        | True                 |         | 
 # And I take a screenshot
-    And I should see the phrase "Your Personal Action Plan for changing a court order from your divorce case in 13 steps"
+    And I should see the phrase "Your Action Plan for changing a court order from your divorce case in 13 steps"
     And I should see the phrase "Decide the steps you want to take"
     And I should see the phrase "Learn about a Motion to Modify your Parenting Plan"
     And I should see the phrase "Fill out the Motion to Modify Custody forms"
@@ -465,7 +465,7 @@ Scenario: Row #117
     | unknown_final_date['appeal']           | True                 |         | 
     | unknown_final_date['set aside']        | True                 |         | 
 # And I take a screenshot
-    And I should see the phrase "Your Personal Action Plan for changing a court order from your divorce case in 16 steps"
+    And I should see the phrase "Your Action Plan for changing a court order from your divorce case in 16 steps"
     And I should see the phrase "Decide the steps you want to take"
     And I should see the phrase "Learn about a Motion to Modify your Parenting Plan"
     And I should see the phrase "Fill out the Motion to Modify Custody forms"
@@ -503,7 +503,7 @@ Scenario: Row #118
     | parents_agree                           | False                 |         | 
     | final_order_date                        | today - 9             |         | 
 # And I take a screenshot
-    And I should see the phrase "Your Personal Action Plan for changing a court order from your divorce case in 10 steps"
+    And I should see the phrase "Your Action Plan for changing a court order from your divorce case in 10 steps"
     And I should see the phrase "Learn about the Motion to Modify Divorce Property & Debt Division"
     And I should see the phrase "Fill out the motion form to modify the property and debt division order"
     And I should see the phrase "Learn about Motions to Reconsider"
@@ -533,7 +533,7 @@ Scenario: Row #138
     | final_order_date                       | today - 9            |         | 
     | parents_agree                          | True                 |         | 
 # And I take a screenshot
-    And I should see the phrase "Your Personal Action Plan for changing a court order from your divorce case in 10 steps"
+    And I should see the phrase "Your Action Plan for changing a court order from your divorce case in 10 steps"
     And I should see the phrase "Decide the steps you want to take"
     And I should see the phrase "Find out if you and your ex agree"
     And I should see the phrase "Tell the court about your agreement"
@@ -562,7 +562,7 @@ Scenario: Row #140
     | final_order_date                       | today - 12           |         | 
     | parents_agree                          | True                 |         | 
 # And I take a screenshot
-    And I should see the phrase "Your Personal Action Plan for changing a court order from your divorce case in 11 steps"
+    And I should see the phrase "Your Action Plan for changing a court order from your divorce case in 11 steps"
     And I should see the phrase "Decide the steps you want to take"
     And I should see the phrase "Find out if you and your ex agree"
     And I should see the phrase "Tell the court about your agreement"
@@ -594,7 +594,7 @@ Scenario: Row #142
     | final_order_date                       | today - 17           |         | 
     | parents_agree                          | True                 |         | 
 # And I take a screenshot
-    And I should see the phrase "Your Personal Action Plan for changing a court order from your divorce case in 11 steps"
+    And I should see the phrase "Your Action Plan for changing a court order from your divorce case in 11 steps"
     And I should see the phrase "Decide the steps you want to take"
     And I should see the phrase "Find out if you and your ex agree"
     And I should see the phrase "Tell the court about your agreement"
@@ -609,3 +609,5 @@ Scenario: Row #142
     And I take a screenshot
     And I download "changing_divorce_order.pdf"
     And I download "changing_divorce_order.docx"
+
+

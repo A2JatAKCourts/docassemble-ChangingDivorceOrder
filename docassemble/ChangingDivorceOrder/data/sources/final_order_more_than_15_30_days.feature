@@ -16,7 +16,7 @@ Scenario: Row #32
     | final_order_date                     | today - 17           |         | 
     | parents_agree                        | True                 |         | 
     And I take a screenshot
-    And I should see the phrase "Your Personal Action Plan for changing your custody or Parenting Plan order from your divorce case in 10 steps"
+    And I should see the phrase "Your Action Plan for changing your custody or Parenting Plan order from your divorce case in 10 steps"
     And I should see the phrase "Decide the steps you want to take"
     And I should see the phrase "Find out if you and the other parent agree"
     And I should see the phrase "Tell the court about your agreement"
@@ -43,7 +43,7 @@ Scenario: Row #32b
     | guess_final_order_date               | more than 15 days    |         | 
     | parents_agree                        | True                 |         | 
     And I take a screenshot
-    And I should see the phrase "Your Personal Action Plan for changing your custody or Parenting Plan order from your divorce case in 10 steps"
+    And I should see the phrase "Your Action Plan for changing your custody or Parenting Plan order from your divorce case in 10 steps"
     And I should see the phrase "Decide the steps you want to take"
     And I should see the phrase "Find out if you and the other parent agree"
     And I should see the phrase "Tell the court about your agreement"
@@ -70,7 +70,7 @@ Scenario: Row #33
     | final_order_date                     | today - 17           |         | 
     | parents_agree                        | False                |         | 
     And I take a screenshot
-    And I should see the phrase "Your Personal Action Plan for changing your custody or Parenting Plan order from your divorce case in 7 steps"
+    And I should see the phrase "Your Action Plan for changing your custody or Parenting Plan order from your divorce case in 7 steps"
     And I should see the phrase "Learn about the Motion to Set Aside Judgment or Order"
     And I should see the phrase "Fill out forms if you want to file a Motion to Set Aside"
     And I should see the phrase "Fill out the Certificate of Service"
@@ -95,7 +95,7 @@ Scenario: Row #33b
     | guess_final_order_date               | more than 15 days    |         | 
     | parents_agree                        | False                |         | 
     And I take a screenshot
-    And I should see the phrase "Your Personal Action Plan for changing your custody or Parenting Plan order from your divorce case in 7 steps"
+    And I should see the phrase "Your Action Plan for changing your custody or Parenting Plan order from your divorce case in 7 steps"
     And I should see the phrase "Learn about the Motion to Set Aside Judgment or Order"
     And I should see the phrase "Fill out forms if you want to file a Motion to Set Aside"
     And I should see the phrase "Fill out the Certificate of Service"
@@ -119,7 +119,7 @@ Scenario: Row #54
     | final_order_date                       | today - 32           |         | 
     | parents_agree                          | True                 |         | 
     And I take a screenshot
-    And I should see the phrase "Your Personal Action Plan for changing a court order from your divorce case in 10 steps"
+    And I should see the phrase "Your Action Plan for changing a court order from your divorce case in 10 steps"
     And I should see the phrase "Decide the steps you want to take"
     And I should see the phrase "Find out if you and your ex agree"
     And I should see the phrase "Tell the court about your agreement"
@@ -147,7 +147,7 @@ Scenario: Row #54b
     | guess_final_order_date                 | more than 30 days    |         | 
     | parents_agree                          | True                 |         | 
     And I take a screenshot
-    And I should see the phrase "Your Personal Action Plan for changing a court order from your divorce case in 10 steps"
+    And I should see the phrase "Your Action Plan for changing a court order from your divorce case in 10 steps"
     And I should see the phrase "Decide the steps you want to take"
     And I should see the phrase "Find out if you and your ex agree"
     And I should see the phrase "Tell the court about your agreement"
@@ -174,7 +174,7 @@ Scenario: Row #55
     | final_order_date                       | today - 32           |         | 
     | parents_agree                          | False                |         | 
     And I take a screenshot
-    And I should see the phrase "Your Personal Action Plan for changing a court order from your divorce case in 7 steps"
+    And I should see the phrase "Your Action Plan for changing a court order from your divorce case in 7 steps"
     And I should see the phrase "Learn about the Motion to Set Aside Judgment or Order"
     And I should see the phrase "Fill out forms if you want to file a Motion to Set Aside"
     And I should see the phrase "Fill out the Certificate of Service"
@@ -199,7 +199,7 @@ Scenario: Row #55b
     | guess_final_order_date                 | more than 30 days    |         | 
     | parents_agree                          | False                |         | 
     And I take a screenshot
-    And I should see the phrase "Your Personal Action Plan for changing a court order from your divorce case in 7 steps"
+    And I should see the phrase "Your Action Plan for changing a court order from your divorce case in 7 steps"
     And I should see the phrase "Learn about the Motion to Set Aside Judgment or Order"
     And I should see the phrase "Fill out forms if you want to file a Motion to Set Aside"
     And I should see the phrase "Fill out the Certificate of Service"
@@ -223,7 +223,7 @@ Scenario: Row #76
     | final_order_date                        | today - 32           |         | 
     | parents_agree                           | True                 |         | 
     And I take a screenshot
-    And I should see the phrase "Your Personal Action Plan for changing a court order from your divorce case in 10 steps"
+    And I should see the phrase "Your Action Plan for changing a court order from your divorce case in 10 steps"
     And I should see the phrase "Decide the steps you want to take"
     And I should see the phrase "Find out if you and your ex agree"
     And I should see the phrase "Tell the court about your agreement"
@@ -251,7 +251,7 @@ Scenario: Row #76b
     | guess_final_order_date                  | more than 30 days    |         | 
     | parents_agree                           | True                 |         | 
     And I take a screenshot
-    And I should see the phrase "Your Personal Action Plan for changing a court order from your divorce case in 10 steps"
+    And I should see the phrase "Your Action Plan for changing a court order from your divorce case in 10 steps"
     And I should see the phrase "Decide the steps you want to take"
     And I should see the phrase "Find out if you and your ex agree"
     And I should see the phrase "Tell the court about your agreement"
@@ -278,7 +278,7 @@ Scenario: Row #77
     | final_order_date                        | today - 32           |         | 
     | parents_agree                           | False                |         | 
     And I take a screenshot
-    And I should see the phrase "Your Personal Action Plan for changing a court order from your divorce case in 7 steps"
+    And I should see the phrase "Your Action Plan for changing a court order from your divorce case in 7 steps"
     And I should see the phrase "Learn about the Motion to Set Aside Judgment or Order"
     And I should see the phrase "Fill out forms if you want to file a Motion to Set Aside"
     And I should see the phrase "Fill out the Certificate of Service"
@@ -303,7 +303,7 @@ Scenario: Row #77b
     | guess_final_order_date                  | more than 30 days    |         | 
     | parents_agree                           | False                |         | 
     And I take a screenshot
-    And I should see the phrase "Your Personal Action Plan for changing a court order from your divorce case in 7 steps"
+    And I should see the phrase "Your Action Plan for changing a court order from your divorce case in 7 steps"
     And I should see the phrase "Learn about the Motion to Set Aside Judgment or Order"
     And I should see the phrase "Fill out forms if you want to file a Motion to Set Aside"
     And I should see the phrase "Fill out the Certificate of Service"
@@ -314,3 +314,5 @@ Scenario: Row #77b
     And I take a screenshot
     And I download "changing_divorce_order.pdf"
     And I download "changing_divorce_order.docx"
+
+
