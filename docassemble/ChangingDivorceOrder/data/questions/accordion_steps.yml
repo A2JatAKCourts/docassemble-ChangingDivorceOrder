@@ -8,32 +8,36 @@ generic object: ALDocumentBundle
 template: x.send_email_template
 subject: |
   % if user_need == 'change foreign custody order':
-  Your Personal Action Plan for changing your custody or Parenting Plan order from another state
+  Your Action Plan for changing your custody or Parenting Plan order from another state
   % endif
   % if user_need == 'respond to motion in divorce':
   % if middle_of_case == 'no' and type_of_response == 'appeal':
-  Your Personal Action Plan for responding to the appeal your ex filed to change a court order from your divorce case
+  Your Action Plan for responding to the appeal your ex filed to change a court order from your divorce case
   % endif
   % if middle_of_case == 'no' and type_of_response != 'appeal':
-  Your Personal Action Plan for responding to a motion your ex filed to change a court order from your divorce case
+  Your Action Plan for responding to a motion your ex filed to change a court order from your divorce case
   % endif
   % if middle_of_case == 'yes':
-  Your Personal Action Plan for responding to a motion your spouse filed to change a court order in your divorce case
+  Your Action Plan for responding to a motion your spouse filed to change a court order in your divorce case
   % endif
   % endif
   % if user_need == 'change divorce order':
   % if middle_of_case == 'no' and type_of_final_order.all_false('spousal support', 'property or debt'):
-  Your Personal Action Plan for changing your custody or Parenting Plan order from your divorce case in ${ len(step_list) } steps
+  Your Action Plan for changing your custody or Parenting Plan order from your divorce case in ${ len(step_list) } steps
   % elif middle_of_case == 'yes':
-  Your Personal Action Plan for changing a court order during your divorce case
+  Your Action Plan for changing a court order during your divorce case
   % else:
-  Your Personal Action Plan for changing a court order from your divorce case
+  Your Action Plan for changing a court order from your divorce case
   % endif
   % endif 
 content: |
-  Thank you for using Alaska Court System Access to Justice Easy Forms
+  Thank you for using the Alaska Court System’s Court Guide Action Plan.
 
   Your Action Plan is attached.
+
+  Get [more information and a list of all the Court Guide Action Plans](https://ak-courts.info/plans).
+  
+  [ak-courts.info/plans](https://ak-courts.info/plans).
 ---
 id: final screen
 decoration: pen-to-square
@@ -42,30 +46,30 @@ question: |
   % if len(step_list) < 2:
   Get more information or help
   % else:
-  # <i class="fa-thin fa-list"></i>Your Personal Action Plan is ready!
+  # <i class="fa-thin fa-list"></i>Your Court Guide Action Plan is ready!
   % endif
 subquestion: |
   % if user_need == 'change foreign custody order':
-  #### Your Personal Action Plan for changing your custody or Parenting Plan order from another state in ${ len(step_list) } steps
+  #### Your Action Plan for changing your custody or Parenting Plan order from another state in ${ len(step_list) } steps
   % endif
   % if user_need == 'respond to motion in divorce':
   % if middle_of_case == 'no' and type_of_response == 'appeal':
-  #### Your Personal Action Plan for responding to the appeal your ex filed to change a court order from your divorce case, in ${ len(step_list) } steps
+  #### Your Action Plan for responding to the appeal your ex filed to change a court order from your divorce case, in ${ len(step_list) } steps
   % endif
   % if middle_of_case == 'no' and type_of_response != 'appeal':
-  #### Your Personal Action Plan for responding to a motion your ex filed to change a court order from your divorce case, in ${ len(step_list) } steps
+  #### Your Action Plan for responding to a motion your ex filed to change a court order from your divorce case, in ${ len(step_list) } steps
   % endif
   % if middle_of_case == 'yes':
-  #### Your Personal Action Plan for responding to a motion your spouse filed to change a court order in your divorce case, in ${ len(step_list) } steps
+  #### Your Action Plan for responding to a motion your spouse filed to change a court order in your divorce case, in ${ len(step_list) } steps
   % endif
   % endif
   % if user_need == 'change divorce order':
   % if middle_of_case == 'no' and type_of_final_order.all_false('spousal support', 'property or debt'):
-  #### Your Personal Action Plan for changing your custody or Parenting Plan order from your divorce case in ${ len(step_list) } steps
+  #### Your Action Plan for changing your custody or Parenting Plan order from your divorce case in ${ len(step_list) } steps
   % elif middle_of_case == 'yes':
-  #### Your Personal Action Plan for changing a court order during your divorce case in ${ len(step_list) } steps
+  #### Your Action Plan for changing a court order during your divorce case in ${ len(step_list) } steps
   % else:
-  #### Your Personal Action Plan for changing a court order from your divorce case in ${ len(step_list) } steps
+  #### Your Action Plan for changing a court order from your divorce case in ${ len(step_list) } steps
   % endif
   % endif
     
