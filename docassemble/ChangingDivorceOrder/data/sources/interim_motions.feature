@@ -208,7 +208,7 @@ Scenario:  Row #22
     And I should see the phrase "Decide the steps you want to take"
     And I should see the phrase "Find out if you and your spouse agree"
     And I should see the phrase "Tell the court about your agreement"
-    And I should see the phrase "Ask the court to change the Standing Order or a similar decision"
+    And I should see the phrase "Ask the court to change the Standing Order or a similar order"
     And I should see the phrase "Fill out your motion forms"
     And I should see the phrase "Fill out the Certificate of Service"
     And I should see the phrase "File your motion forms"
@@ -230,7 +230,7 @@ Scenario:  Row #23
     | type_of_interim_order | standing order       |         | 
     | parents_agree         | False                |         | 
     And I should see the phrase "Your Action Plan for changing a court order during your divorce case in 7 steps"
-    And I should see the phrase "Ask the court to change the Standing Order or a similar decision"
+    And I should see the phrase "Ask the court to change the Standing Order or a similar order"
     And I should see the phrase "Fill out your motion forms"
     And I should see the phrase "Fill out the Certificate of Service"
     And I should see the phrase "File your motion forms"
