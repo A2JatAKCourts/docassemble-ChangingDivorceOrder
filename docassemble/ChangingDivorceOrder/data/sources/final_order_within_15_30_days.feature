@@ -13,7 +13,7 @@ Scenario: Row #30
     | middle_of_case                       | no                   |         |
     | type_of_final_order['custody order'] | True                 |         |
     | why_change                           | problem              |         |
-    | final_order_date                     | today - 14           |         |
+    | final_order_date                     | today - 13           |         |
     | parents_agree                        | True                 |         |
   And I should see the phrase "Your Action Plan for changing your custody or Parenting Plan order from your divorce case in 11 steps"
   And I should see the phrase "Decide the steps you want to take"
@@ -72,7 +72,7 @@ Scenario: Row #31
     | middle_of_case                       | no                   |         |
     | type_of_final_order['custody order'] | True                 |         |
     | why_change                           | problem              |         |
-    | final_order_date                     | today - 14           |         |
+    | final_order_date                     | today - 13           |         |
     | parents_agree                        | False                |         |
   And I should see the phrase "Your Action Plan for changing your custody or Parenting Plan order from your divorce case in 8 steps"
   And I should see the phrase "Decide if you want to file an appeal"
@@ -124,7 +124,7 @@ Scenario: Row #52
     | middle_of_case                         | no                   |         |
     | type_of_final_order['spousal support'] | True                 |         |
     | why_change_divorce_order               | problem              |         |
-    | final_order_date                       | today - 29           |         |
+    | final_order_date                       | today - 28           |         |
     | parents_agree                          | True                 |         |
   And I should see the phrase "Your Action Plan for changing a court order from your divorce case in 11 steps"
   And I should see the phrase "Decide the steps you want to take"
@@ -182,7 +182,7 @@ Scenario: Row #53
     | middle_of_case                         | no                   |         |
     | type_of_final_order['spousal support'] | True                 |         |
     | why_change_divorce_order               | problem              |         |
-    | final_order_date                       | today - 29           |         |
+    | final_order_date                       | today - 28           |         |
     | parents_agree                          | False                |         |
   And I should see the phrase "Your Action Plan for changing a court order from your divorce case in 8 steps"
   And I should see the phrase "Decide if you want to file an appeal"
@@ -233,7 +233,7 @@ Scenario: Row #74
     | middle_of_case                          | no                   |         |
     | type_of_final_order['property or debt'] | True                 |         |
     | why_change_divorce_order                | problem              |         |
-    | final_order_date                        | today - 29           |         |
+    | final_order_date                        | today - 28           |         |
     | parents_agree                           | True                 |         |
   And I should see the phrase "Your Action Plan for changing a court order from your divorce case in 11 steps"
   And I should see the phrase "Decide the steps you want to take"
@@ -290,7 +290,7 @@ Scenario: Row #75
     | middle_of_case                          | no                   |         |
     | type_of_final_order['property or debt'] | True                 |         |
     | why_change_divorce_order                | problem              |         |
-    | final_order_date                        | today - 29           |         |
+    | final_order_date                        | today - 28           |         |
     | parents_agree                           | False                |         |
   And I should see the phrase "Your Action Plan for changing a court order from your divorce case in 8 steps"
   And I should see the phrase "Decide if you want to file an appeal"

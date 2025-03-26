@@ -13,7 +13,7 @@ Scenario: Row #28
     | middle_of_case                       | no                   |         | 
     | type_of_final_order['custody order'] | True                 |         | 
     | why_change                           | problem              |         | 
-    | final_order_date                     | today - 9            |         | 
+    | final_order_date                     | today - 8            |         | 
     | parents_agree                        | True                 |         | 
     And I should see the phrase "Your Action Plan for changing your custody or Parenting Plan order from your divorce case in 10 steps"
     And I should see the phrase "Decide the steps you want to take"
@@ -66,7 +66,7 @@ Scenario: Row #29
     | middle_of_case                       | no                   |         | 
     | type_of_final_order['custody order'] | True                 |         | 
     | why_change                           | problem              |         | 
-    | final_order_date                     | today - 9            |         | 
+    | final_order_date                     | today - 8            |         | 
     | parents_agree                        | False                |         | 
     And I should see the phrase "Your Action Plan for changing your custody or Parenting Plan order from your divorce case in 7 steps"
     And I should see the phrase "Learn about Motions to Reconsider"
@@ -113,7 +113,7 @@ Scenario: Row #50
     | middle_of_case                         | no                   |         | 
     | type_of_final_order['spousal support'] | True                 |         | 
     | why_change_divorce_order               | problem              |         | 
-    | final_order_date                       | today - 9            |         | 
+    | final_order_date                       | today - 8            |         | 
     | parents_agree                          | True                 |         | 
     And I should see the phrase "Your Action Plan for changing a court order from your divorce case in 10 steps"
     And I should see the phrase "Decide the steps you want to take"
@@ -166,7 +166,7 @@ Scenario: Row #51
     | middle_of_case                         | no                   |         | 
     | type_of_final_order['spousal support'] | True                 |         | 
     | why_change_divorce_order               | problem              |         | 
-    | final_order_date                       | today - 9            |         | 
+    | final_order_date                       | today - 8            |         | 
     | parents_agree                          | False                |         | 
     And I should see the phrase "Your Action Plan for changing a court order from your divorce case in 7 steps"
     And I should see the phrase "Learn about Motions to Reconsider"
@@ -214,7 +214,7 @@ Scenario: Row #72
     | middle_of_case                          | no                   |         | 
     | type_of_final_order['property or debt'] | True                 |         | 
     | why_change_divorce_order                | problem              |         | 
-    | final_order_date                        | today - 9            |         | 
+    | final_order_date                        | today - 8            |         | 
     | parents_agree                           | True                 |         | 
 
     And I should see the phrase "Your Action Plan for changing a court order from your divorce case in 10 steps"
@@ -268,7 +268,7 @@ Scenario: Row #73
     | middle_of_case                          | no                   |         | 
     | type_of_final_order['property or debt'] | True                 |         | 
     | why_change_divorce_order                | problem              |         | 
-    | final_order_date                        | today - 9            |         | 
+    | final_order_date                        | today - 8            |         | 
     | parents_agree                           | False                |         | 
 
     And I should see the phrase "Your Action Plan for changing a court order from your divorce case in 7 steps"

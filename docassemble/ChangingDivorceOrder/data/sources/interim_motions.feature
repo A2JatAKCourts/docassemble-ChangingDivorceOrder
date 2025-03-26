@@ -13,7 +13,7 @@ Scenario: Row #18
     | user_need             | change divorce order |         | 
     | middle_of_case        | yes                  |         | 
     | type_of_interim_order | motion               |         | 
-    | interim_order_date    | today - 2            |         | 
+    | interim_order_date    | today - 3            |         | 
     | parents_agree         | True                 |         | 
     And I should see the phrase "Your Action Plan for changing a court order during your divorce case in 10 steps"
     And I should see the phrase "Decide the steps you want to take"
@@ -65,7 +65,7 @@ Scenario: Row #19
     | user_need             | change divorce order |         | 
     | middle_of_case        | yes                  |         | 
     | type_of_interim_order | motion               |         | 
-    | interim_order_date    | today - 2            |         | 
+    | interim_order_date    | today - 3            |         | 
     | parents_agree         | False                |         | 
     And I should see the phrase "Your Action Plan for changing a court order during your divorce case in 7 steps"
     And I should see the phrase "Learn about Motions to Reconsider"

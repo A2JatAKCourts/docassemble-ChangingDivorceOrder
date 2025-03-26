@@ -113,7 +113,7 @@ Scenario: Row #99
     | type_of_final_order['spousal support'] | True                 |         | 
     | why_change_divorce_order               | problem              |         | 
     | parents_agree                          | False                |         | 
-    | final_order_date                       | today - 9            |         | 
+    | final_order_date                       | today - 8            |         | 
 # And I take a screenshot
     And I should see the phrase "Your Action Plan for changing a court order from your divorce case in 12 steps"
     And I should see the phrase "Learn about a Motion to Modify your Parenting Plan"
@@ -501,7 +501,7 @@ Scenario: Row #118
     | type_of_final_order['property or debt'] | True                  |         | 
     | why_change_divorce_order                | changed circumstances |         | 
     | parents_agree                           | False                 |         | 
-    | final_order_date                        | today - 9             |         | 
+    | final_order_date                        | today - 8             |         | 
 # And I take a screenshot
     And I should see the phrase "Your Action Plan for changing a court order from your divorce case in 10 steps"
     And I should see the phrase "Learn about the Motion to Modify Divorce Property & Debt Division"
@@ -530,7 +530,7 @@ Scenario: Row #138
     | why_change                             | problem              |         | 
     | type_of_final_order['spousal support'] | True                 |         | 
     | why_change_divorce_order               | problem              |         | 
-    | final_order_date                       | today - 9            |         | 
+    | final_order_date                       | today - 8            |         | 
     | parents_agree                          | True                 |         | 
 # And I take a screenshot
     And I should see the phrase "Your Action Plan for changing a court order from your divorce case in 10 steps"
