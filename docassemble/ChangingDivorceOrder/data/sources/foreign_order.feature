@@ -12,7 +12,7 @@ Scenario: Row #1
     | user_need | change foreign custody order |  |
   And I should see the phrase "Your Action Plan for changing your custody or Parenting Plan order from another state in 12 steps" 
   And I should see the phrase "Ask the court to change your custody and Parenting Plan or child support order from another state"
-  And I should see the phrase "Make sure that the Alaska court has the authority to change the order"
+  And I should see the phrase "Make sure the Alaska court has the authority to change the order"
   And I should see the phrase "Register the out-of-state order"
   And I should see the phrase "Learn about motions to modify"
   And I should see the phrase "Fill out the Motion to Modify Custody forms"
