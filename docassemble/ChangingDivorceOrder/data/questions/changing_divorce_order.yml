@@ -24,9 +24,9 @@ data:
   title: >-
     Changing your divorce court order
   short title: >-
-    Changing your custody order
+    Changing your divorce order
   description: |-
-    Personal Action Plan for changing your custody or Parenting Plan order
+    An Action Plan for changing a court order from your divorce case
   allowed courts: []
   categories: []
   typical role: "unknown"
@@ -47,7 +47,7 @@ code: |
   github_repo_name =  'docassemble-ChangingDivorceOrderInterviewIssues'
 ---
 code: |
-  interview_short_title = "Get a Personal Action Plan for changing your custody or Parenting Plan order"
+  interview_short_title = "Get an Action Plan for a court order from your divorce case"
 ---
 code: |
   al_form_type = "other" 
@@ -140,7 +140,7 @@ id: Changing a Divorce Order
 question: |
   Changing a Divorce Order
 subquestion: |
-  This Guided Assistant asks you questions and uses your answers to build a Personal Action Plan - a list of steps to help you with asking the court to change a court order during or after your divorce case in Alaska. 
+  This Court Guide Action Plan asks you questions and uses your answers to build a list of steps to help you with asking the court to change a court order during or after your divorce case in Alaska. 
   
   What do you want to do?
 fields:

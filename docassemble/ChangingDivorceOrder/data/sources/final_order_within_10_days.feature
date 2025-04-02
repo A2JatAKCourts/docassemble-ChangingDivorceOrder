@@ -13,9 +13,9 @@ Scenario: Row #28
     | middle_of_case                       | no                   |         | 
     | type_of_final_order['custody order'] | True                 |         | 
     | why_change                           | problem              |         | 
-    | final_order_date                     | today - 9            |         | 
+    | final_order_date                     | today - 8            |         | 
     | parents_agree                        | True                 |         | 
-    And I should see the phrase "Your Personal Action Plan for changing your custody or Parenting Plan order from your divorce case in 10 steps"
+    And I should see the phrase "Your Action Plan for changing your custody or Parenting Plan order from your divorce case in 10 steps"
     And I should see the phrase "Decide the steps you want to take"
     And I should see the phrase "Find out if you and the other parent agree"
     And I should see the phrase "Tell the court about your agreement"
@@ -42,7 +42,7 @@ Scenario: Row #28b
     | final_order_period                   | True                 |         | 
     | guess_final_order_date               | within 10 days       |         | 
     | parents_agree                        | True                 |         | 
-    And I should see the phrase "Your Personal Action Plan for changing your custody or Parenting Plan order from your divorce case in 10 steps"
+    And I should see the phrase "Your Action Plan for changing your custody or Parenting Plan order from your divorce case in 10 steps"
     And I should see the phrase "Decide the steps you want to take"
     And I should see the phrase "Find out if you and the other parent agree"
     And I should see the phrase "Tell the court about your agreement"
@@ -66,9 +66,9 @@ Scenario: Row #29
     | middle_of_case                       | no                   |         | 
     | type_of_final_order['custody order'] | True                 |         | 
     | why_change                           | problem              |         | 
-    | final_order_date                     | today - 9            |         | 
+    | final_order_date                     | today - 8            |         | 
     | parents_agree                        | False                |         | 
-    And I should see the phrase "Your Personal Action Plan for changing your custody or Parenting Plan order from your divorce case in 7 steps"
+    And I should see the phrase "Your Action Plan for changing your custody or Parenting Plan order from your divorce case in 7 steps"
     And I should see the phrase "Learn about Motions to Reconsider"
     And I should see the phrase "Fill out the Motion to Reconsider forms"
     And I should see the phrase "Fill out the Certificate of Service"
@@ -92,7 +92,7 @@ Scenario: Row #29b
     | final_order_period                   | True                 |         | 
     | guess_final_order_date               | within 10 days       |         | 
     | parents_agree                        | False                |         | 
-    And I should see the phrase "Your Personal Action Plan for changing your custody or Parenting Plan order from your divorce case in 7 steps"
+    And I should see the phrase "Your Action Plan for changing your custody or Parenting Plan order from your divorce case in 7 steps"
     And I should see the phrase "Learn about Motions to Reconsider"
     And I should see the phrase "Fill out the Motion to Reconsider forms"
     And I should see the phrase "Fill out the Certificate of Service"
@@ -113,9 +113,9 @@ Scenario: Row #50
     | middle_of_case                         | no                   |         | 
     | type_of_final_order['spousal support'] | True                 |         | 
     | why_change_divorce_order               | problem              |         | 
-    | final_order_date                       | today - 9            |         | 
+    | final_order_date                       | today - 8            |         | 
     | parents_agree                          | True                 |         | 
-    And I should see the phrase "Your Personal Action Plan for changing a court order from your divorce case in 10 steps"
+    And I should see the phrase "Your Action Plan for changing a court order from your divorce case in 10 steps"
     And I should see the phrase "Decide the steps you want to take"
     And I should see the phrase "Find out if you and your ex agree"
     And I should see the phrase "Tell the court about your agreement"
@@ -142,7 +142,7 @@ Scenario: Row #50b
     | final_order_period                     | True                 |         | 
     | guess_final_order_date                 | within 10 days       |         | 
     | parents_agree                          | True                 |         | 
-    And I should see the phrase "Your Personal Action Plan for changing a court order from your divorce case in 10 steps"
+    And I should see the phrase "Your Action Plan for changing a court order from your divorce case in 10 steps"
     And I should see the phrase "Decide the steps you want to take"
     And I should see the phrase "Find out if you and your ex agree"
     And I should see the phrase "Tell the court about your agreement"
@@ -166,9 +166,9 @@ Scenario: Row #51
     | middle_of_case                         | no                   |         | 
     | type_of_final_order['spousal support'] | True                 |         | 
     | why_change_divorce_order               | problem              |         | 
-    | final_order_date                       | today - 9            |         | 
+    | final_order_date                       | today - 8            |         | 
     | parents_agree                          | False                |         | 
-    And I should see the phrase "Your Personal Action Plan for changing a court order from your divorce case in 7 steps"
+    And I should see the phrase "Your Action Plan for changing a court order from your divorce case in 7 steps"
     And I should see the phrase "Learn about Motions to Reconsider"
     And I should see the phrase "Fill out the Motion to Reconsider forms"
     And I should see the phrase "Fill out the Certificate of Service"
@@ -193,7 +193,7 @@ Scenario: Row #51b
     | guess_final_order_date                 | within 10 days       |         | 
     | parents_agree                          | False                |         | 
 
-    And I should see the phrase "Your Personal Action Plan for changing a court order from your divorce case in 7 steps"
+    And I should see the phrase "Your Action Plan for changing a court order from your divorce case in 7 steps"
     And I should see the phrase "Learn about Motions to Reconsider"
     And I should see the phrase "Fill out the Motion to Reconsider forms"
     And I should see the phrase "Fill out the Certificate of Service"
@@ -214,10 +214,10 @@ Scenario: Row #72
     | middle_of_case                          | no                   |         | 
     | type_of_final_order['property or debt'] | True                 |         | 
     | why_change_divorce_order                | problem              |         | 
-    | final_order_date                        | today - 9            |         | 
+    | final_order_date                        | today - 8            |         | 
     | parents_agree                           | True                 |         | 
 
-    And I should see the phrase "Your Personal Action Plan for changing a court order from your divorce case in 10 steps"
+    And I should see the phrase "Your Action Plan for changing a court order from your divorce case in 10 steps"
     And I should see the phrase "Decide the steps you want to take"
     And I should see the phrase "Find out if you and your ex agree"
     And I should see the phrase "Tell the court about your agreement"
@@ -245,7 +245,7 @@ Scenario: Row #72b
     | guess_final_order_date                  | within 10 days       |         | 
     | parents_agree                           | True                 |         | 
 
-    And I should see the phrase "Your Personal Action Plan for changing a court order from your divorce case in 10 steps"
+    And I should see the phrase "Your Action Plan for changing a court order from your divorce case in 10 steps"
     And I should see the phrase "Decide the steps you want to take"
     And I should see the phrase "Find out if you and your ex agree"
     And I should see the phrase "Learn about Motions to Reconsider"
@@ -268,10 +268,10 @@ Scenario: Row #73
     | middle_of_case                          | no                   |         | 
     | type_of_final_order['property or debt'] | True                 |         | 
     | why_change_divorce_order                | problem              |         | 
-    | final_order_date                        | today - 9            |         | 
+    | final_order_date                        | today - 8            |         | 
     | parents_agree                           | False                |         | 
 
-    And I should see the phrase "Your Personal Action Plan for changing a court order from your divorce case in 7 steps"
+    And I should see the phrase "Your Action Plan for changing a court order from your divorce case in 7 steps"
     And I should see the phrase "Learn about Motions to Reconsider"
     And I should see the phrase "Fill out the Motion to Reconsider forms"
     And I should see the phrase "Fill out the Certificate of Service"
@@ -296,7 +296,7 @@ Scenario: Row #73b
     | guess_final_order_date                  | within 10 days       |         | 
     | parents_agree                           | False                |         | 
 
-    And I should see the phrase "Your Personal Action Plan for changing a court order from your divorce case in 7 steps"
+    And I should see the phrase "Your Action Plan for changing a court order from your divorce case in 7 steps"
     And I should see the phrase "Learn about Motions to Reconsider"
     And I should see the phrase "Fill out the Motion to Reconsider forms"
     And I should see the phrase "Fill out the Certificate of Service"
@@ -307,3 +307,5 @@ Scenario: Row #73b
     And I take a screenshot
     And I download "changing_divorce_order.pdf"
     And I download "changing_divorce_order.docx"
+
+
