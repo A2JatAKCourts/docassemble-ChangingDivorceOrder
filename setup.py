@@ -54,7 +54,7 @@ setup(name='docassemble.ChangingDivorceOrder',
       url='https://docassemble.org',
       packages=find_packages(),
       namespace_packages=['docassemble'],
-      install_requires=['docassemble.AKA2JBranding>=25.3.7', 'docassemble.AssemblyLine>=3.2.0'],
+      install_requires=['docassemble.AKA2JBranding>=25.3.31', 'docassemble.AssemblyLine>=3.2.0'],
       zip_safe=False,
       package_data=find_package_data(where='docassemble/ChangingDivorceOrder/', package='docassemble.ChangingDivorceOrder'),
      )
