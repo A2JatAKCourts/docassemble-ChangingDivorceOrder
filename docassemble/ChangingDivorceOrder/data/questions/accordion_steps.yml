@@ -622,7 +622,7 @@ content: |
   If the judge decides there is a reason to change the final property and debt decision, the judge will issue a new order.
   % endif
   % if user_need == 'change foreign custody order' or (not user_need in('respond to motion in custody', 'respond to motion in divorce') and middle_of_case == 'no'):
-  The court charges $75 to file this motion. If you cannot afford the fee, you may be able to get the court to waive it. See the Step ${ file_motion_idx }: ${ file_step_heading }.
+  The court charges $75 to file this motion. If you cannot afford the fee, you may be able to get the court to waive it. See ${ truefiling_file_and_serve_step.subject }.
   % endif
 --- 
 template: fill_modify_divorce_step
