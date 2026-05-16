@@ -1,9 +1,12 @@
+comment: |
+  2026-05-12 updating to include TrueFiling steps
 include:
   - docassemble.AssemblyLine:assembly_line.yml
   - docassemble.AKA2JBranding:custom_organization.yml
   - docassemble.AKA2JBranding:aka2j_templates.yml
   - docassemble.AKA2JBranding:aka2j_motion_response_templates.yml
-  - docassemble.AKA2JBranding:aka2j_mod_cust_div_templates.yml
+  - docassemble.AKA2JBranding:aka2j_mod_cust_div_templates.yml   
+  - truefiling.yml
   - accordion_steps.yml
 ---
 metadata:
