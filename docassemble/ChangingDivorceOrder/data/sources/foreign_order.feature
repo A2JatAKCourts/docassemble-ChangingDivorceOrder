@@ -1,6 +1,6 @@
 @foreign
 Feature: User paths
-# 2026-05-15
+# 2026-05-16
 
 Background:
   Given the maximum seconds for each Step is 45
@@ -17,7 +17,7 @@ Scenario: Row #1
     | other_party_enter_email | True                         |         | 
   And I should see the phrase "Your Action Plan for changing your custody or Parenting Plan order from another state in 11 steps" 
   And I should see the phrase "Step 1: Ask the court to change your custody and Parenting Plan or child support order from another state"
-  And I should see the phrase "Step 2: Make sure that the Alaska court has the authority to change the order"
+  And I should see the phrase "Step 2: Make sure the Alaska court has the authority to change the order"
   And I should see the phrase "Step 3: Register the out-of-state order"
   And I should see the phrase "Step 4: Learn about motions to modify"
   And I should see the phrase "Step 5: Fill out the Motion to Modify Custody forms"
