@@ -1,6 +1,6 @@
 @modifying
 Feature: User paths
-# 2026-05-15
+# 2026-05-16 
 
 Background: 
   Given the maximum seconds for each Step is 45
@@ -28,7 +28,7 @@ Scenario: Row #24
     And I should see the phrase "Step 6: Fill out your child support forms"
     And I should see the phrase "Step 7: Do not wait to file your Motion to Modify"
     And I should see the phrase "Step 8: File your Modify Custody, Visitation & Support Packet"
-    And I tap the "#ZmlsZV9tb3Rpb25fc3RlcA .al_toggle" element and stay on the same page
+    And I tap the "#dHJ1ZWZpbGluZ19maWxlX2FuZF9zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
     And I should see the phrase "Pay the $75 fee to file your Motion to Modify"
     And I should see the phrase "Step 9: Serve the other parent"
     And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
@@ -60,7 +60,7 @@ Scenario: Row #25
     And I should see the phrase "Step 4: Do not wait to file your Motion to Modify"
     And I should see the phrase "Step 5: Sign if you use paper forms or do not use TrueFiling"
     And I should see the phrase "Step 6: File your Modify Custody, Visitation & Support Packet"
-    And I tap the "#ZmlsZV9tb3Rpb25fc3RlcA .al_toggle" element and stay on the same page
+    And I tap the "#dHJ1ZWZpbGluZ19maWxlX2FuZF9zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
     And I should see the phrase "Pay the $75 fee to file your Motion to Modify"
     And I should see the phrase "Step 7: Serve the other parent"
     And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
@@ -95,7 +95,7 @@ Scenario: Row #26
     And I should see the phrase "Step 7: Do not wait to file your Motion to Modify"
     And I should see the phrase "Step 8: Sign if you use paper forms or do not use TrueFiling"
     And I should see the phrase "Step 9: File your Modify Custody, Visitation & Support Packet"
-    And I tap the "#ZmlsZV9tb3Rpb25fc3RlcA .al_toggle" element and stay on the same page
+    And I tap the "#dHJ1ZWZpbGluZ19maWxlX2FuZF9zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
     And I should see the phrase "Pay the $75 fee to file your Motion to Modify"
     And I should see the phrase "Step 10: Serve the other parent"
     And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
@@ -126,7 +126,7 @@ Scenario: Row #27
     And I should see the phrase "Step 4: Do not wait to file your Motion to Modify"
     And I should see the phrase "Step 5: Sign if you use paper forms or do not use TrueFiling"
     And I should see the phrase "Step 6: File your Modify Custody, Visitation & Support Packet"
-    And I tap the "#ZmlsZV9tb3Rpb25fc3RlcA .al_toggle" element and stay on the same page
+    And I tap the "#dHJ1ZWZpbGluZ19maWxlX2FuZF9zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
     And I should see the phrase "Pay the $75 fee to file your Motion to Modify"
     And I should see the phrase "Step 7: Serve the other parent"
     And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
@@ -158,7 +158,7 @@ Scenario: Row #48
     And I should see the phrase "Step 5: Fill out the motion form to modify the spousal support order"
     And I should see the phrase "Step 6: Sign if you use paper forms or do not use TrueFiling"
     And I should see the phrase "Step 7: File your Request to Modify Order or Decree Concerning Spousal Maintenance or Property Allocation"
-    And I tap the "#ZmlsZV9tb3Rpb25fc3RlcA .al_toggle" element and stay on the same page
+    And I tap the "#dHJ1ZWZpbGluZ19maWxlX2FuZF9zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
     And I should see the phrase "Pay the $75 fee to file your Motion to Modify"
     And I should see the phrase "Step 8: Serve your ex"
     And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
@@ -188,7 +188,7 @@ Scenario: Row #49
     And I should see the phrase "Step 2: Fill out the motion form to modify the spousal support order"
     And I should see the phrase "Step 3: Sign if you use paper forms or do not use TrueFiling"
     And I should see the phrase "Step 4: File your Request to Modify Order or Decree Concerning Spousal Maintenance or Property Allocation"
-    And I tap the "#ZmlsZV9tb3Rpb25fc3RlcA .al_toggle" element and stay on the same page
+    And I tap the "#dHJ1ZWZpbGluZ19maWxlX2FuZF9zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
     And I should see the phrase "Pay the $75 fee to file your Motion to Modify"
     And I should see the phrase "Step 5: Serve your ex"
     And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
@@ -221,7 +221,7 @@ Scenario: Row #70
     And I should see the phrase "Step 5: Fill out the motion form to modify the property and debt division order"
     And I should see the phrase "Step 6: Sign if you use paper forms or do not use TrueFiling"
     And I should see the phrase "Step 7: File your Request to Modify Order or Decree Concerning Spousal Maintenance or Property Allocation"
-    And I tap the "#ZmlsZV9tb3Rpb25fc3RlcA .al_toggle" element and stay on the same page
+    And I tap the "#dHJ1ZWZpbGluZ19maWxlX2FuZF9zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
     And I should see the phrase "Pay the $75 fee to file your Motion to Modify"
     And I should see the phrase "Step 8: Serve your ex"
     And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
@@ -251,7 +251,7 @@ Scenario: Row #71
     And I should see the phrase "Step 2: Fill out the motion form to modify the property and debt division order"
     And I should see the phrase "Step 3: Sign if you use paper forms or do not use TrueFiling"
     And I should see the phrase "Step 4: File your Request to Modify Order or Decree Concerning Spousal Maintenance or Property Allocation"
-    And I tap the "#ZmlsZV9tb3Rpb25fc3RlcA .al_toggle" element and stay on the same page
+    And I tap the "#dHJ1ZWZpbGluZ19maWxlX2FuZF9zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
     And I should see the phrase "Pay the $75 fee to file your Motion to Modify"
     And I should see the phrase "Step 5: Serve your ex"
     And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
