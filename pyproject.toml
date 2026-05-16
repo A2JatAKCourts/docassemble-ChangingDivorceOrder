@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "docassemble.ChangingDivorceOrder"
-version = "2025.05.01"
+version = "2025.05.010"
 description = "A docassemble extension."
 readme = "README.md"
 authors = [
