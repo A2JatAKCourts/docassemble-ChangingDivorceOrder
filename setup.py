@@ -1,6 +1,6 @@
 import os
 import sys
-from setuptools import setup, find_packages
+from setuptools import setup, find_namespace_packages
 from fnmatch import fnmatchcase
 from distutils.util import convert_path
 
@@ -44,18 +44,16 @@ def find_package_data(where='.', package='', exclude=standard_exclude, exclude_d
     return out
 
 setup(name='docassemble.ChangingDivorceOrder',
-      version='2025.05.01',
+      version='2025.05.15',
       description=('A docassemble extension.'),
       long_description='# docassemble.ChangingDivorceOrder\r\n\r\nA docassemble extension.\r\n\r\n## Author\r\n\r\nCaroline Robinson, CRobinson@akcourts.gov\r\n\r\n',
       long_description_content_type='text/markdown',
       author='Caroline Robinson',
       author_email='CRobinson@akcourts.gov',
-      license='The MIT License (MIT)',
+      license='MIT',
       url='https://docassemble.org',
-      packages=find_packages(),
-      namespace_packages=['docassemble'],
-      install_requires=['docassemble.AKA2JBranding>=25.5.1', 'docassemble.AssemblyLine>=3.2.0'],
+      packages=find_namespace_packages(),
+      install_requires=['docassemble.AKA2JBranding @ git+https://github.com/A2JatAKCourts/docassemble-AKA2JBranding.git@main', 'docassemble.AssemblyLine>=4.5.0'],
       zip_safe=False,
       package_data=find_package_data(where='docassemble/ChangingDivorceOrder/', package='docassemble.ChangingDivorceOrder'),
      )
-
