@@ -560,6 +560,97 @@ code: |
     if is_unique:
       image_list.append(new_image)
 ---
+template: modify_divorce_step
+subject: |
+  Step ${ modify_divorce_idx }: 
+  % if user_need == 'change divorce order' and middle_of_case == 'no':
+  Learn about the Motion to Modify
+  % if type_of_final_order['property or debt']:
+  Divorce Property & Debt Division
+  % endif
+  % if type_of_final_order.all_true('property or debt', 'spousal support'):
+   and 
+  % endif
+  % if type_of_final_order['spousal support']:
+  Spousal Support
+  % endif
+  % endif
+  % if user_need == 'respond to motion in divorce' and type_of_response == 'modify':
+  Learn about motions to modify 
+  % if type_of_modification['spousal support']:
+  spousal support
+  % endif
+  % if type_of_modification.all_true('spousal support', 'property or debt'):
+  and 
+  % endif
+  % if type_of_modification['property or debt']:
+  division of property and debt
+  % endif
+  % endif
+content: |
+  % if user_need == 'change divorce order':
+  Changing your divorce order is called “modifying” it.  To ask the judge to change your divorce order, file a **Motion to Modify**. The rules for changing spousal support are different from the rules for dividing property and debt.
+  % endif
+  % if user_need == 'change divorce order' and middle_of_case == 'no' and type_of_final_order['spousal support']:
+  <div class="step-subheading">Change spousal support</div>
+  % endif
+  % if (user_need == 'change divorce order' and middle_of_case == 'no' and type_of_final_order['spousal support']) or (user_need == 'respond to motion in divorce' and type_of_response == 'modify' and type_of_modification['spousal support']):
+  The court will generally only change spousal support if there is a "substantial change in circumstances."
+  <div class = "example">
+  <div class = "heading">Some examples</div>
+  <ul>
+  <li>The court ordered Spouse A to pay Spouse B spousal support.  Spouse B was very ill and could not work.  Spouse B is now better and has a full-time job.</li>
+  <li>The court ordered Spouse A to pay Spouse B spousal support for 4 years so Spouse B could get a degree that would help them earn more money.  Spouse B got their degree in 3 years and now has a full-time job earning more money because of the degree.</li>
+  </ul>
+  </div>
+  % endif
+
+  % if user_need == 'change divorce order' and middle_of_case == 'no' and type_of_final_order['property or debt']:
+  <div class="step-subheading">Change the property and debt division</div>
+  % endif
+
+  % if (user_need == 'change divorce order' and middle_of_case == 'no' and type_of_final_order['spousal support']) or (user_need == 'respond to motion in divorce' and type_of_response == 'modify' and type_of_modification['property or debt']):
+  Changing the outcome of final property and debt decisions in a divorce case can be tough. Once the court decides who gets what, it is not easy to undo those decisions.
+  
+  <div class = "example">
+  <div class = "heading">Some examples</div>
+  <ul>
+  <li>If the court awards the house to one spouse, they might sell it, and then it is impossible to get it back if the other spouse later wants the court to award them the house.</li>
+  <li>The court orders one person to receive some money from the marriage. If they spend that money, it cannot be taken back later.</li>
+  </ul>
+  </div>
+  If the judge decides there is a reason to change the final property and debt decision, the judge will issue a new order.
+  % endif
+  % if user_need == 'change foreign custody order' or (not user_need in('respond to motion in custody', 'respond to motion in divorce') and middle_of_case == 'no'):
+  The court charges $75 to file this motion. If you cannot afford the fee, you may be able to get the court to waive it. See the Step ${ file_motion_idx }: ${ file_step_heading }.
+  % endif
+--- 
+template: fill_modify_divorce_step
+subject: |
+  Step ${ fill_modify_divorce_idx }: Fill out the motion form to modify
+  % if type_of_final_order.all_true('property or debt', 'spousal support'):
+  the property and debt division and the spousal support orders
+  % elif type_of_final_order['property or debt']:
+  the property and debt division order
+  % elif type_of_final_order['spousal support']:
+  the spousal support order
+  % endif
+content: |
+  <div class="step-subheading">Use</div>
+   <ul><li><strong>Request to Modify Order or Decree Concerning Spousal Maintenance or Property Allocation, DR-735</strong> [<a href= "https://public.courts.alaska.gov/web/forms/docs/dr-735.pdf">Fill-In PDF</a>]
+  <ul><li> Wait to sign this form until you are in front of someone who has the power to take oaths, like a notary public.
+  <ul><li>The court clerk can do this for free.</li>
+  <li>Bring a valid photo ID with you.</li>
+  </ul></li>
+  <li>If you cannot get to a notary public or someone who has the power to take oaths, you can "self-certify."  Use:</ br>
+  <strong>Self-Certification (No Notary Available), TF-835</strong> [<a href= "https://public.courts.alaska.gov/web/forms/docs/tf-835.pdf">Fill-In PDF</a>]</li></ul></li>
+  <li><strong>Notice of Motion, CIV-650</strong> [<a href="https://public.courts.alaska.gov/web/forms/docs/tf-835.pdf">Fill-In PDF</a>]</li>
+  </ul>
+  
+  <div class="step-subheading">Watch</div>
+  
+  * [Motions Part 1: How to Ask the Court For Something](https://www.youtube.com/watch?v=2irmxT0_0EA) 
+---
 comment: |
   2026-05-15 adapting for TrueFiling
   Learn step for custody and divorce if modifying custody or child support. Child support interview has its own learn_modify_child_support_step. 
