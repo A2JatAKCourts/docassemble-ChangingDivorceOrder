@@ -1,7 +1,7 @@
 name: Automatic tests for changing_more_than_one_order on  GitHub Server
 
 on:
-  push:
+#  push:
   workflow_dispatch:
     inputs:
       tags:
