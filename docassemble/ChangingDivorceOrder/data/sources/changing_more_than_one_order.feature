@@ -1,6 +1,6 @@
 @morethan1order
 Feature: User paths
-# 2026-05-15
+# 2026-05-16
 
 Background: 
   Given the maximum seconds for each Step is 90
@@ -33,7 +33,7 @@ Scenario: Row #92
     And I should see the phrase "Step 8: Learn about the Motion to Modify Spousal Support"
     And I should see the phrase "Step 9: Fill out the motion form to modify the spousal support order"
     And I should see the phrase "Step 10: File your motion forms"
-    And I tap the "#ZmlsZV9tb3Rpb25fc3RlcA .al_toggle" element and stay on the same page
+    And I tap the "#dHJ1ZWZpbGluZ19maWxlX2FuZF9zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
     And I should see the phrase "Step 11: Pay one $75 fee to file both Motions to Modify at the same time."
     And I should see the phrase "Step 12: Serve your ex"
     And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
@@ -70,7 +70,7 @@ Scenario: Row #95
     And I should see the phrase "Step 6: Fill out the motion form to modify the property and debt division order"
     And I should see the phrase "Step 7: Sign if you use paper forms or do not use TrueFiling"
     And I should see the phrase "Step 8: File your motion forms"
-    And I tap the "#ZmlsZV9tb3Rpb25fc3RlcA .al_toggle" element and stay on the same page
+    And I tap the "#dHJ1ZWZpbGluZ19maWxlX2FuZF9zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
     And I should see the phrase "Step 9: Pay one $75 fee to file both Motions to Modify at the same time."
     And I should see the phrase "Step 10: Serve your ex"
     And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
@@ -108,7 +108,7 @@ Scenario: Row #97
     And I should see the phrase "Step 6: Fill out the motion form to modify the property and debt division and the spousal support orders"
     And I should see the phrase "Step 7: Sign if you use paper forms or do not use TrueFiling"
     And I should see the phrase "Step 8: File your motion forms"
-    And I tap the "#ZmlsZV9tb3Rpb25fc3RlcA .al_toggle" element and stay on the same page
+    And I tap the "#dHJ1ZWZpbGluZ19maWxlX2FuZF9zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
     And I should see the phrase "Step 9: Pay one $75 fee to file both Motions to Modify at the same time."
     And I should see the phrase "Step 10: Serve your ex"
     And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
@@ -145,7 +145,7 @@ Scenario: Row #99
     And I should see the phrase "Step 6: Fill out the Motion to Reconsider forms"
     And I should see the phrase "Step 7: Sign if you use paper forms or do not use TrueFiling"
     And I should see the phrase "Step 8: File your motion forms"
-    And I tap the "#ZmlsZV9tb3Rpb25fc3RlcA .al_toggle" element and stay on the same page
+    And I tap the "#dHJ1ZWZpbGluZ19maWxlX2FuZF9zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
     And I should see the phrase "Step 9: Pay the $75 fee to file your Motion to Modify"
     And I should see the phrase "Step 10: Serve your ex"  
     And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
@@ -189,7 +189,7 @@ Scenario: Row #100
     And I should see the phrase "Step 11: Fill out forms if you want to file a Motion to Set Aside"
     And I should see the phrase "Step 12: Sign if you use paper forms or do not use TrueFiling"
     And I should see the phrase "Step 13: File your motion forms"
-    And I tap the "#ZmlsZV9tb3Rpb25fc3RlcA .al_toggle" element and stay on the same page
+    And I tap the "#dHJ1ZWZpbGluZ19maWxlX2FuZF9zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
     And I should see the phrase "Step 14: Pay the $75 fee to file your Motion to Modify"
     And I should see the phrase "Step 15: Serve your ex"
     And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
@@ -230,7 +230,7 @@ Scenario: Row #102
     And I should see the phrase "Step 9: Fill out forms if you want to file a Motion to Set Aside"
     And I should see the phrase "Step 10: Sign if you use paper forms or do not use TrueFiling"
     And I should see the phrase "Step 11: File your motion forms"
-    And I tap the "#ZmlsZV9tb3Rpb25fc3RlcA .al_toggle" element and stay on the same page
+    And I tap the "#dHJ1ZWZpbGluZ19maWxlX2FuZF9zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
     And I should see the phrase "Step 12: Pay the $75 fee to file your Motion to Modify"
     And I should see the phrase "Step 13: Serve your ex"
     And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
@@ -275,7 +275,7 @@ Scenario: Row #104
     And I should see the phrase "Step 9: Fill out the Motion to Reconsider forms"
     And I should see the phrase "Step 10: Sign if you use paper forms or do not use TrueFiling"
     And I should see the phrase "Step 11: File your motion forms"
-    And I tap the "#ZmlsZV9tb3Rpb25fc3RlcA .al_toggle" element and stay on the same page
+    And I tap the "#dHJ1ZWZpbGluZ19maWxlX2FuZF9zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
     And I should see the phrase "Step 12: Pay the $75 fee to file your Motion to Modify"
     And I should see the phrase "Step 13: Serve your ex"
     And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
@@ -323,7 +323,7 @@ Scenario: Row #107
     And I tap the "#YXBwZWFsX3N0ZXA .al_toggle" element and stay on the same page
     And I should see the phrase "Step 11: Sign if you use paper forms or do not use TrueFiling"
     And I should see the phrase "Step 12: File your motion forms"
-    And I tap the "#ZmlsZV9tb3Rpb25fc3RlcA .al_toggle" element and stay on the same page
+    And I tap the "#dHJ1ZWZpbGluZ19maWxlX2FuZF9zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
     And I should see the phrase "Step 13: Pay the $75 fee to file your Motion to Modify"
     And I should see the phrase "Step 14: Serve your ex"  
     And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
@@ -370,7 +370,7 @@ Scenario: Row #109
     And I should see the phrase "Step 11: Fill out forms if you want to file a Motion to Set Aside"
     And I should see the phrase "Step 12: Sign if you use paper forms or do not use TrueFiling"
     And I should see the phrase "Step 13: File your motion forms"
-    And I tap the "#ZmlsZV9tb3Rpb25fc3RlcA .al_toggle" element and stay on the same page
+    And I tap the "#dHJ1ZWZpbGluZ19maWxlX2FuZF9zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
     And I should see the phrase "Step 14: Pay the $75 fee to file your Motion to Modify"
     And I should see the phrase "Step 15: Serve your ex"
     And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
@@ -414,7 +414,7 @@ Scenario: Row #112
     And I should see the phrase "Step 8: Learn about the Motion to Set Aside Judgment or Order"
     And I should see the phrase "Step 9: Fill out forms if you want to file a Motion to Set Aside"
     And I should see the phrase "Step 10: File your motion forms"
-    And I tap the "#ZmlsZV9tb3Rpb25fc3RlcA .al_toggle" element and stay on the same page
+    And I tap the "#dHJ1ZWZpbGluZ19maWxlX2FuZF9zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
     And I should see the phrase "Step 11: Pay the $75 fee to file your Motion to Modify"
     And I should see the phrase "Step 12: Serve your ex"
     And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
@@ -457,7 +457,7 @@ Scenario: Row #113
     And I should see the phrase "Step 6: Fill out forms if you want to file a Motion to Set Aside"
     And I should see the phrase "Step 7: Sign if you use paper forms or do not use TrueFiling"
     And I should see the phrase "Step 8: File your motion forms"
-    And I tap the "#ZmlsZV9tb3Rpb25fc3RlcA .al_toggle" element and stay on the same page
+    And I tap the "#dHJ1ZWZpbGluZ19maWxlX2FuZF9zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
     And I should see the phrase "Step 9: Pay the $75 fee to file your Motion to Modify"
     And I should see the phrase "Step 10: Serve your ex"
     And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
@@ -503,7 +503,7 @@ Scenario: Row #115
     And I should see the phrase "Step 9: Fill out forms if you want to file a Motion to Set Aside"
     And I should see the phrase "Step 10: Sign if you use paper forms or do not use TrueFiling"
     And I should see the phrase "Step 11: File your motion forms"
-    And I tap the "#ZmlsZV9tb3Rpb25fc3RlcA .al_toggle" element and stay on the same page
+    And I tap the "#dHJ1ZWZpbGluZ19maWxlX2FuZF9zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
     And I should see the phrase "Step 12: Pay the $75 fee to file your Motion to Modify"
     And I should see the phrase "Step 13: Serve your ex"
     And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
@@ -550,7 +550,7 @@ Scenario: Row #117
     And I should see the phrase "Step 10: Fill out forms if you want to file a Motion to Set Aside"
     And I should see the phrase "Step 11: Sign if you use paper forms or do not use TrueFiling"
     And I should see the phrase "Step 12: File your motion forms"
-    And I tap the "#ZmlsZV9tb3Rpb25fc3RlcA .al_toggle" element and stay on the same page
+    And I tap the "#dHJ1ZWZpbGluZ19maWxlX2FuZF9zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
     And I should see the phrase "Step 13: Pay the $75 fee to file your Motion to Modify"
     And I should see the phrase "Step 14: Serve your ex"
     And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
@@ -586,7 +586,7 @@ Scenario: Row #118
     And I should see the phrase "Step 4: Fill out the Motion to Reconsider forms"
     And I should see the phrase "Step 5: Sign if you use paper forms or do not use TrueFiling" 
     And I should see the phrase "Step 6: File your motion forms"
-    And I tap the "#ZmlsZV9tb3Rpb25fc3RlcA .al_toggle" element and stay on the same page
+    And I tap the "#dHJ1ZWZpbGluZ19maWxlX2FuZF9zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
     And I should see the phrase "Step 7: Pay the $75 fee to file your Motion to Modify"
     And I should see the phrase "Step 8: Serve your ex"
     And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
