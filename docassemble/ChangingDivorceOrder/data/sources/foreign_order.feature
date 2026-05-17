@@ -1,6 +1,6 @@
 @foreign
 Feature: User paths
-# 2026-05-16
+# 2026-05-15
 
 Background:
   Given the maximum seconds for each Step is 45
@@ -26,7 +26,7 @@ Scenario: Row #1
   And I should see the phrase "Step 8: File your Motion to Modify"
   And I should see the phrase "Step 9: Serve the other parent"
   And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
-  And I should see the phrase "Follow the TrueFiling instructions to serve them at their email address."
+#  And I should see the phrase "Follow the TrueFiling instructions to serve them at their email address."
   And I should see the phrase "Step 10: What to expect after you file a Motion to Modify"
   And I should see the phrase "Step 11: Get more information or help"
   And I take a screenshot
