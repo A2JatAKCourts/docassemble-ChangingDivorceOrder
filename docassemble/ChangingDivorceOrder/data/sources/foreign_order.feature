@@ -27,7 +27,7 @@ Scenario: Row #1
   And I should see the phrase "Step 9: Serve the other parent"
   #  And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
 #  And I should see the phrase "Follow the TrueFiling instructions to serve them at their email address."
-  And I should see the phrase "Step 10: What to expect after you file a Motion to Modify"
+  And I should see the phrase "Step 10: What to expect after you file your documents"
   And I should see the phrase "Step 11: Get more information or help"
   And I take a screenshot
   And I download "changing_divorce_order.pdf"
