@@ -191,7 +191,8 @@ content: |
   % endif
 ---
 comment: |
-  2026-04-01
+  2026-05-19 for serving motions - qualify statement other party not using TrueFiling and no email sentence for situations where user is not answering a complaint.
+  We don't have anything people who need to serve other party who is not using TrueFiling but has given the court their email - perhaps we just include that in look at the court web resources about serving. 
 template: truefiling_serve_step
 subject: |
   Step ${ truefiling_serve_idx }:
@@ -249,8 +250,9 @@ content: |
   % endif
   % if user_need in('child support', 'change AK order', 'change foreign order','change divorce order', 'change custody order', 'change foreign custody order', 'respond to motion in custody', 'respond to motion in divorce'):
   If you are not using TrueFiling, read [If I am not using TrueFiling, how do I serve the other side?](https://courts.alaska.gov/shc/family/serve.htm#not-truefiling-serve)
-
-  If the ${ other_party_in_case } is not using TrueFiling and did not give an email, you cannot serve them through TrueFiling.
+  % if other_party_exempt == 'yes' and other_party_enter_email in (False, None):
+  If ${ other_party_in_case } is not using TrueFiling and did not give an email, you cannot serve them through TrueFiling.
+  % endif
   % endif
 
   % if ((user_need in ('answer custody', 'answer divorce') and ((type_of_response.any_true('improper service', 'default') and not proper_service and not have_complaint) or (((type_of_response.any_true('improper service', 'default') and ((not proper_service and have_complaint) or proper_service)) or type_of_response.all_false('improper service', 'default'))))) or user_need in ('child support', 'change AK order', 'change foreign order', 'change divorce order', 'change custody order', 'change foreign custody order', 'respond to motion in custody', 'respond to motion in divorce')) and other_party_exempt == 'yes' and other_party_enter_email in (False, None):

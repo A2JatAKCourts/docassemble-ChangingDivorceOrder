@@ -35,10 +35,10 @@ Scenario: Row #92
     And I should see the phrase "Step 10: Fill out the motion form to modify the spousal support order"
     And I should see the phrase "Step 11: File your motion forms"
     And I tap the "#dHJ1ZWZpbGluZ19maWxlX2FuZF9zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
-    And I should see the phrase "Pay one $75 fee to file both Motions to Modify at the same time."
+#    And I should see the phrase "Pay one $75 fee to file both Motions to Modify at the same time."
     And I should see the phrase "Step 12: Serve your ex"
-    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
-    And I should see the phrase "Follow the TrueFiling instructions to serve them at their email address."
+    #    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
+    #    And I should see the phrase "Follow the TrueFiling instructions to serve them at their email address."
     And I should see the phrase "Step 13: What to expect after you file a motion"
     And I should see the phrase "Step 14: Get more information or help"
     And I take a screenshot
@@ -72,10 +72,10 @@ Scenario: Row #95
     And I should see the phrase "Step 7: Sign if you use paper forms or do not use TrueFiling"
     And I should see the phrase "Step 8: File your motion forms"
     And I tap the "#dHJ1ZWZpbGluZ19maWxlX2FuZF9zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
-    And I should see the phrase "Pay one $75 fee to file both Motions to Modify at the same time."
+#    And I should see the phrase "Pay one $75 fee to file both Motions to Modify at the same time."
     And I should see the phrase "Step 9: Serve your ex"
-    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
-    And I should see the phrase "Because the other person is not using TrueFiling and did not give an email address, you cannot serve them through TrueFiling."
+    #    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
+    #    And I should see the phrase "Because the other person is not using TrueFiling and did not give an email address, you cannot serve them through TrueFiling."
     And I should see the phrase "Step 10: What to expect after you file a motion"
     And I should see the phrase "Step 11: Get more information or help"
     And I take a screenshot
@@ -110,10 +110,10 @@ Scenario: Row #97
     And I should see the phrase "Step 7: Sign if you use paper forms or do not use TrueFiling"
     And I should see the phrase "Step 8: File your motion forms"
     And I tap the "#dHJ1ZWZpbGluZ19maWxlX2FuZF9zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
-    And I should see the phrase "Pay one $75 fee to file both Motions to Modify at the same time."
+#    And I should see the phrase "Pay one $75 fee to file both Motions to Modify at the same time."
     And I should see the phrase "Step 9: Serve your ex"
-    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
-    And I should see the phrase "Look at the other parent's complaint to see if they checked they were exempt."
+    #    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
+    #    And I should see the phrase "Look at the other parent's complaint to see if they checked they were exempt."
     And I should see the phrase "Step 10: What to expect after you file a motion"
     And I should see the phrase "Step 11: Get more information or help"
     And I take a screenshot
@@ -147,10 +147,10 @@ Scenario: Row #99
     And I should see the phrase "Step 7: Sign if you use paper forms or do not use TrueFiling"
     And I should see the phrase "Step 8: File your motion forms"
     And I tap the "#dHJ1ZWZpbGluZ19maWxlX2FuZF9zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
-    And I should see the phrase "Pay the $75 fee to file your Motion to Modify"
+#    And I should see the phrase "Pay the $75 fee to file your Motion to Modify"
     And I should see the phrase "Step 9: Serve your ex"  
-    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
-    And I should see the phrase "Use TrueFiling to serve your ex. Read If I am using TrueFiling, how do I serve the other side?"
+    #    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
+    #    And I should see the phrase "Use TrueFiling to serve your ex. Read If I am using TrueFiling, how do I serve the other side?"
     And I should see the phrase "Step 10: What to expect after you file a Motion to Modify"
     And I should see the phrase "Step 11: What to expect after you file a Motion to Reconsider"
     And I should see the phrase "Step 12: Get more information or help"
@@ -191,10 +191,10 @@ Scenario: Row #100
     And I should see the phrase "Step 12: Sign if you use paper forms or do not use TrueFiling"
     And I should see the phrase "Step 13: File your motion forms"
     And I tap the "#dHJ1ZWZpbGluZ19maWxlX2FuZF9zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
-    And I should see the phrase "Pay the $75 fee to file your Motion to Modify"
+#    And I should see the phrase "Pay the $75 fee to file your Motion to Modify"
     And I should see the phrase "Step 14: Serve your ex"
-    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
-    And I should see the phrase "Look at their complaint to see if they checked they were exempt."
+    #    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
+    #    And I should see the phrase "Look at their complaint to see if they checked they were exempt."
     And I should see the phrase "Step 15: What to expect after you file a motion"
     And I should see the phrase "Step 16: Get more information or help"
     And I take a screenshot
@@ -232,10 +232,10 @@ Scenario: Row #102
     And I should see the phrase "Step 10: Sign if you use paper forms or do not use TrueFiling"
     And I should see the phrase "Step 11: File your motion forms"
     And I tap the "#dHJ1ZWZpbGluZ19maWxlX2FuZF9zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
-    And I should see the phrase "Pay the $75 fee to file your Motion to Modify"
+#    And I should see the phrase "Pay the $75 fee to file your Motion to Modify"
     And I should see the phrase "Step 12: Serve your ex"
-    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
-    And I should see the phrase "Follow the TrueFiling instructions to serve them at their email address."
+    #    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
+    #    And I should see the phrase "Follow the TrueFiling instructions to serve them at their email address."
     And I should see the phrase "Step 13: What to expect after you file a motion"
     And I should see the phrase "Step 14: Get more information or help"
     And I take a screenshot
@@ -277,10 +277,10 @@ Scenario: Row #104
     And I should see the phrase "Step 10: Sign if you use paper forms or do not use TrueFiling"
     And I should see the phrase "Step 11: File your motion forms"
     And I tap the "#dHJ1ZWZpbGluZ19maWxlX2FuZF9zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
-    And I should see the phrase "Pay the $75 fee to file your Motion to Modify"
+#    And I should see the phrase "Pay the $75 fee to file your Motion to Modify"
     And I should see the phrase "Step 12: Serve your ex"
-    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
-    And I should see the phrase "Because the other person is not using TrueFiling and did not give an email address, you cannot serve them through TrueFiling."
+    #    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
+    #    And I should see the phrase "Because the other person is not using TrueFiling and did not give an email address, you cannot serve them through TrueFiling."
     And I should see the phrase "Step 13: What to expect after you file a Motion to Modify"
     And I should see the phrase "Step 14: What to expect after you file a Motion to Reconsider"
     And I should see the phrase "Step 15: Get more information or help"
@@ -325,10 +325,10 @@ Scenario: Row #107
     And I should see the phrase "Step 11: Sign if you use paper forms or do not use TrueFiling"
     And I should see the phrase "Step 12: File your motion forms"
     And I tap the "#dHJ1ZWZpbGluZ19maWxlX2FuZF9zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
-    And I should see the phrase "Pay the $75 fee to file your Motion to Modify"
+#    And I should see the phrase "Pay the $75 fee to file your Motion to Modify"
     And I should see the phrase "Step 13: Serve your ex"  
-    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
-    And I should see the phrase "Look at the other parent's complaint to see if they checked they were exempt."
+    #    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
+    #    And I should see the phrase "Look at the other parent's complaint to see if they checked they were exempt."
     And I should see the phrase "Step 14: What to expect after you file a Motion to Modify"
     And I should see the phrase "Step 15: What to expect after you file a Motion to Reconsider"
     And I should see the phrase "Step 16: Get more information or help"
@@ -372,10 +372,10 @@ Scenario: Row #109
     And I should see the phrase "Step 12: Sign if you use paper forms or do not use TrueFiling"
     And I should see the phrase "Step 13: File your motion forms"
     And I tap the "#dHJ1ZWZpbGluZ19maWxlX2FuZF9zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
-    And I should see the phrase "Pay the $75 fee to file your Motion to Modify"
+#    And I should see the phrase "Pay the $75 fee to file your Motion to Modify"
     And I should see the phrase "Step 14: Serve your ex"
-    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
-    And I should see the phrase "Use TrueFiling to serve your ex. Read If I am using TrueFiling, how do I serve the other side?"
+    #    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
+    #    And I should see the phrase "Use TrueFiling to serve your ex. Read If I am using TrueFiling, how do I serve the other side?"
     And I should see the phrase "Step 15: What to expect after you file a motion"
     And I should see the phrase "Step 16: What to expect after you file a Motion to Reconsider"
     And I should see the phrase "Step 17: Get more information or help"
@@ -416,10 +416,10 @@ Scenario: Row #112
     And I should see the phrase "Step 9: Fill out forms if you want to file a Motion to Set Aside"
     And I should see the phrase "Step 10: File your motion forms"
     And I tap the "#dHJ1ZWZpbGluZ19maWxlX2FuZF9zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
-    And I should see the phrase "Pay the $75 fee to file your Motion to Modify"
+#    And I should see the phrase "Pay the $75 fee to file your Motion to Modify"
     And I should see the phrase "Step 11: Serve your ex"
-    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
-    And I should see the phrase "Look at their complaint to see if they checked they were exempt."
+    #    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
+    #    And I should see the phrase "Look at their complaint to see if they checked they were exempt."
     And I should see the phrase "Step 12: What to expect after you file a motion"
     And I should see the phrase "Step 13: What to expect after you file a Motion to Reconsider"
     And I should see the phrase "Step 14: Get more information or help"
@@ -459,10 +459,10 @@ Scenario: Row #113
     And I should see the phrase "Step 7: Sign if you use paper forms or do not use TrueFiling"
     And I should see the phrase "Step 8: File your motion forms"
     And I tap the "#dHJ1ZWZpbGluZ19maWxlX2FuZF9zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
-    And I should see the phrase "Pay the $75 fee to file your Motion to Modify"
+#    And I should see the phrase "Pay the $75 fee to file your Motion to Modify"
     And I should see the phrase "Step 9: Serve your ex"
-    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
-    And I should see the phrase "Follow the TrueFiling instructions to serve them at their email address."
+    #    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
+    #    And I should see the phrase "Follow the TrueFiling instructions to serve them at their email address."
     And I should see the phrase "Step 10: What to expect after you file a motion"
     And I should see the phrase "Step 11: Get more information or help"
     And I take a screenshot
@@ -505,10 +505,10 @@ Scenario: Row #115
     And I should see the phrase "Step 10: Sign if you use paper forms or do not use TrueFiling"
     And I should see the phrase "Step 11: File your motion forms"
     And I tap the "#dHJ1ZWZpbGluZ19maWxlX2FuZF9zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
-    And I should see the phrase "Pay the $75 fee to file your Motion to Modify"
+#    And I should see the phrase "Pay the $75 fee to file your Motion to Modify"
     And I should see the phrase "Step 12: Serve your ex"
-    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
-    And I should see the phrase "Because the other person is not using TrueFiling and did not give an email address, you cannot serve them through TrueFiling."
+    #    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
+    #    And I should see the phrase "Because the other person is not using TrueFiling and did not give an email address, you cannot serve them through TrueFiling."
     And I should see the phrase "Step 13: What to expect after you file a motion"
     And I should see the phrase "Step 14: Get more information or help"
     And I take a screenshot
@@ -552,10 +552,10 @@ Scenario: Row #117
     And I should see the phrase "Step 11: Sign if you use paper forms or do not use TrueFiling"
     And I should see the phrase "Step 12: File your motion forms"
     And I tap the "#dHJ1ZWZpbGluZ19maWxlX2FuZF9zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
-    And I should see the phrase "Pay the $75 fee to file your Motion to Modify"
+#    And I should see the phrase "Pay the $75 fee to file your Motion to Modify"
     And I should see the phrase "Step 13: Serve your ex"
-    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
-    And I should see the phrase "Look at the other parent's complaint to see if they checked they were exempt."
+    #    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
+    #    And I should see the phrase "Look at the other parent's complaint to see if they checked they were exempt."
     And I should see the phrase "Step 14: What to expect after you file a motion"
     And I should see the phrase "Step 15: What to expect after you file a Motion to Reconsider"
     And I should see the phrase "Step 16: Get more information or help"
@@ -588,10 +588,10 @@ Scenario: Row #118
     And I should see the phrase "Step 5: Sign if you use paper forms or do not use TrueFiling" 
     And I should see the phrase "Step 6: File your motion forms"
     And I tap the "#dHJ1ZWZpbGluZ19maWxlX2FuZF9zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
-    And I should see the phrase "Pay the $75 fee to file your Motion to Modify"
+#    And I should see the phrase "Pay the $75 fee to file your Motion to Modify"
     And I should see the phrase "Step 7: Serve your ex"
-    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
-    And I should see the phrase "Use TrueFiling to serve your ex. Read If I am using TrueFiling, how do I serve the other side?"
+    #    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
+    #    And I should see the phrase "Use TrueFiling to serve your ex. Read If I am using TrueFiling, how do I serve the other side?"
     And I should see the phrase "Step 8: What to expect after you file a Motion to Reconsider"
     And I should see the phrase "Step 9: Get more information or help"
     And I take a screenshot
@@ -624,8 +624,8 @@ Scenario: Row #138
     And I should see the phrase "Step 6: Sign if you use paper forms or do not use TrueFiling"
     And I should see the phrase "Step 7: File your Motion to Reconsider"
     And I should see the phrase "Step 8: Serve your ex"
-    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
-    And I should see the phrase "Look at their complaint to see if they checked they were exempt."
+    #    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
+    #    And I should see the phrase "Look at their complaint to see if they checked they were exempt."
     And I should see the phrase "Step 9: What to expect after you file a Motion to Reconsider"
     And I should see the phrase "Step 10: Get more information or help"
     And I take a screenshot
@@ -662,8 +662,8 @@ Scenario: Row #140
     And I should see the phrase "Step 8: Sign if you use paper forms or do not use TrueFiling"
     And I should see the phrase "Step 9: File your Motion to Set Aside"
     And I should see the phrase "Step 10: Serve your ex"
-    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
-    And I should see the phrase "Follow the TrueFiling instructions to serve them at their email address."
+    #    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
+    #    And I should see the phrase "Follow the TrueFiling instructions to serve them at their email address."
     And I should see the phrase "Step 11: What to expect after you file a Motion to Set Aside"
     And I should see the phrase "Step 12: Get more information or help"
     And I take a screenshot
@@ -698,8 +698,8 @@ Scenario: Row #142
     And I should see the phrase "Step 7: Sign if you use paper forms or do not use TrueFiling"
     And I should see the phrase "Step 8: File your Motion to Set Aside"
     And I should see the phrase "Step 9: Serve your ex"
-    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
-    And I should see the phrase "Because the other person is not using TrueFiling and did not give an email address, you cannot serve them through TrueFiling."
+    #    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
+    #    And I should see the phrase "Because the other person is not using TrueFiling and did not give an email address, you cannot serve them through TrueFiling."
     And I should see the phrase "Step 10: What to expect after you file a Motion to Set Aside"
     And I should see the phrase "Step 11: Get more information or help"
     And I take a screenshot

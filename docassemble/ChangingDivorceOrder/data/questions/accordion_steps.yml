@@ -162,7 +162,7 @@ code: |
       add_unique_step((sign_step, "sign_idx"), step_list)
       
     file_step_heading = 'File your Motion to Modify'
-    file_modify_filing_fee = '<li>Pay the $75 fee to file your Motion to Modify.</br>If you cannot afford the filing fee, you can ask the court to waive it:</li><ul><li>Call the <a href="https://courts.alaska.gov/shc/family">Family Law Self-HelpCenter</a><br>(907)264-0851, or<br>(866)279-0851,<br>or</li><li>Use <strong>Exemption From the Payment of Fees, TF-920</strong>[<a href="https://public.courts.alaska.gov/web/forms/docs/tf-920.pdf">Fill-In PDF</a>]</li></ul>'
+    # file_modify_filing_fee = '<li>Pay the $75 fee to file your Motion to Modify.</br>If you cannot afford the filing fee, you can ask the court to waive it:</li><ul><li>Call the <a href="https://courts.alaska.gov/shc/family">Family Law Self-HelpCenter</a><br>(907)264-0851, or<br>(866)279-0851,<br>or</li><li>Use <strong>Exemption From the Payment of Fees, TF-920</strong>[<a href="https://public.courts.alaska.gov/web/forms/docs/tf-920.pdf">Fill in PDF</a>]</li></ul>'
     # add_unique_step((file_motion_step, "file_motion_idx"), step_list)
     add_unique_step((truefiling_file_and_serve_step, "truefiling_file_and_serve_idx"), step_list)
     # add_unique_step((serve_motion_step, "serve_motion_idx"), step_list)
@@ -300,17 +300,17 @@ code: |
       else:
         other_party_in_case = 'your ex'
 
-      if (type_of_final_order['custody order'] \
-          and why_change in('review', 'schedule')) \
-        and (type_of_final_order.any_true('property or debt', 'spousal support') \
-          and why_change_divorce_order == 'changed circumstances'):
-        file_modify_filing_fee = '<li>Pay one $75 fee to file both Motions to Modify at the same time. If you file your motions on different days, you must pay a $75 filing fee for each Motion to Modify.</br>If you cannot afford the filing fee, you can ask the court to waive it:</li><ul><li>Call the <a href="https://courts.alaska.gov/shc/family">Family Law Self-Help Center</a><br>(907)264-0851, or<br>(866)279-0851,<br>or</li><li>Use <strong>Exemption From the Payment of Fees, TF-920</strong>[<a href="https://public.courts.alaska.gov/web/forms/docs/tf-920.pdf">Fill-In PDF</a>]</li></ul>'
-      elif (type_of_final_order['custody order'] \
-          and why_change in('review', 'schedule')) \
-        or (type_of_final_order.any_true('property or debt', 'spousal support') \
-          and why_change_divorce_order == 'changed circumstances'):
-        file_modify_filing_fee = '<li>Pay the $75 fee to file your Motion to Modify.</br>If you cannot afford the filing fee, you can ask the court to waive it:</li><ul><li>Call the <a href="https://courts.alaska.gov/shc/family">Family Law Self-HelpCenter</a><br>(907)264-0851, or<br>(866)279-0851,<br>or</li><li>Use <strong>Exemption From the Payment of Fees, TF-920</strong>[<a href="https://public.courts.alaska.gov/web/forms/docs/tf-920.pdf">Fill-In PDF</a>]</li></ul>'
-      
+      #  if (type_of_final_order['custody order'] \
+      #      and why_change in('review', 'schedule')) \
+      #    and (type_of_final_order['spousal support'] \
+      #      and why_change_divorce_order == 'changed circumstances'):
+      #    # file_modify_filing_fee = '<li>Pay one $75 fee to file both Motions to Modify at the same time. If you file your motions on different days, you must pay a $75 filing fee for each Motion to Modify.</br>If you cannot afford the filing fee, you can ask the court to waive it:</li><ul><li>Call the <a href="https://courts.alaska.gov/shc/family">Family Law Self-Help Center</a><br>(907)264-0851, or<br>(866)279-0851,<br>or</li><li>Use <strong>Exemption From the Payment of Fees, TF-920</strong>[<a href="https://public.courts.alaska.gov/web/forms/docs/tf-920.pdf">Fill in PDF</a>]</li></ul>'
+      #  elif (type_of_final_order['custody order'] \
+      #      and why_change in('review', 'schedule')) \
+      #    or (type_of_final_order['spousal support'] \
+      #      and why_change_divorce_order == 'changed circumstances'):
+      #    # file_modify_filing_fee = '<li>Pay the $75 fee to file your Motion to Modify.</br>If you cannot afford the filing fee, you can ask the court to waive it:</li><ul><li>Call the <a href="https://courts.alaska.gov/shc/family">Family Law Self-HelpCenter</a><br>(907)264-0851, or<br>(866)279-0851,<br>or</li><li>Use <strong>Exemption From the Payment of Fees, TF-920</strong>[<a href="https://public.courts.alaska.gov/web/forms/docs/tf-920.pdf">Fill in PDF</a>]</li></ul>'
+        
       if parents_agree:
         add_unique_step((pick_a_step_step, "pick_a_step_idx"), step_list)
         add_unique_step((parents_agree_step, "parents_agree_idx"), step_list)
@@ -334,28 +334,30 @@ code: |
           motion_type = 'Motion to Modify'
         
       # Rows 48-49, 67-68 
-      if type_of_final_order.any_true('property or debt', 'spousal support') \
+      if type_of_final_order['spousal support'] \
         and why_change_divorce_order == 'changed circumstances':
         add_unique_step((modify_divorce_step, "modify_divorce_idx"), step_list)
         add_unique_step((fill_modify_divorce_step, "fill_modify_divorce_idx"), step_list)
         # add_unique_image({'image': service_cert_modify_spousal_support_property_image, 'text': "Certificate of Service at the bottom of a Request to Modify Order or Decree Concerning Spousal Maintenance or Property Allocation."}, images_list)
         if not type_of_final_order['custody order']:
-          file_step_heading = 'File your Request to Modify Order or Decree Concerning Spousal Maintenance or Property Allocation'
+          file_step_heading = 'File your Request to Change Order or Decree'
           motion_type = 'Motion to Modify'
           log('--simple modify divorce', "console")
 
       if ((type_of_final_order['custody order'] \
             and why_change == 'problem') \
-          or (type_of_final_order.any_true('property or debt','spousal support') \
-            and why_change_divorce_order == 'problem')) \
+          or (type_of_final_order['spousal support'] \
+            and why_change_divorce_order == 'problem') \
+          or type_of_final_order['property or debt']) \
         and final_order_date_within_10_days:
         add_unique_step((learn_reconsider_step, "learn_reconsider_idx"), step_list)
         add_unique_step((fill_reconsider_step, "fill_reconsider_idx"), step_list)
         add_unique_image({'image': service_cert_reconsider_set_aside_image, 'text': "Certificate of Service at the bottom of the Motion to Set Aside."}, images_list)
         if not ((type_of_final_order['custody order'] \
                  and why_change in('review', 'schedule')) \
-             or (type_of_final_order.any_true('property or debt','spousal support') \
-                 and why_change_divorce_order == 'changed circumstances')):
+             or (type_of_final_order['spousal support'] \
+                 and why_change_divorce_order == 'changed circumstances')\
+             or type_of_final_order['property or debt']):
           file_step_heading = 'File your Motion to Reconsider'
         else:
           motion_type = 'Motion to Modify'
@@ -363,8 +365,9 @@ code: |
       if (type_of_final_order['custody order'] \
           and why_change == 'problem' \
           and final_order_date_within_15_days) \
-        or (type_of_final_order.any_true('property or debt','spousal support') \
-          and why_change_divorce_order == 'problem' \
+        or (((type_of_final_order['spousal support'] \
+          and why_change_divorce_order == 'problem') \
+        or type_of_final_order['property or debt']) 
           and final_order_date_within_30_days):
         add_unique_step((appeal_step, 'appeal_idx'), step_list)
         add_unique_step((learn_set_aside_step, "learn_set_aside_idx"), step_list)
@@ -372,7 +375,7 @@ code: |
         add_unique_image({'image': service_cert_reconsider_set_aside_image, 'text': "Certificate of Service at the bottom of the Motion to Set Aside."}, images_list)
         if not ((type_of_final_order['custody order'] \
                  and why_change in('review', 'schedule')) \
-             or (type_of_final_order.any_true('property or debt','spousal support') \
+             or (type_of_final_order['spousal support'] \
                  and why_change_divorce_order == 'changed circumstances')):
           file_motion_to_set_aside = 'If you decide to file a **Motion to Set Aside** because it fits your case:'
           file_step_heading = 'File your Motion to Set Aside'
@@ -380,8 +383,9 @@ code: |
 
       if ((type_of_final_order['custody order'] \
             and why_change == 'problem') \
-          or (type_of_final_order.any_true('property or debt','spousal support') \
-            and why_change_divorce_order == 'problem')) \
+          or (type_of_final_order['spousal support'] \
+            and why_change_divorce_order == 'problem') \
+          or type_of_final_order['property or debt']) \
         and (final_order_date_within_30_days \
           or final_order_date_more_30_days):
         add_unique_step((learn_set_aside_step, "learn_set_aside_idx"), step_list)
@@ -389,7 +393,7 @@ code: |
         add_unique_image({'image': service_cert_reconsider_set_aside_image, 'text': "Certificate of Service at the bottom of the Motion to Set Aside."}, images_list)
         if not ((type_of_final_order['custody order'] \
                  and why_change in('review', 'schedule')) \
-             or (type_of_final_order.any_true('property or debt','spousal support') \
+             or (type_of_final_order['spousal support'] \
                  and why_change_divorce_order == 'changed circumstances')):
           file_motion_to_set_aside = 'If you decide to file a **Motion to Set Aside** because it fits your case:'
           file_step_heading = 'File your Motion to Set Aside'
@@ -397,9 +401,10 @@ code: |
 
       if ((type_of_final_order['custody order'] \
             and why_change == 'problem') \
-          or (type_of_final_order.any_true('property or debt','spousal support') \
-              and why_change_divorce_order == 'problem')) \
-          and showifdef('guess_final_order_date') != 'unknown':
+          or (type_of_final_order['spousal support'] \
+              and why_change_divorce_order == 'problem') \
+          or type_of_final_order['property or debt']) \
+            and showifdef('guess_final_order_date') != 'unknown':
           if filling_manner in('paper', 'dunno') or filing_method in('mail or in person', 'dunno'):
             add_unique_step((sign_step, "sign_idx"), step_list)
           # add_unique_step((file_motion_step, "file_motion_idx"), step_list)
@@ -444,7 +449,7 @@ code: |
   ##### Add File step heading and language for what to expect step
           if (type_of_final_order['custody order'] \
               and why_change in('review','schedule')) \
-            or (type_of_final_order.any_true('property or debt','spousal support') \
+            or (type_of_final_order['spousal support'] \
               and why_change_divorce_order == 'changed circumstances'):
             if unknown_final_date.all_true('appeal', 'reconsider', exclusive = True) \
               or unknown_final_date.all_true('appeal', exclusive = True) \
@@ -454,7 +459,7 @@ code: |
             (type_of_final_order['custody order'] \
               and why_change in('review','schedule')) \
             and
-            (type_of_final_order.any_true('property or debt','spousal support') \
+            (type_of_final_order['spousal support'] \
               and why_change_divorce_order == 'changed circumstances')
             ):
             if unknown_final_date.all_true('reconsider', exclusive=True) \
@@ -476,8 +481,9 @@ code: |
             add_unique_step((truefiling_file_and_serve_step, "truefiling_file_and_serve_idx"), step_list)
             # add_unique_step((serve_motion_step, "serve_motion_idx"), step_list)
             add_unique_step((truefiling_serve_step, "truefiling_serve_idx"), step_list)
-          if unknown_final_date['set aside'] or ((type_of_final_order['custody order'] and why_change in('review','schedule')) \
-          or (type_of_final_order.any_true('property or debt','spousal support') and why_change_divorce_order == 'changed circumstances')):
+          if unknown_final_date['set aside'] or (type_of_final_order['custody order'] and why_change in('review','schedule')) \
+          or (type_of_final_order['spousal support'] and why_change_divorce_order == 'changed circumstances') \
+          or type_of_final_order['property or debt']:
             # add_unique_step((expect_after_motion_step, "expect_after_motion_idx"), step_list)
             add_unique_step((expect_after_motion_or_answer_step, "expect_after_motion_or_answer_idx"), step_list)
             log('unknown motion','console')
@@ -487,7 +493,7 @@ code: |
             log('unknown reconsider','console')
 
       if (type_of_final_order['custody order'] and why_change in('review','schedule')) \
-          or (type_of_final_order.any_true('property or debt','spousal support') and why_change_divorce_order == 'changed circumstances'):
+          or (type_of_final_order['spousal support'] and why_change_divorce_order == 'changed circumstances'):
         # add_unique_step((cert_of_service_step, "cert_of_service_idx"), step_list)
         if filling_manner in('paper', 'dunno') or filing_method in('mail or in person', 'dunno'):
           add_unique_step((sign_step, "sign_idx"), step_list)
@@ -560,39 +566,19 @@ code: |
     if is_unique:
       image_list.append(new_image)
 ---
+comment: |
+  2026-05-18 Remove CIV-735 motion to change spousal support and property and debt division in Changing Divorce Order
 template: modify_divorce_step
 subject: |
   Step ${ modify_divorce_idx }: 
   % if user_need == 'change divorce order' and middle_of_case == 'no':
-  Learn about the Motion to Modify
-  % if type_of_final_order['property or debt']:
-  Divorce Property & Debt Division
-  % endif
-  % if type_of_final_order.all_true('property or debt', 'spousal support'):
-   and 
-  % endif
-  % if type_of_final_order['spousal support']:
-  Spousal Support
-  % endif
-  % endif
-  % if user_need == 'respond to motion in divorce' and type_of_response == 'modify':
-  Learn about motions to modify 
-  % if type_of_modification['spousal support']:
-  spousal support
-  % endif
-  % if type_of_modification.all_true('spousal support', 'property or debt'):
-  and 
-  % endif
-  % if type_of_modification['property or debt']:
-  division of property and debt
-  % endif
+  Learn about the Motion to Modify Spousal Support
+  % elif user_need == 'respond to motion in divorce' and type_of_response == 'modify':
+  Learn about motions to modify spousal support
   % endif
 content: |
   % if user_need == 'change divorce order':
-  Changing your divorce order is called “modifying” it.  To ask the judge to change your divorce order, file a **Motion to Modify**. The rules for changing spousal support are different from the rules for dividing property and debt.
-  % endif
-  % if user_need == 'change divorce order' and middle_of_case == 'no' and type_of_final_order['spousal support']:
-  <div class="step-subheading">Change spousal support</div>
+  Changing your divorce order is called “modifying” it.  To ask the judge to change your divorce order, file a **Motion to Modify**.
   % endif
   % if (user_need == 'change divorce order' and middle_of_case == 'no' and type_of_final_order['spousal support']) or (user_need == 'respond to motion in divorce' and type_of_response == 'modify' and type_of_modification['spousal support']):
   The court will generally only change spousal support if there is a "substantial change in circumstances."
@@ -605,47 +591,18 @@ content: |
   </div>
   % endif
 
-  % if user_need == 'change divorce order' and middle_of_case == 'no' and type_of_final_order['property or debt']:
-  <div class="step-subheading">Change the property and debt division</div>
-  % endif
-
-  % if (user_need == 'change divorce order' and middle_of_case == 'no' and type_of_final_order['spousal support']) or (user_need == 'respond to motion in divorce' and type_of_response == 'modify' and type_of_modification['property or debt']):
-  Changing the outcome of final property and debt decisions in a divorce case can be tough. Once the court decides who gets what, it is not easy to undo those decisions.
-  
-  <div class = "example">
-  <div class = "heading">Some examples</div>
-  <ul>
-  <li>If the court awards the house to one spouse, they might sell it, and then it is impossible to get it back if the other spouse later wants the court to award them the house.</li>
-  <li>The court orders one person to receive some money from the marriage. If they spend that money, it cannot be taken back later.</li>
-  </ul>
-  </div>
-  If the judge decides there is a reason to change the final property and debt decision, the judge will issue a new order.
-  % endif
   % if user_need == 'change foreign custody order' or (not user_need in('respond to motion in custody', 'respond to motion in divorce') and middle_of_case == 'no'):
   The court charges $75 to file this motion. If you cannot afford the fee, you may be able to get the court to waive it. See ${ truefiling_file_and_serve_step.subject }.
   % endif
 --- 
 template: fill_modify_divorce_step
 subject: |
-  Step ${ fill_modify_divorce_idx }: Fill out the motion form to modify
-  % if type_of_final_order.all_true('property or debt', 'spousal support'):
-  the property and debt division and the spousal support orders
-  % elif type_of_final_order['property or debt']:
-  the property and debt division order
-  % elif type_of_final_order['spousal support']:
-  the spousal support order
-  % endif
+  Step ${ fill_modify_divorce_idx }: 
+  Fill out the motion form to modify the spousal support order
 content: |
   <div class="step-subheading">Use</div>
-   <ul><li><strong>Request to Modify Order or Decree Concerning Spousal Maintenance or Property Allocation, DR-735</strong> [<a href= "https://public.courts.alaska.gov/web/forms/docs/dr-735.pdf">Fill-In PDF</a>]
-  <ul><li> Wait to sign this form until you are in front of someone who has the power to take oaths, like a notary public.
-  <ul><li>The court clerk can do this for free.</li>
-  <li>Bring a valid photo ID with you.</li>
-  </ul></li>
-  <li>If you cannot get to a notary public or someone who has the power to take oaths, you can "self-certify."  Use:</ br>
-  <strong>Self-Certification (No Notary Available), TF-835</strong> [<a href= "https://public.courts.alaska.gov/web/forms/docs/tf-835.pdf">Fill-In PDF</a>]</li></ul></li>
-  <li><strong>Notice of Motion, CIV-650</strong> [<a href="https://public.courts.alaska.gov/web/forms/docs/tf-835.pdf">Fill-In PDF</a>]</li>
-  </ul>
+  **Request to Change Order or Decree, DR-735** [<a href= "https://ak-courts.info/dr735">Fill in PDF</a>]
+  ${ signing_paragraph }
   
   <div class="step-subheading">Watch</div>
   

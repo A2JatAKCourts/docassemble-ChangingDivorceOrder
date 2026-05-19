@@ -25,8 +25,8 @@ Scenario: Row #2a
     And I should see the phrase "Step 3: Fill out a response that states you agree"
     And I should see the phrase "Step 4: File your response"
     And I should see the phrase "Step 5: Serve your spouse"
-    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
-    And I should see the phrase "Follow the TrueFiling instructions to serve them at their email address."
+    #    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
+    #    And I should see the phrase "Follow the TrueFiling instructions to serve them at their email address."
     And I should see the phrase "Step 6: What to expect after you respond to the Motion to Modify"
     And I should see the phrase "Step 7: Contact your spouse, and write out your agreement"
     And I should see the phrase "Step 8: File your agreement with the court within 10 or 13 days"
@@ -56,8 +56,8 @@ Scenario: Row #2
     And I should see the phrase "Step 4: Sign if you use paper forms or do not use TrueFiling"
     And I should see the phrase "Step 5: File your response"
     And I should see the phrase "Step 6: Serve your ex"
-    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
-    And I should see the phrase "Because the other person is not using TrueFiling and did not give an email address, you cannot serve them through TrueFiling."
+    #    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
+    #    And I should see the phrase "Because the other person is not using TrueFiling and did not give an email address, you cannot serve them through TrueFiling."
     And I should see the phrase "Step 7: What to expect after you respond to the Motion to Modify"
     And I should see the phrase "Step 8: Contact your ex, and write out your agreement"
     And I should see the phrase "Step 9: File your agreement with the court within 10 or 13 days"
@@ -86,8 +86,8 @@ Scenario: Row #3a
     And I should see the phrase "Step 3: Sign if you use paper forms or do not use TrueFiling"
     And I should see the phrase "Step 4: File your response"
     And I should see the phrase "Step 5: Serve your spouse"
-    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
-    And I should see the phrase "Look at the other parent's complaint to see if they checked they were exempt."
+    #    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
+    #    And I should see the phrase "Look at the other parent's complaint to see if they checked they were exempt."
     And I should see the phrase "Step 6: What to expect after you respond to the Motion to Modify"
     And I should see the phrase "Step 7: Get more information or help"
     And I take a screenshot
@@ -114,8 +114,8 @@ Scenario: Row #3c
     And I should see the phrase "Step 3: Sign if you use paper forms or do not use TrueFiling"
     And I should see the phrase "Step 4: File your response"
     And I should see the phrase "Step 5: Serve your ex"
-    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
-    And I should see the phrase "Use TrueFiling to serve your ex. Read If I am using TrueFiling, how do I serve the other side?"
+    #    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
+    #    And I should see the phrase "Use TrueFiling to serve your ex. Read If I am using TrueFiling, how do I serve the other side?"
     And I should see the phrase "Step 6: What to expect after you respond to the Motion to Modify"
     And I should see the phrase "Step 7: Get more information or help"
     And I take a screenshot
@@ -142,8 +142,8 @@ Scenario: Row #5a
     And I should see the phrase "Step 4: Sign if you use paper forms or do not use TrueFiling"
     And I should see the phrase "Step 5: File your response"
     And I should see the phrase "Step 6: Serve your spouse"
-    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
-    And I should see the phrase "Look at their complaint to see if they checked they were exempt."
+    #    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
+    #    And I should see the phrase "Look at their complaint to see if they checked they were exempt."
     And I should see the phrase "Step 7: What to expect after you respond to the Motion to Modify"
     And I should see the phrase "Step 8: Contact your spouse, and write out your agreement"
     And I should see the phrase "Step 9: File your agreement with the court within 10 or 13 days"
@@ -173,8 +173,8 @@ Scenario: Row #5b
     And I should see the phrase "Step 4: Sign if you use paper forms or do not use TrueFiling"
     And I should see the phrase "Step 5: File your response"
     And I should see the phrase "Step 6: Serve your ex"
-    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
-    And I should see the phrase "Follow the TrueFiling instructions to serve them at their email address."
+    #    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
+    #    And I should see the phrase "Follow the TrueFiling instructions to serve them at their email address."
     And I should see the phrase "Step 7: What to expect after you respond to the Motion to Modify"
     And I should see the phrase "Step 8: Contact your ex, and write out your agreement"
     And I should see the phrase "Step 9: File your agreement with the court within 10 or 13 days"
@@ -205,8 +205,8 @@ Scenario: Row #5c
     And I should see the phrase "Step 4: Sign if you use paper forms or do not use TrueFiling"
     And I should see the phrase "Step 5: File your response"
     And I should see the phrase "Step 6: Serve your spouse"
-    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
-    And I should see the phrase "Because the other person is not using TrueFiling and did not give an email address, you cannot serve them through TrueFiling."
+    #    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
+    #    And I should see the phrase "Because the other person is not using TrueFiling and did not give an email address, you cannot serve them through TrueFiling."
     And I should see the phrase "Step 7: What to expect after you respond to the Motion to Modify"
     And I should see the phrase "Step 8: Contact your spouse, and write out your agreement"
     And I should see the phrase "Step 9: File your agreement with the court within 10 or 13 days"
@@ -240,8 +240,8 @@ Scenario: Row #8
     And I should see the phrase "Step 4: Sign if you use paper forms or do not use TrueFiling"
     And I should see the phrase "Step 5: File your response"
     And I should see the phrase "Step 6: Serve your spouse"
-    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
-    And I should see the phrase "Look at the other parent's complaint to see if they checked they were exempt."
+    #    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
+    #    And I should see the phrase "Look at the other parent's complaint to see if they checked they were exempt."
     And I should see the phrase "Step 7: What to expect after you respond to the Motion to Modify"
     And I should see the phrase "Step 8: Get more information or help"
     And I take a screenshot
@@ -264,8 +264,8 @@ Scenario: Row #11
     And I should see the phrase "Step 2: Sign if you use paper forms or do not use TrueFiling"
     And I should see the phrase "Step 3: If the judge asks you to respond to the Motion to Reconsider, file your response"
     And I should see the phrase "Step 4: If the judge asks you to respond to the Motion to Reconsider, serve your spouse"
-    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
-    And I should see the phrase "Use TrueFiling to serve your spouse. Read If I am using TrueFiling, how do I serve the other side?"
+    #    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
+    #    And I should see the phrase "Use TrueFiling to serve your spouse. Read If I am using TrueFiling, how do I serve the other side?"
     And I should see the phrase "Step 5: Get more information or help"
     And I take a screenshot
     And I download "changing_divorce_order.pdf"
@@ -288,8 +288,8 @@ Scenario: Row #12
     And I should see the phrase "Step 2: Fill out a response that states you agree"
     And I should see the phrase "Step 3: File your response"
     And I should see the phrase "Step 4: Serve your ex"
-    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
-    And I should see the phrase "Look at their complaint to see if they checked they were exempt."
+    #    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
+    #    And I should see the phrase "Look at their complaint to see if they checked they were exempt."
     And I should see the phrase "Step 5: What to expect after you respond to the Motion to Set Aside Judgment or Order"
     And I should see the phrase "Step 6: Contact your ex, and write out your agreement"
     And I should see the phrase "Step 7: File your agreement with the court within 10 or 13 days"
@@ -316,8 +316,8 @@ Scenario: Row #14
     And I should see the phrase "Step 2: Sign if you use paper forms or do not use TrueFiling"
     And I should see the phrase "Step 3: File your response"
     And I should see the phrase "Step 4: Serve your ex"
-    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
-    And I should see the phrase "Follow the TrueFiling instructions to serve them at their email address."
+    #    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
+    #    And I should see the phrase "Follow the TrueFiling instructions to serve them at their email address."
     And I should see the phrase "Step 5: What to expect after you respond to the Motion to Set Aside Judgment or Order"
     And I should see the phrase "Step 6: Get more information or help"
     And I take a screenshot

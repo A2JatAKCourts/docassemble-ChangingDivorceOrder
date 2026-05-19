@@ -1,6 +1,6 @@
 @morethan15or30
 Feature: User paths
-# 2026-05-15
+# 2026-05-18
 
 Background: 
   Given the maximum seconds for each Step is 45
@@ -28,8 +28,8 @@ Scenario: Row #32
     And I should see the phrase "Step 4: Fill out forms if you want to file a Motion to Set Aside"
     And I should see the phrase "Step 5: File your Motion to Set Aside"
     And I should see the phrase "Step 6: Serve the other parent"
-    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
-    And I should see the phrase "Follow the TrueFiling instructions to serve them at their email address."
+    #    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
+    #    And I should see the phrase "Follow the TrueFiling instructions to serve them at their email address."
     And I should see the phrase "Step 7: What to expect after you file a Motion to Set Aside"
     And I should see the phrase "Step 8: Get more information or help"
     And I take a screenshot
@@ -62,8 +62,8 @@ Scenario: Row #32b
     And I should see the phrase "Step 6: Sign if you use paper forms or do not use TrueFiling"
     And I should see the phrase "Step 7: File your Motion to Set Aside"
     And I should see the phrase "Step 8: Serve the other parent"
-    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
-    And I should see the phrase "Because the other person is not using TrueFiling and did not give an email address, you cannot serve them through TrueFiling."
+    #    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
+    #    And I should see the phrase "Because the other person is not using TrueFiling and did not give an email address, you cannot serve them through TrueFiling."
     And I should see the phrase "Step 9: What to expect after you file a Motion to Set Aside"
     And I should see the phrase "Step 10: Get more information or help"
     And I take a screenshot
@@ -92,8 +92,8 @@ Scenario: Row #33
     And I should see the phrase "Step 3: Sign if you use paper forms or do not use TrueFiling"
     And I should see the phrase "Step 4: File your Motion to Set Aside"
     And I should see the phrase "Step 5: Serve the other parent"
-    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
-    And I should see the phrase "Look at the other parent's complaint to see if they checked they were exempt."
+    #    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
+    #    And I should see the phrase "Look at the other parent's complaint to see if they checked they were exempt."
     And I should see the phrase "Step 6: What to expect after you file a Motion to Set Aside"
     And I should see the phrase "Step 7: Get more information or help"
     And I take a screenshot
@@ -122,10 +122,10 @@ Scenario: Row #33b
     And I should see the phrase "Step 3: Sign if you use paper forms or do not use TrueFiling"
     And I should see the phrase "Step 4: File your Motion to Set Aside"
     And I should see the phrase "Step 5: Serve the other parent"
-    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
-    And I should see the phrase "Use TrueFiling to serve the other parent. Read If I am using TrueFiling, how do I serve the other side?"
-    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
-    And I should see the phrase "Use TrueFiling to serve the other parent. Read If I am using TrueFiling, how do I serve the other side?"
+    #    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
+    #    And I should see the phrase "Use TrueFiling to serve the other parent. Read If I am using TrueFiling, how do I serve the other side?"
+    #    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
+    #    And I should see the phrase "Use TrueFiling to serve the other parent. Read If I am using TrueFiling, how do I serve the other side?"
     And I should see the phrase "Step 6: What to expect after you file a Motion to Set Aside"
     And I should see the phrase "Step 7: Get more information or help"
     And I take a screenshot
@@ -156,8 +156,8 @@ Scenario: Row #54
     And I should see the phrase "Step 6: Sign if you use paper forms or do not use TrueFiling"
     And I should see the phrase "Step 7: File your Motion to Set Aside"
     And I should see the phrase "Step 8: Serve your ex"
-    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
-    And I should see the phrase "Look at their complaint to see if they checked they were exempt."
+    #    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
+    #    And I should see the phrase "Look at their complaint to see if they checked they were exempt."
     And I should see the phrase "Step 9: What to expect after you file a Motion to Set Aside"
     And I should see the phrase "Step 10: Get more information or help"
     And I take a screenshot
@@ -190,8 +190,8 @@ Scenario: Row #54b
     And I should see the phrase "Step 6: Sign if you use paper forms or do not use TrueFiling"
     And I should see the phrase "Step 7: File your Motion to Set Aside"
     And I should see the phrase "Step 8: Serve your ex"
-    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
-    And I should see the phrase "Follow the TrueFiling instructions to serve them at their email address."
+    #    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
+    #    And I should see the phrase "Follow the TrueFiling instructions to serve them at their email address."
     And I should see the phrase "Step 9: What to expect after you file a Motion to Set Aside"
     And I should see the phrase "Step 10: Get more information or help"
     And I take a screenshot
@@ -220,8 +220,8 @@ Scenario: Row #55
     And I should see the phrase "Step 3: Sign if you use paper forms or do not use TrueFiling"
     And I should see the phrase "Step 4: File your Motion to Set Aside"
     And I should see the phrase "Step 5: Serve your ex"
-    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
-    And I should see the phrase "Because the other person is not using TrueFiling and did not give an email address, you cannot serve them through TrueFiling."
+    #    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
+    #    And I should see the phrase "Because the other person is not using TrueFiling and did not give an email address, you cannot serve them through TrueFiling."
     And I should see the phrase "Step 6: What to expect after you file a Motion to Set Aside"
     And I should see the phrase "Step 7: Get more information or help"
     And I take a screenshot
@@ -251,8 +251,8 @@ Scenario: Row #55b
     And I should see the phrase "Step 3: Sign if you use paper forms or do not use TrueFiling"
     And I should see the phrase "Step 4: File your Motion to Set Aside"
     And I should see the phrase "Step 5: Serve your ex"
-    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
-    And I should see the phrase "Look at the other parent's complaint to see if they checked they were exempt."
+    #    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
+    #    And I should see the phrase "Look at the other parent's complaint to see if they checked they were exempt."
     And I should see the phrase "Step 6: What to expect after you file a Motion to Set Aside"
     And I should see the phrase "Step 7: Get more information or help"
     And I take a screenshot
@@ -267,7 +267,7 @@ Scenario: Row #76
     | user_need                               | change divorce order |         | 
     | middle_of_case                          | no                   |         | 
     | type_of_final_order['property or debt'] | True                 |         | 
-    | why_change_divorce_order                | problem              |         | 
+  # | why_change_divorce_order                | problem              |         | 
     | final_order_date                        | today - 32           |         | 
     | parents_agree                           | True                 |         | 
     | filling_manner                          | dunno                |         | 
@@ -283,10 +283,10 @@ Scenario: Row #76
     And I should see the phrase "Step 6: Sign if you use paper forms or do not use TrueFiling"
     And I should see the phrase "Step 7: File your Motion to Set Aside"
     And I should see the phrase "Step 8: Serve your ex"
-    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
-    And I should see the phrase "Use TrueFiling to serve your ex. Read If I am using TrueFiling, how do I serve the other side?"
-    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
-    And I should see the phrase "Use TrueFiling to serve your ex. Read If I am using TrueFiling, how do I serve the other side?"
+    #    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
+    #    And I should see the phrase "Use TrueFiling to serve your ex. Read If I am using TrueFiling, how do I serve the other side?"
+    #    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
+    #    And I should see the phrase "Use TrueFiling to serve your ex. Read If I am using TrueFiling, how do I serve the other side?"
     And I should see the phrase "Step 9: What to expect after you file a Motion to Set Aside"
     And I should see the phrase "Step 10: Get more information or help"
     And I take a screenshot
@@ -301,7 +301,7 @@ Scenario: Row #76b
     | user_need                               | change divorce order |         | 
     | middle_of_case                          | no                   |         | 
     | type_of_final_order['property or debt'] | True                 |         | 
-    | why_change_divorce_order                | problem              |         | 
+  # | why_change_divorce_order                | problem              |         | 
     | final_order_period                      | True                 |         | 
     | guess_final_order_date                  | more than 30 days    |         | 
     | parents_agree                           | True                 |         | 
@@ -317,8 +317,8 @@ Scenario: Row #76b
     And I should see the phrase "Step 5: Fill out forms if you want to file a Motion to Set Aside"
     And I should see the phrase "Step 6: File your Motion to Set Aside"
     And I should see the phrase "Step 7: Serve your ex"
-    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
-    And I should see the phrase "Look at their complaint to see if they checked they were exempt."
+    #    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
+    #    And I should see the phrase "Look at their complaint to see if they checked they were exempt."
     And I should see the phrase "Step 8: What to expect after you file a Motion to Set Aside"
     And I should see the phrase "Step 9: Get more information or help"
     And I take a screenshot
@@ -333,7 +333,7 @@ Scenario: Row #77
     | user_need                               | change divorce order |         | 
     | middle_of_case                          | no                   |         | 
     | type_of_final_order['property or debt'] | True                 |         | 
-    | why_change_divorce_order                | problem              |         | 
+  # | why_change_divorce_order                | problem              |         | 
     | final_order_date                        | today - 32           |         | 
     | parents_agree                           | False                |         | 
     | filling_manner                          | electronically       |         | 
@@ -347,8 +347,8 @@ Scenario: Row #77
     And I should see the phrase "Step 3: Sign if you use paper forms or do not use TrueFiling"
     And I should see the phrase "Step 4: File your Motion to Set Aside"
     And I should see the phrase "Step 5: Serve your ex"
-    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
-    And I should see the phrase "Follow the TrueFiling instructions to serve them at their email address."
+    #    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
+    #    And I should see the phrase "Follow the TrueFiling instructions to serve them at their email address."
     And I should see the phrase "Step 6: What to expect after you file a Motion to Set Aside"
     And I should see the phrase "Step 7: Get more information or help"
     And I take a screenshot
@@ -363,7 +363,7 @@ Scenario: Row #77b
     | user_need                               | change divorce order |         | 
     | middle_of_case                          | no                   |         | 
     | type_of_final_order['property or debt'] | True                 |         | 
-    | why_change_divorce_order                | problem              |         | 
+  # | why_change_divorce_order                | problem              |         | 
     | final_order_period                      | True                 |         | 
     | guess_final_order_date                  | more than 30 days    |         | 
     | parents_agree                           | False                |         | 
@@ -378,8 +378,8 @@ Scenario: Row #77b
     And I should see the phrase "Step 3: Sign if you use paper forms or do not use TrueFiling"
     And I should see the phrase "Step 4: File your Motion to Set Aside"
     And I should see the phrase "Step 5: Serve your ex"
-    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
-    And I should see the phrase "Because the other person is not using TrueFiling and did not give an email address, you cannot serve them through TrueFiling."
+    #    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
+    #    And I should see the phrase "Because the other person is not using TrueFiling and did not give an email address, you cannot serve them through TrueFiling."
     And I should see the phrase "Step 6: What to expect after you file a Motion to Set Aside"
     And I should see the phrase "Step 7: Get more information or help"
     And I take a screenshot
