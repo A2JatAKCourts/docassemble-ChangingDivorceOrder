@@ -1,6 +1,6 @@
 @modifying
 Feature: User paths
-# 2026-05-18
+# 2026-05-20
 
 Background: 
   Given the maximum seconds for each Step is 45
@@ -29,7 +29,7 @@ Scenario: Row #24
     And I should see the phrase "Step 7: Do not wait to file your Motion to Modify"
     And I should see the phrase "Step 8: File your Modify Custody, Visitation & Support Packet"
     And I tap the "#dHJ1ZWZpbGluZ19maWxlX2FuZF9zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
-#    And I should see the phrase "Pay the $75 fee to file your Motion to Modify"
+    And I should see the phrase "Pay the $75 fee to file your Motion to Modify"
     And I should see the phrase "Step 9: Serve the other parent"
     #    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
     #    And I should see the phrase "Follow the TrueFiling instructions to serve them at their email address."
@@ -61,7 +61,7 @@ Scenario: Row #25
     And I should see the phrase "Step 5: Sign if you use paper forms or do not use TrueFiling"
     And I should see the phrase "Step 6: File your Modify Custody, Visitation & Support Packet"
     And I tap the "#dHJ1ZWZpbGluZ19maWxlX2FuZF9zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
-#    And I should see the phrase "Pay the $75 fee to file your Motion to Modify"
+    And I should see the phrase "Pay the $75 fee to file your Motion to Modify"
     And I should see the phrase "Step 7: Serve the other parent"
     #    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
     #    And I should see the phrase "Because the other person is not using TrueFiling and did not give an email address, you cannot serve them through TrueFiling."
@@ -96,7 +96,7 @@ Scenario: Row #26
     And I should see the phrase "Step 8: Sign if you use paper forms or do not use TrueFiling"
     And I should see the phrase "Step 9: File your Modify Custody, Visitation & Support Packet"
     And I tap the "#dHJ1ZWZpbGluZ19maWxlX2FuZF9zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
-#    And I should see the phrase "Pay the $75 fee to file your Motion to Modify"
+    And I should see the phrase "Pay the $75 fee to file your Motion to Modify"
     And I should see the phrase "Step 10: Serve the other parent"
     #    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
     #    And I should see the phrase "Look at the other parent's complaint to see if they checked they were exempt."
@@ -127,7 +127,7 @@ Scenario: Row #27
     And I should see the phrase "Step 5: Sign if you use paper forms or do not use TrueFiling"
     And I should see the phrase "Step 6: File your Modify Custody, Visitation & Support Packet"
     And I tap the "#dHJ1ZWZpbGluZ19maWxlX2FuZF9zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
-#    And I should see the phrase "Pay the $75 fee to file your Motion to Modify"
+    And I should see the phrase "Pay the $75 fee to file your Motion to Modify"
     And I should see the phrase "Step 7: Serve the other parent"
     #    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
     #    And I should see the phrase "Use TrueFiling to serve the other parent. Read If I am using TrueFiling, how do I serve the other side?"
@@ -159,7 +159,7 @@ Scenario: Row #48
     And I should see the phrase "Step 6: Sign if you use paper forms or do not use TrueFiling"
     And I should see the phrase "Step 7: File your Request to Modify Order or Decree Concerning Spousal Maintenance or Property Allocation"
     And I tap the "#dHJ1ZWZpbGluZ19maWxlX2FuZF9zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
-#    And I should see the phrase "Pay the $75 fee to file your Motion to Modify"
+    And I should see the phrase "Pay the $75 fee to file your Motion to Modify"
     And I should see the phrase "Step 8: Serve your ex"
     #    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
     #    And I should see the phrase "Look at their complaint to see if they checked they were exempt."
@@ -189,7 +189,7 @@ Scenario: Row #49
     And I should see the phrase "Step 3: Sign if you use paper forms or do not use TrueFiling"
     And I should see the phrase "Step 4: File your Request to Modify Order or Decree Concerning Spousal Maintenance or Property Allocation"
     And I tap the "#dHJ1ZWZpbGluZ19maWxlX2FuZF9zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
-#    And I should see the phrase "Pay the $75 fee to file your Motion to Modify"
+    And I should see the phrase "Pay the $75 fee to file your Motion to Modify"
     And I should see the phrase "Step 5: Serve your ex"
     #    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
     #    And I should see the phrase "Follow the TrueFiling instructions to serve them at their email address."
