@@ -1,4 +1,5 @@
 comment: |
+  2026-05-18 updating to use Motion to Set aside if user wants to change Property Division judgment
   2026-05-12: Updating to use TrueFiling steps
 ---
 generic object: ALDocumentBundle
@@ -162,7 +163,7 @@ code: |
       add_unique_step((sign_step, "sign_idx"), step_list)
       
     file_step_heading = 'File your Motion to Modify'
-    # file_modify_filing_fee = '<li>Pay the $75 fee to file your Motion to Modify.</br>If you cannot afford the filing fee, you can ask the court to waive it:</li><ul><li>Call the <a href="https://courts.alaska.gov/shc/family">Family Law Self-HelpCenter</a><br>(907)264-0851, or<br>(866)279-0851,<br>or</li><li>Use <strong>Exemption From the Payment of Fees, TF-920</strong>[<a href="https://public.courts.alaska.gov/web/forms/docs/tf-920.pdf">Fill in PDF</a>]</li></ul>'
+    file_modify_filing_fee = 'Pay the $75 fee to file your Motion to Modify.'
     # add_unique_step((file_motion_step, "file_motion_idx"), step_list)
     add_unique_step((truefiling_file_and_serve_step, "truefiling_file_and_serve_idx"), step_list)
     # add_unique_step((serve_motion_step, "serve_motion_idx"), step_list)
@@ -300,16 +301,16 @@ code: |
       else:
         other_party_in_case = 'your ex'
 
-      #  if (type_of_final_order['custody order'] \
-      #      and why_change in('review', 'schedule')) \
-      #    and (type_of_final_order['spousal support'] \
-      #      and why_change_divorce_order == 'changed circumstances'):
-      #    # file_modify_filing_fee = '<li>Pay one $75 fee to file both Motions to Modify at the same time. If you file your motions on different days, you must pay a $75 filing fee for each Motion to Modify.</br>If you cannot afford the filing fee, you can ask the court to waive it:</li><ul><li>Call the <a href="https://courts.alaska.gov/shc/family">Family Law Self-Help Center</a><br>(907)264-0851, or<br>(866)279-0851,<br>or</li><li>Use <strong>Exemption From the Payment of Fees, TF-920</strong>[<a href="https://public.courts.alaska.gov/web/forms/docs/tf-920.pdf">Fill in PDF</a>]</li></ul>'
-      #  elif (type_of_final_order['custody order'] \
-      #      and why_change in('review', 'schedule')) \
-      #    or (type_of_final_order['spousal support'] \
-      #      and why_change_divorce_order == 'changed circumstances'):
-      #    # file_modify_filing_fee = '<li>Pay the $75 fee to file your Motion to Modify.</br>If you cannot afford the filing fee, you can ask the court to waive it:</li><ul><li>Call the <a href="https://courts.alaska.gov/shc/family">Family Law Self-HelpCenter</a><br>(907)264-0851, or<br>(866)279-0851,<br>or</li><li>Use <strong>Exemption From the Payment of Fees, TF-920</strong>[<a href="https://public.courts.alaska.gov/web/forms/docs/tf-920.pdf">Fill in PDF</a>]</li></ul>'
+      if (type_of_final_order['custody order'] \
+          and why_change in('review', 'schedule')) \
+        and (type_of_final_order['spousal support'] \
+          and why_change_divorce_order == 'changed circumstances'):
+          file_modify_filing_fee = 'Pay one $75 fee to file each Motion to Modify.'
+      elif (type_of_final_order['custody order'] \
+          and why_change in('review', 'schedule')) \
+        or (type_of_final_order['spousal support'] \
+          and why_change_divorce_order == 'changed circumstances'):
+        file_modify_filing_fee = 'Pay the $75 fee to file your Motion to Modify.'
         
       if parents_agree:
         add_unique_step((pick_a_step_step, "pick_a_step_idx"), step_list)
