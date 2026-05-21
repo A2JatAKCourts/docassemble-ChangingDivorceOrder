@@ -1,6 +1,6 @@
 @modifying
 Feature: User paths
-# 2026-05-20
+# 2026-05-21
 
 Background: 
   Given the maximum seconds for each Step is 45
@@ -19,6 +19,7 @@ Scenario: Row #24
     | filing_method                        | efiling              |         | 
     | other_party_exempt                   | yes                  |         | 
     | other_party_enter_email              | True                 |         | 
+    | ak_patience_assembling               | True                 |         | 
     And I should see the phrase "Your Action Plan for changing your custody or Parenting Plan order from your divorce case in 11 steps"
     And I should see the phrase "Step 1: Decide the steps you want to take"
     And I should see the phrase "Step 2: Find out if you and the other parent agree"
@@ -53,6 +54,7 @@ Scenario: Row #25
     | filing_method                        | mail or in person    |         | 
     | other_party_exempt                   | yes                  |         | 
     | other_party_enter_email              | False                |         | 
+    | ak_patience_assembling               | True                 |         | 
     And I should see the phrase "Your Action Plan for changing your custody or Parenting Plan order from your divorce case in 9 steps"
     And I should see the phrase "Step 1: Learn about a Motion to Modify your Parenting Plan"
     And I should see the phrase "Step 2: Fill out the Motion to Modify Custody forms"
@@ -85,6 +87,7 @@ Scenario: Row #26
     | filing_method                        | dunno                |         | 
     | other_party_exempt                   | yes                  |         | 
     | other_party_enter_email              | None                 |         | 
+    | ak_patience_assembling               | True                 |         | 
     And I should see the phrase "Your Action Plan for changing your custody or Parenting Plan order from your divorce case in 12 steps"
     And I should see the phrase "Step 1: Decide the steps you want to take"
     And I should see the phrase "Step 2: Find out if you and the other parent agree"
@@ -119,6 +122,7 @@ Scenario: Row #27
     | filling_manner                       | paper                |         | 
     | filing_method                        | efiling              |         | 
     | other_party_exempt                   | no                   |         | 
+    | ak_patience_assembling               | True                 |         | 
     And I should see the phrase "Your Action Plan for changing your custody or Parenting Plan order from your divorce case in 9 steps"
     And I should see the phrase "Step 1: Learn about a Motion to Modify your Parenting Plan"
     And I should see the phrase "Step 2: Fill out the Motion to Modify Custody forms"
@@ -150,6 +154,7 @@ Scenario: Row #48
     | filling_manner                         | paper                 |         | 
     | filing_method                          | mail or in person     |         | 
     | other_party_exempt                     | none                  |         | 
+    | ak_patience_assembling                 | True                  |         | 
     And I should see the phrase "Your Action Plan for changing a court order from your divorce case in 10 steps"
     And I should see the phrase "Step 1: Decide the steps you want to take"
     And I should see the phrase "Step 2: Find out if you and your ex agree"
@@ -183,6 +188,7 @@ Scenario: Row #49
     | filing_method                          | dunno                 |         | 
     | other_party_exempt                     | yes                   |         | 
     | other_party_enter_email                | True                  |         | 
+    | ak_patience_assembling                 | True                  |         | 
     And I should see the phrase "Your Action Plan for changing a court order from your divorce case in 7 steps"
     And I should see the phrase "Step 1: Learn about the Motion to Modify Spousal Support"
     And I should see the phrase "Step 2: Fill out the motion form to modify the spousal support order"
@@ -215,6 +221,7 @@ Scenario: Row #49
 #      | filing_method                           | efiling               |         | 
 #      | other_party_exempt                      | yes                   |         | 
 #      | other_party_enter_email                 | False                 |         | 
+#      | ak_patience_assembling                  | True                  |         | 
 #      And I should see the phrase "Your Action Plan for changing a court order from your divorce case in 10 steps"
 #      And I should see the phrase "Step 1: Decide the steps you want to take"
 #      And I should see the phrase "Step 2: Find out if you and your ex agree"
@@ -248,6 +255,7 @@ Scenario: Row #49
 #      | filing_method                           | mail or in person     |         | 
 #      | other_party_exempt                      | yes                   |         | 
 #      | other_party_enter_email                 | None                  |         | 
+#      | ak_patience_assembling                  | True                  |         | 
 #      And I should see the phrase "Your Action Plan for changing a court order from your divorce case in 7 steps"
 #      And I should see the phrase "Step 1: Learn about the Motion to Modify Divorce Property & Debt Division"
 #      And I should see the phrase "Step 2: Fill out the motion form to modify the property and debt division order"

@@ -1,6 +1,6 @@
 @responding
 Feature: User paths
-# 2026-05-15
+# 2026-05-21
 
 Background: 
   Given the maximum seconds for each Step is 45
@@ -19,11 +19,13 @@ Scenario: Row #2a
     | filing_method                         | efiling                      |         | 
     | other_party_exempt                    | yes                          |         | 
     | other_party_enter_email               | True                         |         | 
+    | ak_patience_assembling                | True                         |         | 
     And I should see the phrase "Your Action Plan for responding to a motion your spouse filed to change a court order in your divorce case, in 9 steps"
     And I should see the phrase "Step 1: Learn about motions to modify a child support order"
     And I should see the phrase "Step 2: Let your spouse and the court know you agree with the proposed changes"
     And I should see the phrase "Step 3: Fill out a response that states you agree"
-    And I should see the phrase "Step 4: File your response"
+    
+    And I should see the phrase "Step 4: File and serve your response within 10 or 13 days"
     And I should see the phrase "Step 5: Serve your spouse"
     #    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
     #    And I should see the phrase "Follow the TrueFiling instructions to serve them at their email address."
@@ -49,12 +51,13 @@ Scenario: Row #2
     | filing_method                   | mail or in person            |         | 
     | other_party_exempt              | yes                          |         | 
     | other_party_enter_email         | False                        |         | 
+    | ak_patience_assembling          | True                         |         | 
     And I should see the phrase "Your Action Plan for responding to a motion your ex filed to change a court order from your divorce case, in 10 steps"
     And I should see the phrase "Step 1: Learn about motions to modify custody or a Parenting Plan order"
     And I should see the phrase "Step 2: Let your ex and the court know you agree with the proposed changes"
     And I should see the phrase "Step 3: Fill out a response that states you agree"
     And I should see the phrase "Step 4: Sign if you use paper forms or do not use TrueFiling"
-    And I should see the phrase "Step 5: File your response"
+    And I should see the phrase "Step 5: File and serve your response within 10 or 13 days"
     And I should see the phrase "Step 6: Serve your ex"
     #    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
     #    And I should see the phrase "Because the other person is not using TrueFiling and did not give an email address, you cannot serve them through TrueFiling."
@@ -80,11 +83,12 @@ Scenario: Row #3a
     | filing_method                   | dunno                        |         | 
     | other_party_exempt              | yes                          |         | 
     | other_party_enter_email         | None                         |         | 
+    | ak_patience_assembling          | True                         |         | 
     And I should see the phrase "Your Action Plan for responding to a motion your spouse filed to change a court order in your divorce case, in 7 steps"
     And I should see the phrase "Step 1: Learn about motions to modify custody or a Parenting Plan order"
     And I should see the phrase "Step 2: Fill out a response that states you do not agree with the proposed changes"
     And I should see the phrase "Step 3: Sign if you use paper forms or do not use TrueFiling"
-    And I should see the phrase "Step 4: File your response"
+    And I should see the phrase "Step 4: File and serve your response within 10 or 13 days"
     And I should see the phrase "Step 5: Serve your spouse"
     #    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
     #    And I should see the phrase "Look at the other parent's complaint to see if they checked they were exempt."
@@ -108,11 +112,12 @@ Scenario: Row #3c
     | filling_manner                        | paper                        |         | 
     | filing_method                         | efiling                      |         | 
     | other_party_exempt                    | no                           |         | 
+    | ak_patience_assembling                | True                         |         | 
     And I should see the phrase "Your Action Plan for responding to a motion your ex filed to change a court order from your divorce case, in 7 steps"
     And I should see the phrase "Step 1: Learn about motions to modify custody or a Parenting Plan order"
     And I should see the phrase "Step 2: Fill out a response that states you do not agree with the proposed changes"
     And I should see the phrase "Step 3: Sign if you use paper forms or do not use TrueFiling"
-    And I should see the phrase "Step 4: File your response"
+    And I should see the phrase "Step 4: File and serve your response within 10 or 13 days"
     And I should see the phrase "Step 5: Serve your ex"
     #    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
     #    And I should see the phrase "Use TrueFiling to serve your ex. Read If I am using TrueFiling, how do I serve the other side?"
@@ -135,12 +140,13 @@ Scenario: Row #5a
     | filling_manner                          | paper                        |         | 
     | filing_method                           | mail or in person            |         | 
     | other_party_exempt                      | none                         |         | 
+    | ak_patience_assembling                  | True                         |         | 
     And I should see the phrase "Your Action Plan for responding to a motion your spouse filed to change a court order in your divorce case, in 10 steps"
     And I should see the phrase "Step 1: Learn about motions to modify spousal support"
     And I should see the phrase "Step 2: Let your spouse and the court know you agree with the proposed changes"
     And I should see the phrase "Step 3: Fill out a response that states you agree"
     And I should see the phrase "Step 4: Sign if you use paper forms or do not use TrueFiling"
-    And I should see the phrase "Step 5: File your response"
+    And I should see the phrase "Step 5: File and serve your response within 10 or 13 days"
     And I should see the phrase "Step 6: Serve your spouse"
     #    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
     #    And I should see the phrase "Look at their complaint to see if they checked they were exempt."
@@ -166,12 +172,13 @@ Scenario: Row #5b
     | filing_method                            | dunno                        |         | 
     | other_party_exempt                       | yes                          |         | 
     | other_party_enter_email                  | True                         |         | 
+    | ak_patience_assembling                   | True                         |         | 
     And I should see the phrase "Your Action Plan for responding to a motion your ex filed to change a court order from your divorce case, in 10 steps"
     And I should see the phrase "Step 1: Learn about motions to modify division of property and debt"
     And I should see the phrase "Step 2: Let your ex and the court know you agree with the proposed changes"
     And I should see the phrase "Step 3: Fill out a response that states you agree"
     And I should see the phrase "Step 4: Sign if you use paper forms or do not use TrueFiling"
-    And I should see the phrase "Step 5: File your response"
+    And I should see the phrase "Step 5: File and serve your response within 10 or 13 days"
     And I should see the phrase "Step 6: Serve your ex"
     #    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
     #    And I should see the phrase "Follow the TrueFiling instructions to serve them at their email address."
@@ -198,12 +205,13 @@ Scenario: Row #5c
     | filing_method                            | efiling                      |         | 
     | other_party_exempt                       | yes                          |         | 
     | other_party_enter_email                  | False                        |         | 
+    | ak_patience_assembling                   | True                         |         | 
     And I should see the phrase "Your Action Plan for responding to a motion your spouse filed to change a court order in your divorce case, in 10 steps"
     And I should see the phrase "Step 1: Learn about motions to modify spousal support and division of property and debt"
     And I should see the phrase "Step 2: Let your spouse and the court know you agree with the proposed changes"
     And I should see the phrase "Step 3: Fill out a response that states you agree"
     And I should see the phrase "Step 4: Sign if you use paper forms or do not use TrueFiling"
-    And I should see the phrase "Step 5: File your response"
+    And I should see the phrase "Step 5: File and serve your response within 10 or 13 days"
     And I should see the phrase "Step 6: Serve your spouse"
     #    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
     #    And I should see the phrase "Because the other person is not using TrueFiling and did not give an email address, you cannot serve them through TrueFiling."
@@ -233,12 +241,13 @@ Scenario: Row #8
     | filing_method                            | mail or in person            |         | 
     | other_party_exempt                       | yes                          |         | 
     | other_party_enter_email                  | None                         |         | 
+    | ak_patience_assembling                   | True                         |         | 
     And I should see the phrase "Your Action Plan for responding to a motion your spouse filed to change a court order in your divorce case, in 8 steps"
     And I should see the phrase "Step 1: Learn about motions to modify custody or a Parenting Plan order"
     And I should see the phrase "Step 2: Learn about motions to modify spousal support and division of property and debt"
     And I should see the phrase "Step 3: Fill out a response that states you do not agree with the proposed changes"
     And I should see the phrase "Step 4: Sign if you use paper forms or do not use TrueFiling"
-    And I should see the phrase "Step 5: File your response"
+    And I should see the phrase "Step 5: File and serve your response within 10 or 13 days"
     And I should see the phrase "Step 6: Serve your spouse"
     #    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
     #    And I should see the phrase "Look at the other parent's complaint to see if they checked they were exempt."
@@ -259,10 +268,11 @@ Scenario: Row #11
     | filling_manner     | dunno                        |         | 
     | filing_method      | dunno                        |         | 
     | other_party_exempt | no                           |         | 
+    | ak_patience_assembling | True                     |         | 
     And I should see the phrase "Your Action Plan for responding to a motion your spouse filed to change a court order in your divorce case, in 5 steps"
     And I should see the phrase "Step 1: If the court asks, respond in writing to the Motion to Reconsider"
     And I should see the phrase "Step 2: Sign if you use paper forms or do not use TrueFiling"
-    And I should see the phrase "Step 3: If the judge asks you to respond to the Motion to Reconsider, file your response"
+    And I should see the phrase "Step 3: If the judge asks you to respond to the Motion to Reconsider, File and serve your response within 10 or 13 days"
     And I should see the phrase "Step 4: If the judge asks you to respond to the Motion to Reconsider, serve your spouse"
     #    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
     #    And I should see the phrase "Use TrueFiling to serve your spouse. Read If I am using TrueFiling, how do I serve the other side?"
@@ -283,10 +293,11 @@ Scenario: Row #12
     | filling_manner       | electronically               |         | 
     | filing_method        | efiling                      |         | 
     | other_party_exempt   | none                         |         | 
+    | ak_patience_assembling | True                     |         | 
     And I should see the phrase "Your Action Plan for responding to a motion your ex filed to change a court order from your divorce case, in 8 steps"
     And I should see the phrase "Step 1: Let your ex and the court know you agree with the Motion to Set Aside Judgment or Order"
     And I should see the phrase "Step 2: Fill out a response that states you agree"
-    And I should see the phrase "Step 3: File your response"
+    And I should see the phrase "Step 3: File and serve your response within 10 or 13 days"
     And I should see the phrase "Step 4: Serve your ex"
     #    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
     #    And I should see the phrase "Look at their complaint to see if they checked they were exempt."
@@ -311,10 +322,11 @@ Scenario: Row #14
     | filing_method           | mail or in person            |         | 
     | other_party_exempt      | yes                          |         | 
     | other_party_enter_email | True                         |         | 
+    | ak_patience_assembling | True                        |         | 
     And I should see the phrase "Your Action Plan for responding to a motion your ex filed to change a court order from your divorce case, in 6 steps"  
     And I should see the phrase "Step 1: Fill out a response that states you do not agree with the Motion to Set Aside Judgment or Order"
     And I should see the phrase "Step 2: Sign if you use paper forms or do not use TrueFiling"
-    And I should see the phrase "Step 3: File your response"
+    And I should see the phrase "Step 3: File and serve your response within 10 or 13 days"
     And I should see the phrase "Step 4: Serve your ex"
     #    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
     #    And I should see the phrase "Follow the TrueFiling instructions to serve them at their email address."
@@ -337,6 +349,7 @@ Scenario: Row #15
     | filing_method           | dunno                        |         | 
     | other_party_exempt      | yes                          |         | 
     | other_party_enter_email | False                        |         | 
+    | ak_patience_assembling | True                        |         | 
     And I should see the phrase "Your Action Plan for responding to the appeal your ex filed to change a court order from your divorce case, in 4 steps"
     And I should see the phrase "Step 1: Let your ex know you agree with the Appeal and decide if you want to respond in writing"
     And I should see the phrase "Step 2: Contact your ex"
@@ -359,6 +372,7 @@ Scenario: Row #17
     | filing_method           | efiling                      |         | 
     | other_party_exempt      | yes                          |         | 
     | other_party_enter_email | None                         |         | 
+    | ak_patience_assembling | True                        |         | 
     And I should see the phrase "Your Action Plan for responding to the appeal your ex filed to change a court order from your divorce case, in 2 steps"  
     And I should see the phrase "Step 1: Respond in writing to the Appeal"
     And I should see the phrase "Step 2: Get more information or help"

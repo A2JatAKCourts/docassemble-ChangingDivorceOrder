@@ -19,7 +19,7 @@ comment: |
 question: |
   % if user_need in('answer custody', 'answer divorce'):
   Is ${ other_party_in_case } exempt from using TrueFiling?
-  % elif user_need in('child support', 'change AK order', 'change foreign order','change divorce order', 'change custody order', 'change foreign custody order'):
+  % elif user_need in('child support', 'change AK order', 'change foreign order','change divorce order', 'change custody order', 'change foreign custody order', 'respond to motion in divorce' ):
   Is ${ other_party_in_case } using TrueFiling?
   % endif
 subquestion: |
@@ -28,7 +28,12 @@ subquestion: |
   At the end, did ${ other_party_in_case } check the box to say they are exempt from using TrueFiling, the court’s electronic filing system?
   % endif
 fields:
-  - Did they check the 'exempt' box?: other_party_exempt
+  - label: |
+      % if user_need in ('answer custody', 'answer divorce'):
+      Did they check the 'exempt' box?
+      
+      % endif
+    field: other_party_exempt
     input type: radio
     choices:
       code: other_party_exempt_choices
@@ -47,14 +52,14 @@ fields:
 code: |
   if user_need in('answer custody', 'answer divorce'):
     other_party_exempt_choices = [
-      {'yes': f"Yes, { other_party_in_case } is not using TrueFiling"},
-      {'no': "No, they are using TrueFiling"},
-      {'none': "I don’t have the complaint right now"}
+      {'yes': "Yes, they are not using TrueFiling."},
+      {'no': "No, they are using TrueFiling."},
+      {'none': "I don’t have the complaint right now."}
       ]
   else:
     other_party_exempt_choices = [
-      {'yes': f"No, { other_party_in_case } is not using TrueFiling"},
-      {'no': "Yes, they are using TrueFiling"},
+      {'yes': "No, they not using TrueFiling."},
+      {'no': "Yes, they are using TrueFiling."},
       {'none': "I don’t know."}
       ]
 ---
@@ -85,7 +90,7 @@ fields:
 ---
 # as needed, we can also use this to make it clear there may be a delay before download screen. Especially important if you go right from a substantive question to download screen.
 id: patience, assembling
-continue button field: MLH_patience_assembling
+continue button field: ak_patience_assembling
 question: |
   Almost done
 subquestion: |
