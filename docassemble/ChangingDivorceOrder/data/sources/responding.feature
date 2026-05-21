@@ -271,7 +271,7 @@ Scenario: Row #11
     And I should see the phrase "Your Action Plan for responding to a motion your spouse filed to change a court order in your divorce case, in 5 steps"
     And I should see the phrase "Step 1: If the court asks, respond in writing to the Motion to Reconsider"
     And I should see the phrase "Step 2: Sign if you use paper forms or do not use TrueFiling"
-    And I should see the phrase "Step 3: If the judge asks you to respond to the Motion to Reconsider, File and serve your response within 10 or 13 days"
+    And I should see the phrase "Step 3: If the judge asks you to respond to the Motion to Reconsider, file your response"
     And I should see the phrase "Step 4: If the judge asks you to respond to the Motion to Reconsider, serve your spouse"
     #    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
     #    And I should see the phrase "Use TrueFiling to serve your spouse. Read If I am using TrueFiling, how do I serve the other side?"
