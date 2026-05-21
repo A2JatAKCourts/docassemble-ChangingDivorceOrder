@@ -641,7 +641,6 @@ fields:
         {'custody': "the custody and parenting plan order."},
         {'child support': "the child support order."},      
         {'spousal support': "the spousal support order."},
-        {'property or debt': "the order that divides property and debt."},
         {'other': "something else."}
       ]
     js show if: 

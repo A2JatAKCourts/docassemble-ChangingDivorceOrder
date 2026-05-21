@@ -166,7 +166,7 @@ Scenario: Row #5b
     | user_need                                | respond to motion in divorce |         | 
     | middle_of_case                           | no                           |         | 
     | type_of_response                         | modify                       |         | 
-    | type_of_modification['property or debt'] | True                         |         | 
+    | type_of_modification['other']            | True                         |         | 
     | respond_to_modify                        | agree                        |         | 
     | filling_manner                           | paper                        |         | 
     | filing_method                            | dunno                        |         | 
@@ -174,7 +174,7 @@ Scenario: Row #5b
     | other_party_enter_email                  | True                         |         | 
     | ak_patience_assembling                   | True                         |         | 
     And I should see the phrase "Your Action Plan for responding to a motion your ex filed to change a court order from your divorce case, in 10 steps"
-    And I should see the phrase "Step 1: Learn about motions to modify division of property and debt"
+    And I should see the phrase "Step 1: Learn about motions to modify"
     And I should see the phrase "Step 2: Let your ex and the court know you agree with the proposed changes"
     And I should see the phrase "Step 3: Fill out a response that states you agree"
     And I should see the phrase "Step 4: Sign if you use paper forms or do not use TrueFiling"
@@ -199,7 +199,7 @@ Scenario: Row #5c
     | middle_of_case                           | yes                          |         | 
     | type_of_response                         | modify                       |         | 
     | type_of_modification['spousal support']  | True                         |         | 
-    | type_of_modification['property or debt'] | True                         |         | 
+    | type_of_modification['other']            | True                         |         | 
     | respond_to_modify                        | agree                        |         | 
     | filling_manner                           | dunno                        |         | 
     | filing_method                            | efiling                      |         | 
@@ -207,7 +207,7 @@ Scenario: Row #5c
     | other_party_enter_email                  | False                        |         | 
     | ak_patience_assembling                   | True                         |         | 
     And I should see the phrase "Your Action Plan for responding to a motion your spouse filed to change a court order in your divorce case, in 10 steps"
-    And I should see the phrase "Step 1: Learn about motions to modify spousal support and division of property and debt"
+    And I should see the phrase "Step 1: Learn about motions to modify"
     And I should see the phrase "Step 2: Let your spouse and the court know you agree with the proposed changes"
     And I should see the phrase "Step 3: Fill out a response that states you agree"
     And I should see the phrase "Step 4: Sign if you use paper forms or do not use TrueFiling"
@@ -235,7 +235,6 @@ Scenario: Row #8
     | type_of_modification['child support']    | True                         |         | 
     | type_of_modification['other']            | True                         |         | 
     | type_of_modification['spousal support']  | True                         |         | 
-    | type_of_modification['property or debt'] | True                         |         | 
     | respond_to_modify                        | some                         |         | 
     | filling_manner                           | dunno                        |         | 
     | filing_method                            | mail or in person            |         | 
@@ -244,7 +243,7 @@ Scenario: Row #8
     | ak_patience_assembling                   | True                         |         | 
     And I should see the phrase "Your Action Plan for responding to a motion your spouse filed to change a court order in your divorce case, in 8 steps"
     And I should see the phrase "Step 1: Learn about motions to modify custody or a Parenting Plan order"
-    And I should see the phrase "Step 2: Learn about motions to modify spousal support and division of property and debt"
+    And I should see the phrase "Step 2: Learn about motions to modify"
     And I should see the phrase "Step 3: Fill out a response that states you do not agree with the proposed changes"
     And I should see the phrase "Step 4: Sign if you use paper forms or do not use TrueFiling"
     And I should see the phrase "Step 5: File and serve your response within 10 or 13 days"

@@ -186,7 +186,7 @@ code: |
     # Rows 2 - 10
     if type_of_response == 'modify' and type_of_modification.any_true('child support', 'custody'):
       add_unique_step((modify_step, "modify_idx"), step_list)
-    if type_of_response == 'modify' and type_of_modification.any_true('spousal support', 'property or debt', 'other'):
+    if type_of_response == 'modify' and type_of_modification.any_true('spousal support','other'):
       add_unique_step((modify_divorce_step, "modify_divorce_idx"), step_list)
     # Rows 2 - 10
 
@@ -583,6 +583,7 @@ code: |
       image_list.append(new_image)
 ---
 comment: |
+  2026-05-21 add back in a little bit of content for user_need respond to motion in divorce and type_of_response modify and type_of_mod['other'], this was empty even when it was "finished" pre-TrueFiling.
   2026-05-18 Remove CIV-735 motion to change spousal support and property and debt division in Changing Divorce Order
 template: modify_divorce_step
 subject: |
@@ -590,12 +591,19 @@ subject: |
   % if user_need == 'change divorce order' and middle_of_case == 'no':
   Learn about the Motion to Modify Spousal Support
   % elif user_need == 'respond to motion in divorce' and type_of_response == 'modify':
-  Learn about motions to modify spousal support
+  Learn about motions to modify ${ "spousal support" if type_of_modification['spousal support'] and not type_of_modification['other'] else "" }
   % endif
 content: |
   % if user_need == 'change divorce order':
   Changing your divorce order is called “modifying” it.  To ask the judge to change your divorce order, file a **Motion to Modify**.
   % endif
+  
+  % if user_need == 'respond to motion in divorce' and type_of_response == 'modify':
+  If there has been a change in circumstances, either side can file a **Motion to Modify**. 
+  
+  When you respond to a **Motion to Modify**, you should state if you agree with all, some, or none of the of the other side’s other side’s requested changes
+  % endif
+  
   % if (user_need == 'change divorce order' and middle_of_case == 'no' and type_of_final_order['spousal support']) or (user_need == 'respond to motion in divorce' and type_of_response == 'modify' and type_of_modification['spousal support']):
   The court will generally only change spousal support if there is a "substantial change in circumstances."
   <div class = "example">
