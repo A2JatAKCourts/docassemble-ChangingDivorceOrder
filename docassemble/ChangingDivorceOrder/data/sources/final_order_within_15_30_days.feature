@@ -1,6 +1,6 @@
 @within15or30
 Feature: User paths
-# 2026-05-18
+# 2026-05-20
 
 Background:
   Given the maximum seconds for each Step is 45
@@ -20,6 +20,7 @@ Scenario: Row #30
     | filing_method                        | efiling              |         | 
     | other_party_exempt                   | yes                  |         | 
     | other_party_enter_email              | True                 |         | 
+    | ak_patience_assembling | True                     |         | 
   And I should see the phrase "Your Action Plan for changing your custody or Parenting Plan order from your divorce case in 10 steps"
   And I should see the phrase "Step 1: Decide the steps you want to take"
   And I should see the phrase "Step 2: Find out if you and the other parent agree"
@@ -33,7 +34,7 @@ Scenario: Row #30
   And I should see the phrase "Step 8: Serve the other parent"
   #  And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
   #  And I should see the phrase "Follow the TrueFiling instructions to serve them at their email address."
-  And I should see the phrase "Step 9: What to expect after you file a Motion to Set Aside"
+  And I should see the phrase "Step 9: What to expect after you file your Motion to Set Aside"
   And I should see the phrase "Step 10: Get more information or help"
   And I take a screenshot
   And I download "changing_divorce_order.pdf"
@@ -55,6 +56,7 @@ Scenario: Row #30b
     | filing_method                        | mail or in person    |         | 
     | other_party_exempt                   | yes                  |         | 
     | other_party_enter_email              | False                |         | 
+    | ak_patience_assembling | True                     |         | 
   And I should see the phrase "Your Action Plan for changing your custody or Parenting Plan order from your divorce case in 11 steps"
   And I should see the phrase "Step 1: Decide the steps you want to take"
   And I should see the phrase "Step 2: Find out if you and the other parent agree"
@@ -69,7 +71,7 @@ Scenario: Row #30b
   And I should see the phrase "Step 9: Serve the other parent"
   #  And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
   #  And I should see the phrase "Because the other person is not using TrueFiling and did not give an email address, you cannot serve them through TrueFiling."
-  And I should see the phrase "Step 10: What to expect after you file a Motion to Set Aside"
+  And I should see the phrase "Step 10: What to expect after you file your Motion to Set Aside"
   And I should see the phrase "Step 11: Get more information or help"
   And I take a screenshot
   And I download "changing_divorce_order.pdf"
@@ -90,6 +92,7 @@ Scenario: Row #31
     | filing_method                        | dunno                |         | 
     | other_party_exempt                   | yes                  |         | 
     | other_party_enter_email              | None                 |         | 
+    | ak_patience_assembling | True                     |         | 
   And I should see the phrase "Your Action Plan for changing your custody or Parenting Plan order from your divorce case in 8 steps"
   And I should see the phrase "Step 1: Decide if you want to file an appeal"
   And I tap the "#YXBwZWFsX3N0ZXA .al_toggle" element and stay on the same page
@@ -100,7 +103,7 @@ Scenario: Row #31
   And I should see the phrase "Step 6: Serve the other parent"
   #  And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
   #  And I should see the phrase "Look at the other parent's complaint to see if they checked they were exempt."
-  And I should see the phrase "Step 7: What to expect after you file a Motion to Set Aside"
+  And I should see the phrase "Step 7: What to expect after you file your Motion to Set Aside"
   And I should see the phrase "Step 8: Get more information or help"
   And I take a screenshot
   And I download "changing_divorce_order.pdf"
@@ -121,6 +124,7 @@ Scenario: Row #31b
     | filling_manner                       | paper                |         | 
     | filing_method                        | efiling              |         | 
     | other_party_exempt                   | no                   |         | 
+    | ak_patience_assembling | True                     |         | 
   And I should see the phrase "Your Action Plan for changing your custody or Parenting Plan order from your divorce case in 8 steps"
   And I should see the phrase "Step 1: Decide if you want to file an appeal"
   And I tap the "#YXBwZWFsX3N0ZXA .al_toggle" element and stay on the same page
@@ -132,7 +136,7 @@ Scenario: Row #31b
   And I should see the phrase "Step 6: Serve the other parent"
   #  And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
   #  And I should see the phrase "Use TrueFiling to serve the other parent. Read If I am using TrueFiling, how do I serve the other side?"
-  And I should see the phrase "Step 7: What to expect after you file a Motion to Set Aside"
+  And I should see the phrase "Step 7: What to expect after you file your Motion to Set Aside"
   And I should see the phrase "Step 8: Get more information or help"
   And I take a screenshot
   And I download "changing_divorce_order.pdf"
@@ -152,6 +156,7 @@ Scenario: Row #52
     | filling_manner                         | paper                |         | 
     | filing_method                          | mail or in person    |         | 
     | other_party_exempt                     | none                 |         | 
+    | ak_patience_assembling | True                     |         | 
   And I should see the phrase "Your Action Plan for changing a court order from your divorce case in 11 steps"
   And I should see the phrase "Step 1: Decide the steps you want to take"
   And I should see the phrase "Step 2: Find out if you and your ex agree"
@@ -165,7 +170,7 @@ Scenario: Row #52
   And I should see the phrase "Step 9: Serve your ex"
   #  And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
   #  And I should see the phrase "Look at their complaint to see if they checked they were exempt."
-  And I should see the phrase "Step 10: What to expect after you file a Motion to Set Aside"
+  And I should see the phrase "Step 10: What to expect after you file your Motion to Set Aside"
   And I should see the phrase "Step 11: Get more information or help"
   And I take a screenshot
   And I download "changing_divorce_order.pdf"
@@ -187,6 +192,7 @@ Scenario: Row #52b
     | filing_method                          | dunno                |         | 
     | other_party_exempt                     | yes                  |         | 
     | other_party_enter_email                | True                 |         | 
+    | ak_patience_assembling | True                     |         | 
   And I should see the phrase "Your Action Plan for changing a court order from your divorce case in 11 steps"
   And I should see the phrase "Step 1: Decide the steps you want to take"
   And I should see the phrase "Step 2: Find out if you and your ex agree"
@@ -201,7 +207,7 @@ Scenario: Row #52b
   And I should see the phrase "Step 9: Serve your ex"
   #  And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
   #  And I should see the phrase "Follow the TrueFiling instructions to serve them at their email address."
-  And I should see the phrase "Step 10: What to expect after you file a Motion to Set Aside"
+  And I should see the phrase "Step 10: What to expect after you file your Motion to Set Aside"
   And I should see the phrase "Step 11: Get more information or help"
   And I take a screenshot
   And I download "changing_divorce_order.pdf"
@@ -222,6 +228,7 @@ Scenario: Row #53
     | filing_method                          | efiling              |         | 
     | other_party_exempt                     | yes                  |         | 
     | other_party_enter_email                | False                |         | 
+    | ak_patience_assembling | True                     |         | 
   And I should see the phrase "Your Action Plan for changing a court order from your divorce case in 8 steps"
   And I should see the phrase "Step 1: Decide if you want to file an appeal"
   And I should see the phrase "Step 2: Learn about the Motion to Set Aside Judgment or Order"
@@ -231,7 +238,7 @@ Scenario: Row #53
   And I should see the phrase "Step 6: Serve your ex"
   #  And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
   #  And I should see the phrase "Because the other person is not using TrueFiling and did not give an email address, you cannot serve them through TrueFiling."
-  And I should see the phrase "Step 7: What to expect after you file a Motion to Set Aside"
+  And I should see the phrase "Step 7: What to expect after you file your Motion to Set Aside"
   And I should see the phrase "Step 8: Get more information or help"
   And I take a screenshot
   And I download "changing_divorce_order.pdf"
@@ -253,6 +260,7 @@ Scenario: Row #53b
     | filing_method                          | mail or in person    |         | 
     | other_party_exempt                     | yes                  |         | 
     | other_party_enter_email                | None                 |         | 
+    | ak_patience_assembling | True                     |         | 
   And I should see the phrase "Your Action Plan for changing a court order from your divorce case in 8 steps"
   And I should see the phrase "Step 1: Decide if you want to file an appeal"
   And I tap the "#YXBwZWFsX3N0ZXA .al_toggle" element and stay on the same page
@@ -264,7 +272,7 @@ Scenario: Row #53b
   And I should see the phrase "Step 6: Serve your ex"
   #  And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
   #  And I should see the phrase "Look at the other parent's complaint to see if they checked they were exempt."
-  And I should see the phrase "Step 7: What to expect after you file a Motion to Set Aside"
+  And I should see the phrase "Step 7: What to expect after you file your Motion to Set Aside"
   And I should see the phrase "Step 8: Get more information or help"
   And I take a screenshot
   And I download "changing_divorce_order.pdf"
@@ -278,6 +286,7 @@ Scenario: Row #74
     | user_need                               | change divorce order |         | 
     | middle_of_case                          | no                   |         | 
     | type_of_final_order['property or debt'] | True                 |         | 
+    | ak_patience_assembling | True                     |         | 
   # | why_change_divorce_order                | problem              |         | 
     | final_order_date                        | today - 28           |         | 
     | parents_agree                           | True                 |         | 
@@ -296,7 +305,7 @@ Scenario: Row #74
   And I should see the phrase "Step 9: Serve your ex"
   #  And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
   #  And I should see the phrase "Use TrueFiling to serve your ex. Read If I am using TrueFiling, how do I serve the other side?"
-  And I should see the phrase "Step 10: What to expect after you file a Motion to Set Aside"
+  And I should see the phrase "Step 10: What to expect after you file your Motion to Set Aside"
   And I should see the phrase "Step 11: Get more information or help"
   And I take a screenshot
   And I download "changing_divorce_order.pdf"
@@ -310,6 +319,7 @@ Scenario: Row #74b
     | user_need                               | change divorce order |         | 
     | middle_of_case                          | no                   |         | 
     | type_of_final_order['property or debt'] | True                 |         | 
+    | ak_patience_assembling | True                     |         | 
   # | why_change_divorce_order                | problem              |         | 
     | final_order_period                      | True                 |         | 
     | guess_final_order_date                  | within 30 days       |         | 
@@ -330,7 +340,7 @@ Scenario: Row #74b
   And I should see the phrase "Step 8: Serve your ex"
   #  And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
   #  And I should see the phrase "Look at their complaint to see if they checked they were exempt."
-  And I should see the phrase "Step 9: What to expect after you file a Motion to Set Aside"
+  And I should see the phrase "Step 9: What to expect after you file your Motion to Set Aside"
   And I should see the phrase "Step 10: Get more information or help"
   And I take a screenshot
   And I download "changing_divorce_order.pdf"
@@ -344,6 +354,7 @@ Scenario: Row #75
     | user_need                               | change divorce order |         | 
     | middle_of_case                          | no                   |         | 
     | type_of_final_order['property or debt'] | True                 |         | 
+    | ak_patience_assembling | True                     |         | 
   # | why_change_divorce_order                | problem              |         | 
     | final_order_date                        | today - 28           |         | 
     | parents_agree                           | False                |         | 
@@ -360,7 +371,7 @@ Scenario: Row #75
   And I should see the phrase "Step 6: Serve your ex"
   #  And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
   #  And I should see the phrase "Follow the TrueFiling instructions to serve them at their email address."
-  And I should see the phrase "Step 7: What to expect after you file a Motion to Set Aside"
+  And I should see the phrase "Step 7: What to expect after you file your Motion to Set Aside"
   And I should see the phrase "Step 8: Get more information or help"
   And I take a screenshot
   And I download "changing_divorce_order.pdf"
@@ -374,6 +385,7 @@ Scenario: Row #75b
     | user_need                               | change divorce order |         | 
     | middle_of_case                          | no                   |         | 
     | type_of_final_order['property or debt'] | True                 |         | 
+    | ak_patience_assembling | True                     |         | 
   # | why_change_divorce_order                | problem              |         | 
     | final_order_period                      | True                 |         | 
     | guess_final_order_date                  | within 30 days       |         | 
@@ -393,7 +405,7 @@ Scenario: Row #75b
   And I should see the phrase "Step 6: Serve your ex"
   #  And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
   #  And I should see the phrase "Because the other person is not using TrueFiling and did not give an email address, you cannot serve them through TrueFiling."
-  And I should see the phrase "Step 7: What to expect after you file a Motion to Set Aside"
+  And I should see the phrase "Step 7: What to expect after you file your Motion to Set Aside"
   And I should see the phrase "Step 8: Get more information or help"
   And I take a screenshot
   And I download "changing_divorce_order.pdf"

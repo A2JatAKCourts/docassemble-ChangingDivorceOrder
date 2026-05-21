@@ -1,6 +1,6 @@
 @foreign
 Feature: User paths
-# 2026-05-19
+# 2026-05-20
 
 Background:
   Given the maximum seconds for each Step is 45
@@ -15,6 +15,7 @@ Scenario: Row #1
     | filing_method           | efiling                      |         | 
     | other_party_exempt      | yes                          |         | 
     | other_party_enter_email | True                         |         | 
+    | ak_patience_assembling | True                     |         | 
   And I should see the phrase "Your Action Plan for changing your custody or Parenting Plan order from another state in 11 steps" 
   And I should see the phrase "Step 1: Ask the court to change your custody and Parenting Plan or child support order from another state"
   And I should see the phrase "Step 2: Make sure the Alaska court has the authority to change the order"
@@ -27,7 +28,7 @@ Scenario: Row #1
   And I should see the phrase "Step 9: Serve the other parent"
   #  And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
 #  And I should see the phrase "Follow the TrueFiling instructions to serve them at their email address."
-  And I should see the phrase "Step 10: What to expect after you file your documents"
+  And I should see the phrase "Step 10: What to expect after you file your Motion to Modify"
   And I should see the phrase "Step 11: Get more information or help"
   And I take a screenshot
   And I download "changing_divorce_order.pdf"

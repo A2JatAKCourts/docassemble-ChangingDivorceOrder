@@ -1,6 +1,6 @@
 @InterimMotions
 Feature: User paths
-# 2026-05-15
+# 2026-05-20
 
 Background: 
   Given the maximum seconds for each Step is 45
@@ -20,6 +20,7 @@ Scenario: Row #18
     | filing_method           | efiling              |         | 
     | other_party_exempt      | yes                  |         | 
     | other_party_enter_email | True                 |         | 
+    | ak_patience_assembling | True                     |         | 
     And I should see the phrase "Your Action Plan for changing a court order during your divorce case in 9 steps"
     And I should see the phrase "Step 1: Decide the steps you want to take"
     And I should see the phrase "Step 2: Find out if you and your spouse agree"
@@ -30,7 +31,7 @@ Scenario: Row #18
     And I should see the phrase "Step 7: Serve your spouse"
     #    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
     #    And I should see the phrase "Follow the TrueFiling instructions to serve them at their email address."
-    And I should see the phrase "Step 8: What to expect after you file a Motion to Reconsider"
+    And I should see the phrase "Step 8: What to expect after you file your Motion to Reconsider"
     And I should see the phrase "Step 9: Get more information or help"
     And I take a screenshot
     And I download "changing_divorce_order.pdf"
@@ -52,6 +53,7 @@ Scenario: Row #18b
     | filing_method            | mail or in person    |         | 
     | other_party_exempt       | yes                  |         | 
     | other_party_enter_email  | False                |         | 
+    | ak_patience_assembling | True                     |         | 
     And I should see the phrase "Your Action Plan for changing a court order during your divorce case in 10 steps"
     And I should see the phrase "Step 1: Decide the steps you want to take"
     And I should see the phrase "Step 2: Find out if you and your spouse agree"
@@ -63,7 +65,7 @@ Scenario: Row #18b
     And I should see the phrase "Step 8: Serve your spouse"
     #    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
     #    And I should see the phrase "Because the other person is not using TrueFiling and did not give an email address, you cannot serve them through TrueFiling."
-    And I should see the phrase "Step 9: What to expect after you file a Motion to Reconsider"
+    And I should see the phrase "Step 9: What to expect after you file your Motion to Reconsider"
     And I should see the phrase "Step 10: Get more information or help"
     And I take a screenshot
     And I download "changing_divorce_order.pdf"
@@ -83,6 +85,7 @@ Scenario: Row #19
     | filing_method           | dunno                |         | 
     | other_party_exempt      | yes                  |         | 
     | other_party_enter_email | None                 |         | 
+    | ak_patience_assembling | True                     |         | 
     And I should see the phrase "Your Action Plan for changing a court order during your divorce case in 7 steps"
     And I should see the phrase "Step 1: Learn about Motions to Reconsider"
     And I should see the phrase "Step 2: Fill out the Motion to Reconsider forms"
@@ -91,7 +94,7 @@ Scenario: Row #19
     And I should see the phrase "Step 5: Serve your spouse"
     #    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
     #    And I should see the phrase "Look at the other parent's complaint to see if they checked they were exempt."
-    And I should see the phrase "Step 6: What to expect after you file a Motion to Reconsider"
+    And I should see the phrase "Step 6: What to expect after you file your Motion to Reconsider"
     And I should see the phrase "Step 7: Get more information or help"
     And I take a screenshot
     And I download "changing_divorce_order.pdf"
@@ -111,6 +114,7 @@ Scenario: Row #19b
     | filling_manner           | paper                |         | 
     | filing_method            | efiling              |         | 
     | other_party_exempt       | no                   |         | 
+    | ak_patience_assembling | True                     |         | 
     And I should see the phrase "Your Action Plan for changing a court order during your divorce case in 7 steps"
     And I should see the phrase "Step 1: Learn about Motions to Reconsider"
     And I should see the phrase "Step 2: Fill out the Motion to Reconsider forms"
@@ -119,7 +123,7 @@ Scenario: Row #19b
     And I should see the phrase "Step 5: Serve your spouse"
     #    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
     #    And I should see the phrase "Use TrueFiling to serve your spouse. Read If I am using TrueFiling, how do I serve the other side?"
-    And I should see the phrase "Step 6: What to expect after you file a Motion to Reconsider"
+    And I should see the phrase "Step 6: What to expect after you file your Motion to Reconsider"
     And I should see the phrase "Step 7: Get more information or help"
     And I take a screenshot
     And I download "changing_divorce_order.pdf"
@@ -138,6 +142,7 @@ Scenario: Row #20
     | filling_manner        | paper                |         | 
     | filing_method         | mail or in person    |         | 
     | other_party_exempt    | none                 |         | 
+    | ak_patience_assembling | True                     |         | 
     And I should see the phrase "Your Action Plan for changing a court order during your divorce case in 9 steps"
     And I should see the phrase "Step 1: Decide the steps you want to take"
     And I should see the phrase "Step 2: Find out if you and your spouse agree"
@@ -148,7 +153,7 @@ Scenario: Row #20
     And I should see the phrase "Step 7: Serve your spouse"
     #    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
     #    And I should see the phrase "Look at their complaint to see if they checked they were exempt."
-    And I should see the phrase "Step 8: What to expect after you file a motion"
+    And I should see the phrase "Step 8: What to expect after you file your motion"
     And I should see the phrase "Step 9: Get more information or help"
     And I take a screenshot
     And I download "changing_divorce_order.pdf"
@@ -169,6 +174,7 @@ Scenario: Row #20b
     | filing_method            | dunno                |         | 
     | other_party_exempt       | yes                  |         | 
     | other_party_enter_email  | True                 |         | 
+    | ak_patience_assembling | True                     |         | 
     And I should see the phrase "Your Action Plan for changing a court order during your divorce case in 9 steps"
     And I should see the phrase "Step 1: Decide the steps you want to take"
     And I should see the phrase "Step 2: Find out if you and your spouse agree"
@@ -179,7 +185,7 @@ Scenario: Row #20b
     And I should see the phrase "Step 7: Serve your spouse"
     #    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
     #    And I should see the phrase "Follow the TrueFiling instructions to serve them at their email address."
-    And I should see the phrase "Step 8: What to expect after you file a motion"
+    And I should see the phrase "Step 8: What to expect after you file your motion"
     And I should see the phrase "Step 9: Get more information or help"
     And I take a screenshot
     And I download "changing_divorce_order.pdf"
@@ -199,6 +205,7 @@ Scenario: Row #21
     | filing_method           | efiling              |         | 
     | other_party_exempt      | yes                  |         | 
     | other_party_enter_email | False                |         | 
+    | ak_patience_assembling | True                     |         | 
     And I should see the phrase "Your Action Plan for changing a court order during your divorce case in 6 steps"
     And I should see the phrase "Step 1: Ask the judge to change an interim order"
     And I should see the phrase "Step 2: Sign if you use paper forms or do not use TrueFiling"
@@ -206,7 +213,7 @@ Scenario: Row #21
     And I should see the phrase "Step 4: Serve your spouse"
     #    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
     #    And I should see the phrase "Because the other person is not using TrueFiling and did not give an email address, you cannot serve them through TrueFiling."
-    And I should see the phrase "Step 5: What to expect after you file a motion"
+    And I should see the phrase "Step 5: What to expect after you file your motion"
     And I should see the phrase "Step 6: Get more information or help"
     And I take a screenshot
     And I download "changing_divorce_order.pdf"
@@ -227,6 +234,7 @@ Scenario: Row #21b
     | filing_method            | mail or in person    |         | 
     | other_party_exempt       | yes                  |         | 
     | other_party_enter_email  | None                 |         | 
+    | ak_patience_assembling | True                     |         | 
     And I should see the phrase "Your Action Plan for changing a court order during your divorce case in 6 steps"
     And I should see the phrase "Step 1: Ask the judge to change an interim order"
     And I should see the phrase "Step 2: Sign if you use paper forms or do not use TrueFiling"
@@ -234,7 +242,7 @@ Scenario: Row #21b
     And I should see the phrase "Step 4: Serve your spouse"
     #    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
     #    And I should see the phrase "Look at the other parent's complaint to see if they checked they were exempt."
-    And I should see the phrase "Step 5: What to expect after you file a motion"
+    And I should see the phrase "Step 5: What to expect after you file your motion"
     And I should see the phrase "Step 6: Get more information or help"
     And I take a screenshot
     And I download "changing_divorce_order.pdf"
@@ -253,6 +261,7 @@ Scenario:  Row #22
     | filling_manner        | dunno                |         | 
     | filing_method         | dunno                |         | 
     | other_party_exempt    | no                   |         | 
+    | ak_patience_assembling | True                     |         | 
     And I should see the phrase "Your Action Plan for changing a court order during your divorce case in 10 steps"
     And I should see the phrase "Step 1: Decide the steps you want to take"
     And I should see the phrase "Step 2: Find out if you and your spouse agree"
@@ -264,7 +273,7 @@ Scenario:  Row #22
     And I should see the phrase "Step 8: Serve your spouse"
     #    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
     #    And I should see the phrase "Use TrueFiling to serve your spouse. Read If I am using TrueFiling, how do I serve the other side?"
-    And I should see the phrase "Step 9: What to expect after you file a motion"
+    And I should see the phrase "Step 9: What to expect after you file your motion"
     And I should see the phrase "Step 10: Get more information or help"
     And I take a screenshot
     And I download "changing_divorce_order.pdf"
@@ -283,6 +292,7 @@ Scenario:  Row #23
     | filling_manner        | electronically       |         | 
     | filing_method         | efiling              |         | 
     | other_party_exempt    | none                 |         | 
+    | ak_patience_assembling | True                     |         | 
     And I should see the phrase "Your Action Plan for changing a court order during your divorce case in 6 steps"
     And I should see the phrase "Step 1: Ask the court to change the Standing Order or a similar order"
     And I should see the phrase "Step 2: Fill out your motion forms"
@@ -290,7 +300,7 @@ Scenario:  Row #23
     And I should see the phrase "Step 4: Serve your spouse"
     #    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
     #    And I should see the phrase "Look at their complaint to see if they checked they were exempt."
-    And I should see the phrase "Step 5: What to expect after you file a motion"
+    And I should see the phrase "Step 5: What to expect after you file your motion"
     And I should see the phrase "Step 6: Get more information or help"
     And I take a screenshot
     And I download "changing_divorce_order.pdf"
