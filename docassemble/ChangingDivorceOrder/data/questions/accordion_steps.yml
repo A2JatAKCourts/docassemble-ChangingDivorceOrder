@@ -430,6 +430,8 @@ code: |
             add_unique_step((expect_after_motion_or_answer_step, "expect_after_motion_or_answer_idx"), step_list)
             log('known final order date motion','console')
           if final_order_date_within_10_days:
+            if type_of_final_order['custody order'] and why_change in('review', 'schedule'):
+              add_unique_step((expect_after_motion_or_answer_step, "expect_after_motion_or_answer_idx"), step_list)
             add_unique_step((expect_reconsider_step, "expect_reconsider_idx"), step_list)
             # add_unique_step((expect_after_motion_or_answer_step, "expect_after_motion_or_answer_idx"), step_list)
             log('known final order date reconsider','console')
