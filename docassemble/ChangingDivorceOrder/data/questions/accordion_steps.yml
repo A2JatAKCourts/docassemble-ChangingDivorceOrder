@@ -264,7 +264,7 @@ code: |
       # add_unique_step((serve_motion_step, "serve_motion_idx"), step_list)
       add_unique_step((truefiling_serve_step, "truefiling_serve_idx"), step_list)
       # add_unique_step((expect_after_motion_step, "expect_after_motion_idx"), step_list)
-      add_unique_step((expect_after_motion_or_answer_step, "expect_after_motion_or_answer_idx"), step_list)
+      add_unique_step((expect_reconsider_step, "expect_reconsider_idx"), step_list)
       
     # Rows 20 & 21
     if middle_of_case == 'yes' \
