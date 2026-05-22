@@ -312,7 +312,7 @@ Scenario: Row #72b
     And I should see the phrase "Step 1: Decide the steps you want to take"
     And I should see the phrase "Step 2: Find out if you and your ex agree"
     And I should see the phrase "Step 3: Tell the court about your agreement"
-    And I should see the phrase "Step 4:Learn about Motions to Reconsider"
+    And I should see the phrase "Step 4: Learn about Motions to Reconsider"
     And I should see the phrase "Step 5: Fill out the Motion to Reconsider forms"
     And I should see the phrase "Step 6: File your Motion to Reconsider"
     And I should see the phrase "Step 7: Serve your ex"
