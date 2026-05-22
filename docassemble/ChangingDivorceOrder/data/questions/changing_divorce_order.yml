@@ -1,9 +1,13 @@
+comment: |
+  2026-05-18 updating to use Motion to Set aside if user wants to change Property Division judgment
+  2026-05-12 updating to include TrueFiling steps
 include:
   - docassemble.AssemblyLine:assembly_line.yml
   - docassemble.AKA2JBranding:custom_organization.yml
   - docassemble.AKA2JBranding:aka2j_templates.yml
   - docassemble.AKA2JBranding:aka2j_motion_response_templates.yml
-  - docassemble.AKA2JBranding:aka2j_mod_cust_div_templates.yml
+  - docassemble.AKA2JBranding:aka2j_mod_cust_div_templates.yml   
+  - truefiling.yml
   - accordion_steps.yml
 ---
 metadata:
@@ -291,14 +295,7 @@ fields:
 ---
 id: why change final divorce order
 question: |
-  Why do you want to change 
-  % if type_of_final_order.all_true('spousal support','property or debt'):
-  the order about spousal support and dividing property and debt?
-  % elif type_of_final_order.all_true('property or debt'):
-  the order about dividing property and debt?
-  % elif type_of_final_order.all_true('spousal support'):
-  the order about spousal support?
-  % endif
+  Why do you want to change the order about spousal support?
   
 fields:
   - no label: why_change_divorce_order
@@ -310,24 +307,12 @@ fields:
           Spouse A was ordered to pay Spouse B spousal support.  Spouse B was very ill and could not work.  Spouse B is now better and has a full-time job.
           Spouse A was ordered to pay Spouse B spousal support for 4 years so Spouse B could get a degree that would help them earn more money.  Spouse B got their degree in 3 years and now has a full-time job earning more money because of the degree.
       - There is a problem with the order: problem
-  - note: |
-      #### <i class="fa-regular fa-lightbulb"></i> Learn more ####
-      Changing your divorce order is called “modifying” it.  The rules are different for changing spousal support and the property and debt division.      
-       % if type_of_final_order['spousal support']:
-       
-      **Change Spousal Support**
-      
-      The courts will generally only change spousal support if there is a substantial change of circumstances.  Some examples are:
-     
-      * Spouse A was ordered to pay Spouse B spousal support.  Spouse B was very ill and could not work.  Spouse B is now better and has a full-time job.
-      * Spouse A was ordered to pay Spouse B spousal support for 4 years so Spouse B could get a degree that would help them earn more money.  Spouse B got their degree in 3 years and not has a full-time job earning more money because of the degree.
-      % endif
-      % if type_of_final_order['property or debt']:
-      
-      **Change the Property and Debt Division**
-     
-      Changing the outcome of final property and debt decisions in a divorce case can be really tough. Once the court decides who gets what, it's not easy to undo those decisions. For instance, if the court gives one spouse the house, they might sell it, and then it's impossible to get it back if the other spouse later wants the court to award them the house.  Another example is when the court orders one person to receive some money from the marriage. If they spend that money, it can't be taken back later.
-      % endif 
+        help: |
+          Some examples:
+          
+            * The judge made a mistake.
+            * The judge’s decision was based on a fact you just found out is not true.
+            * You found new evidence you could not have found before the judge decided.    
 ---
 id: What is the date on your order
 question: |
@@ -366,7 +351,7 @@ continue button field: final_order_date_question
 ---
 code: |
   if (type_of_final_order.all_true('custody order', exclusive=True) and why_change == 'problem') \
-    or (type_of_final_order.any_true('property or debt', 'spousal support') \
+    or (type_of_final_order['spousal support'] \
         and why_change_divorce_order == 'changed circumstances' \
         and type_of_final_order['custody order'] and why_change == 'problem'):
     final_order_date_options = [
@@ -656,7 +641,6 @@ fields:
         {'custody': "the custody and parenting plan order."},
         {'child support': "the child support order."},      
         {'spousal support': "the spousal support order."},
-        {'property or debt': "the order that divides property and debt."},
         {'other': "something else."}
       ]
     js show if: 
