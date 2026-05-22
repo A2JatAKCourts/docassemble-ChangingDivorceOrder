@@ -31,7 +31,7 @@ Scenario: Row #28
     And I should see the phrase "Step 7: Serve the other parent"
     #    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
     #    And I should see the phrase "Follow the TrueFiling instructions to serve them at their email address."
-    And I should see the phrase "Step 8: What to expect after you file your Motion to Reconsider"
+    And I should see the phrase "Step 8: What to expect after you file a Motion to Reconsider"
     And I should see the phrase "Step 9: Get more information or help"
     And I take a screenshot
     And I download "changing_divorce_order.pdf"
@@ -65,7 +65,7 @@ Scenario: Row #28b
     And I should see the phrase "Step 8: Serve the other parent"
     #    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
     #    And I should see the phrase "Because the other person is not using TrueFiling and did not give an email address, you cannot serve them through TrueFiling."
-    And I should see the phrase "Step 9: What to expect after you file your Motion to Reconsider"
+    And I should see the phrase "Step 9: What to expect after you file a Motion to Reconsider"
     And I should see the phrase "Step 10: Get more information or help"
     And I take a screenshot
     And I download "changing_divorce_order.pdf"
@@ -95,7 +95,7 @@ Scenario: Row #29
     And I should see the phrase "Step 5: Serve the other parent"
     #    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
     #    And I should see the phrase "Look at the other parent's complaint to see if they checked they were exempt."
-    And I should see the phrase "Step 6: What to expect after you file your Motion to Reconsider"
+    And I should see the phrase "Step 6: What to expect after you file a Motion to Reconsider"
     And I should see the phrase "Step 7: Get more information or help"
     And I take a screenshot
     And I download "changing_divorce_order.pdf"
@@ -125,7 +125,7 @@ Scenario: Row #29b
     And I should see the phrase "Step 5: Serve the other parent"
     #    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
     #    And I should see the phrase "Use TrueFiling to serve the other parent. Read If I am using TrueFiling, how do I serve the other side?"
-    And I should see the phrase "Step 6: What to expect after you file your Motion to Reconsider"
+    And I should see the phrase "Step 6: What to expect after you file a Motion to Reconsider"
     And I should see the phrase "Step 7: Get more information or help"
     And I take a screenshot
     And I download "changing_divorce_order.pdf"
@@ -157,7 +157,7 @@ Scenario: Row #50
     And I should see the phrase "Step 8: Serve your ex"
     #    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
     #    And I should see the phrase "Look at their complaint to see if they checked they were exempt."
-    And I should see the phrase "Step 9: What to expect after you file your Motion to Reconsider"
+    And I should see the phrase "Step 9: What to expect after you file a Motion to Reconsider"
     And I should see the phrase "Step 10: Get more information or help"
     And I take a screenshot
     And I download "changing_divorce_order.pdf"
@@ -191,7 +191,7 @@ Scenario: Row #50b
     And I should see the phrase "Step 8: Serve your ex"
     #    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
     #    And I should see the phrase "Follow the TrueFiling instructions to serve them at their email address."
-    And I should see the phrase "Step 9: What to expect after you file your Motion to Reconsider"
+    And I should see the phrase "Step 9: What to expect after you file a Motion to Reconsider"
     And I should see the phrase "Step 10: Get more information or help"
     And I take a screenshot
     And I download "changing_divorce_order.pdf"
@@ -221,7 +221,7 @@ Scenario: Row #51
     And I should see the phrase "Step 5: Serve your ex"
     #    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
     #    And I should see the phrase "Because the other person is not using TrueFiling and did not give an email address, you cannot serve them through TrueFiling."
-    And I should see the phrase "Step 6: What to expect after you file your Motion to Reconsider"
+    And I should see the phrase "Step 6: What to expect after you file a Motion to Reconsider"
     And I should see the phrase "Step 7: Get more information or help"
     And I take a screenshot
     And I download "changing_divorce_order.pdf"
@@ -253,7 +253,7 @@ Scenario: Row #51b
     And I should see the phrase "Step 5: Serve your ex"
     #    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
     #    And I should see the phrase "Look at the other parent's complaint to see if they checked they were exempt."
-    And I should see the phrase "Step 6: What to expect after you file your Motion to Reconsider"
+    And I should see the phrase "Step 6: What to expect after you file a Motion to Reconsider"
     And I should see the phrase "Step 7: Get more information or help"
     And I take a screenshot
     And I download "changing_divorce_order.pdf"
@@ -286,7 +286,7 @@ Scenario: Row #72
     And I should see the phrase "Step 8: Serve your ex"
     #    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
     #    And I should see the phrase "Use TrueFiling to serve your ex. Read If I am using TrueFiling, how do I serve the other side?"
-    And I should see the phrase "Step 9: What to expect after you file your Motion to Reconsider"
+    And I should see the phrase "Step 9: What to expect after you file a Motion to Reconsider"
     And I should see the phrase "Step 10: Get more information or help"
     And I take a screenshot
     And I download "changing_divorce_order.pdf"
@@ -318,7 +318,7 @@ Scenario: Row #72b
     And I should see the phrase "Step 6: Serve your ex"
     #    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
     #    And I should see the phrase "Look at their complaint to see if they checked they were exempt."
-    And I should see the phrase "Step 7: What to expect after you file your Motion to Reconsider"
+    And I should see the phrase "Step 7: What to expect after you file a Motion to Reconsider"
     And I should see the phrase "Step 8: Get more information or help"
     And I take a screenshot
     And I download "changing_divorce_order.pdf"
@@ -349,7 +349,7 @@ Scenario: Row #73
     And I should see the phrase "Step 5: Serve your ex"
     #    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
     #    And I should see the phrase "Follow the TrueFiling instructions to serve them at their email address."
-    And I should see the phrase "Step 6: What to expect after you file your Motion to Reconsider"
+    And I should see the phrase "Step 6: What to expect after you file a Motion to Reconsider"
     And I should see the phrase "Step 7: Get more information or help"
     And I take a screenshot
     And I download "changing_divorce_order.pdf"
@@ -381,7 +381,7 @@ Scenario: Row #73b
     And I should see the phrase "Step 5: Serve your ex"
     #    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
     #    And I should see the phrase "Because the other person is not using TrueFiling and did not give an email address, you cannot serve them through TrueFiling."
-    And I should see the phrase "Step 6: What to expect after you file your Motion to Reconsider"
+    And I should see the phrase "Step 6: What to expect after you file a Motion to Reconsider"
     And I should see the phrase "Step 7: Get more information or help"
     And I take a screenshot
     And I download "changing_divorce_order.pdf"
