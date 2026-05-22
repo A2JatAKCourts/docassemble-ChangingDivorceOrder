@@ -1,6 +1,6 @@
 @morethan15or30
 Feature: User paths
-# 2026-05-20
+# 2026-05-22
 
 Background: 
   Given the maximum seconds for each Step is 45
@@ -22,17 +22,18 @@ Scenario: Row #32
     | other_party_enter_email              | True                 |         | 
     | ak_patience_assembling | True                     |         | 
     And I take a screenshot
-    And I should see the phrase "Your Action Plan for changing your custody or Parenting Plan order from your divorce case in 8 steps"
+    And I should see the phrase "Your Action Plan for changing your custody or Parenting Plan order from your divorce case in 9 steps"
     And I should see the phrase "Step 1: Decide the steps you want to take"
     And I should see the phrase "Step 2: Find out if you and the other parent agree"
     And I should see the phrase "Step 3: Tell the court about your agreement"
-    And I should see the phrase "Step 4: Fill out forms if you want to file a Motion to Set Aside"
-    And I should see the phrase "Step 5: File your Motion to Set Aside"
-    And I should see the phrase "Step 6: Serve the other parent"
+    And I should see the phrase "Step 4: Learn about the Motion to Set Aside Judgment or Order"
+    And I should see the phrase "Step 5: Fill out forms if you want to file a Motion to Set Aside"
+    And I should see the phrase "Step 6: File your Motion to Set Aside"
+    And I should see the phrase "Step 7: Serve the other parent"
     #    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
     #    And I should see the phrase "Follow the TrueFiling instructions to serve them at their email address."
-    And I should see the phrase "Step 7: What to expect after you file your Motion to Set Aside"
-    And I should see the phrase "Step 8: Get more information or help"
+    And I should see the phrase "Step 8: What to expect after you file your Motion to Set Aside"
+    And I should see the phrase "Step 9: Get more information or help"
     And I take a screenshot
     And I download "changing_divorce_order.pdf"
     And I download "changing_divorce_order.docx"
