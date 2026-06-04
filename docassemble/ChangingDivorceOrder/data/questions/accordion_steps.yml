@@ -155,7 +155,7 @@ code: |
     add_unique_step((modify_step, "modify_idx"), step_list)
     add_unique_step((fill_modify_step, "fill_modify_idx"), step_list)
     add_unique_step((calculate_child_support_step, "calculate_child_support_idx"), step_list)
-    add_unique_step((dont_wait_modify_custody_divorce_step, "dont_wait_modify_custody_divorce_idx"), step_list)
+    add_unique_step((dont_wait_modify_child_support_step, "dont_wait_modify_child_support_idx"), step_list)
     #  add_unique_image({'image': service_cert_modify_image, 'text': "Certificate of Service at the bottom of a Motion to Modify."}, images_list)
     # add_unique_step((cert_of_service_step, "cert_of_service_idx"), step_list)
     
@@ -583,6 +583,7 @@ code: |
       image_list.append(new_image)
 ---
 comment: |
+  2026-05-29 sync w content.docx
   2026-05-21 add back in a little bit of content for user_need respond to motion in divorce and type_of_response modify and type_of_mod['other'], this was empty even when it was "finished" pre-TrueFiling.
   2026-05-18 Remove CIV-735 motion to change spousal support and property and debt division in Changing Divorce Order
 template: modify_divorce_step
@@ -601,7 +602,7 @@ content: |
   % if user_need == 'respond to motion in divorce' and type_of_response == 'modify':
   If there has been a change in circumstances, either side can file a **Motion to Modify**. 
   
-  When you respond to a **Motion to Modify**, you should state if you agree with all, some, or none of the of the other side’s other side’s requested changes
+  When you respond to a **Motion to Modify**, state if you agree with all, some, or none of the changes ${ other_party_in_case }'s is requesting.
   % endif
   
   % if (user_need == 'change divorce order' and middle_of_case == 'no' and type_of_final_order['spousal support']) or (user_need == 'respond to motion in divorce' and type_of_response == 'modify' and type_of_modification['spousal support']):
@@ -609,8 +610,8 @@ content: |
   <div class = "example">
   <div class = "heading">Some examples</div>
   <ul>
-  <li>The court ordered Spouse A to pay Spouse B spousal support.  Spouse B was very ill and could not work.  Spouse B is now better and has a full-time job.</li>
-  <li>The court ordered Spouse A to pay Spouse B spousal support for 4 years so Spouse B could get a degree that would help them earn more money.  Spouse B got their degree in 3 years and now has a full-time job earning more money because of the degree.</li>
+  <li>The court ordered Spouse A to pay Spouse B spousal support. Spouse B was very ill and could not work. Spouse B is now better and has a full-time job.</li>
+  <li>The court ordered Spouse A to pay Spouse B spousal support for 4 years so Spouse B could get a degree that would help them earn more money. Spouse B got their degree in 3 years and now has a full-time job earning more money because of the degree.</li>
   </ul>
   </div>
   % endif
@@ -619,6 +620,8 @@ content: |
   The court charges $75 to file this motion. If you cannot afford the fee, you may be able to get the court to waive it. See ${ truefiling_file_and_serve_step.subject }.
   % endif
 --- 
+comment: |
+  2026-05-29 sync w content.docx
 template: fill_modify_divorce_step
 subject: |
   Step ${ fill_modify_divorce_idx }: 
