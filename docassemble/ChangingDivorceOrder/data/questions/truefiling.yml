@@ -261,7 +261,7 @@ content: |
 
 
   % if user_need in('answer custody', 'answer divorce'):
-  %  if (type_of_response.any_true('improper service', 'default') and ((not proper_service and have_complaint) or proper_service)) or (type_of_response.all_false('improper service', 'default') and type_of_response.any_true('ak custody case', 'ak divorce case', 'wrong state', 'case in 2 states')):
+  % if (type_of_response.any_true('improper service', 'default') and ((not proper_service and have_complaint) or proper_service)) or (type_of_response.all_false('improper service', 'default') and type_of_response.any_true('ak custody case', 'ak divorce case', 'wrong state', 'case in 2 states')):
   % if other_party_exempt == 'none' or (other_party_exempt == 'yes' and other_party_enter_email is None):
   Look at their complaint to see if they checked they were exempt. If not, they are using TrueFiling. Even if they checked they are exempt, look to see if they put their email anywhere on the complaint. If they put an email, you can serve them through TrueFiling. Read [Serving the Other Side](https://courts.alaska.gov/shc/family/serve.htm).
   % endif

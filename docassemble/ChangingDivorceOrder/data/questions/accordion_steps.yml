@@ -1,4 +1,5 @@
 comment: |
+  2026-06-04 Changing title from Motion to Reconsider to Motion for Reconsideration
   2026-05-22 updating to use Motion to Set aside if user wants to change Property Division judgment
   2026-05-12: Updating to use TrueFiling steps
 ---
@@ -155,7 +156,7 @@ code: |
     add_unique_step((modify_step, "modify_idx"), step_list)
     add_unique_step((fill_modify_step, "fill_modify_idx"), step_list)
     add_unique_step((calculate_child_support_step, "calculate_child_support_idx"), step_list)
-    add_unique_step((dont_wait_modify_custody_divorce_step, "dont_wait_modify_custody_divorce_idx"), step_list)
+    add_unique_step((dont_wait_modify_child_support_step, "dont_wait_modify_child_support_idx"), step_list)
     #  add_unique_image({'image': service_cert_modify_image, 'text': "Certificate of Service at the bottom of a Motion to Modify."}, images_list)
     # add_unique_step((cert_of_service_step, "cert_of_service_idx"), step_list)
     
@@ -253,12 +254,12 @@ code: |
         add_unique_step((tell_the_court_step, "tell_the_court_idx"), step_list)
       add_unique_step((learn_reconsider_step, "learn_reconsider_idx"), step_list)
       add_unique_step((fill_reconsider_step, "fill_reconsider_idx"), step_list)
-      # add_unique_image({'image': service_cert_reconsider_set_aside_image, 'text': "Certificate of Service at the bottom of the Motion to Reconsider"}, images_list)
+      # add_unique_image({'image': service_cert_reconsider_set_aside_image, 'text': "Certificate of Service at the bottom of the Motion for Reconsideration"}, images_list)
       # add_unique_step((cert_of_service_step, "cert_of_service_idx"), step_list)
       if filling_manner in('paper', 'dunno') or filing_method in('mail or in person', 'dunno'):
         add_unique_step((sign_step, "sign_idx"), step_list)
       other_party_exempt
-      file_step_heading = 'File your Motion to Reconsider'
+      file_step_heading = 'File your Motion for Reconsideration'
       # add_unique_step((file_motion_step, "file_motion_idx"), step_list)
       add_unique_step((truefiling_file_and_serve_step, "truefiling_file_and_serve_idx"), step_list)
       # add_unique_step((serve_motion_step, "serve_motion_idx"), step_list)
@@ -369,7 +370,7 @@ code: |
                  and why_change in('review', 'schedule')) \
              or (type_of_final_order['spousal support'] \
                  and why_change_divorce_order == 'changed circumstances')):
-          file_step_heading = 'File your Motion to Reconsider'
+          file_step_heading = 'File your Motion for Reconsideration'
         else:
           motion_type = 'Motion to Modify'
 
@@ -452,13 +453,13 @@ code: |
   #### Add images to Certificate of Service step
           if unknown_final_date.all_true('reconsider', exclusive=True) \
             or unknown_final_date.all_true('appeal','reconsider', exclusive=True):
-            add_unique_image({'image': service_cert_reconsider_set_aside_image, 'text': "Certificate of Service at the bottom of the Motion to Reconsider"}, images_list)
+            add_unique_image({'image': service_cert_reconsider_set_aside_image, 'text': "Certificate of Service at the bottom of the Motion for Reconsideration"}, images_list)
           if unknown_final_date.all_true('set aside', exclusive=True) \
             or unknown_final_date.all_true('appeal','set aside', exclusive=True):
             add_unique_image({'image': service_cert_reconsider_set_aside_image, 'text': "Certificate of Service at the bottom of the Motion to Set Aside"}, images_list)
           if unknown_final_date.all_true('reconsider','set aside', exclusive=True) \
             or unknown_final_date.all_true('reconsider','appeal','set aside'):
-            add_unique_image({'image': service_cert_reconsider_set_aside_image, 'text': "Certificate of Service at the bottom of the Motion to Reconsider and the Motion to Set Aside"}, images_list)
+            add_unique_image({'image': service_cert_reconsider_set_aside_image, 'text': "Certificate of Service at the bottom of the Motion for Reconsideration and the Motion to Set Aside"}, images_list)
 
   ##### Add File step heading and language for what to expect step
           if (type_of_final_order['custody order'] \
@@ -478,7 +479,7 @@ code: |
             ):
             if unknown_final_date.all_true('reconsider', exclusive=True) \
               or unknown_final_date.all_true('appeal','reconsider', exclusive=True):
-              file_step_heading = 'File your Motion to Reconsider'
+              file_step_heading = 'File your Motion for Reconsideration'
             if unknown_final_date.all_true('set aside', exclusive=True) \
               or unknown_final_date.all_true('appeal','set aside', exclusive=True):
               file_step_heading = 'File your Motion to Set Aside'
@@ -583,6 +584,7 @@ code: |
       image_list.append(new_image)
 ---
 comment: |
+  2026-05-29 sync w content.docx
   2026-05-21 add back in a little bit of content for user_need respond to motion in divorce and type_of_response modify and type_of_mod['other'], this was empty even when it was "finished" pre-TrueFiling.
   2026-05-18 Remove CIV-735 motion to change spousal support and property and debt division in Changing Divorce Order
 template: modify_divorce_step
@@ -601,7 +603,7 @@ content: |
   % if user_need == 'respond to motion in divorce' and type_of_response == 'modify':
   If there has been a change in circumstances, either side can file a **Motion to Modify**. 
   
-  When you respond to a **Motion to Modify**, you should state if you agree with all, some, or none of the of the other side’s other side’s requested changes
+  When you respond to a **Motion to Modify**, state if you agree with all, some, or none of the changes ${ other_party_in_case }'s is requesting.
   % endif
   
   % if (user_need == 'change divorce order' and middle_of_case == 'no' and type_of_final_order['spousal support']) or (user_need == 'respond to motion in divorce' and type_of_response == 'modify' and type_of_modification['spousal support']):
@@ -609,8 +611,8 @@ content: |
   <div class = "example">
   <div class = "heading">Some examples</div>
   <ul>
-  <li>The court ordered Spouse A to pay Spouse B spousal support.  Spouse B was very ill and could not work.  Spouse B is now better and has a full-time job.</li>
-  <li>The court ordered Spouse A to pay Spouse B spousal support for 4 years so Spouse B could get a degree that would help them earn more money.  Spouse B got their degree in 3 years and now has a full-time job earning more money because of the degree.</li>
+  <li>The court ordered Spouse A to pay Spouse B spousal support. Spouse B was very ill and could not work. Spouse B is now better and has a full-time job.</li>
+  <li>The court ordered Spouse A to pay Spouse B spousal support for 4 years so Spouse B could get a degree that would help them earn more money. Spouse B got their degree in 3 years and now has a full-time job earning more money because of the degree.</li>
   </ul>
   </div>
   % endif
@@ -619,6 +621,8 @@ content: |
   The court charges $75 to file this motion. If you cannot afford the fee, you may be able to get the court to waive it. See ${ truefiling_file_and_serve_step.subject }.
   % endif
 --- 
+comment: |
+  2026-05-29 sync w content.docx
 template: fill_modify_divorce_step
 subject: |
   Step ${ fill_modify_divorce_idx }: 

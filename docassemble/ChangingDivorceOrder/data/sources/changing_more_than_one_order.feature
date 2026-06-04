@@ -1,6 +1,6 @@
 @morethan1order
 Feature: User paths
-# 2026-05-20
+# 2026-06-04
 
 Background: 
   Given the maximum seconds for each Step is 90
@@ -69,8 +69,8 @@ Scenario: Row #95
     And I should see the phrase "Step 2: Fill out the Motion to Modify Custody forms"
     And I should see the phrase "Step 3: Fill out your child support forms"
     And I should see the phrase "Step 4: Do not wait to file your Motion to Modify"
-    And I should see the phrase "Step 5: Learn about Motions to Reconsider"
-    And I should see the phrase "Step 6: Fill out the Motion to Reconsider forms"
+    And I should see the phrase "Step 5: Learn about Motions for Reconsideration"
+    And I should see the phrase "Step 6: Fill out the Motion for Reconsideration forms"
     And I should see the phrase "Step 7: Sign if you use paper forms or do not use TrueFiling"
     And I should see the phrase "Step 8: File your motion forms"
     And I tap the "#dHJ1ZWZpbGluZ19maWxlX2FuZF9zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
@@ -79,7 +79,7 @@ Scenario: Row #95
     #    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
     #    And I should see the phrase "Because the other person is not using TrueFiling and did not give an email address, you cannot serve them through TrueFiling."
     And I should see the phrase "Step 10: What to expect after you file your Motion to Modify"
-    And I should see the phrase "Step 11: What to expect after you file a Motion to Reconsider"
+    And I should see the phrase "Step 11: What to expect after you file a Motion for Reconsideration"
     And I should see the phrase "Step 12: Get more information or help"
     And I take a screenshot
     And I download "changing_divorce_order.pdf"
@@ -153,8 +153,8 @@ Scenario: Row #99
     And I should see the phrase "Step 2: Fill out the Motion to Modify Custody forms"
     And I should see the phrase "Step 3: Fill out your child support forms"
     And I should see the phrase "Step 4: Do not wait to file your Motion to Modify"
-    And I should see the phrase "Step 5: Learn about Motions to Reconsider"
-    And I should see the phrase "Step 6: Fill out the Motion to Reconsider forms"
+    And I should see the phrase "Step 5: Learn about Motions for Reconsideration"
+    And I should see the phrase "Step 6: Fill out the Motion for Reconsideration forms"
     And I should see the phrase "Step 7: Sign if you use paper forms or do not use TrueFiling"
     And I should see the phrase "Step 8: File your motion forms"
     And I tap the "#dHJ1ZWZpbGluZ19maWxlX2FuZF9zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
@@ -163,7 +163,7 @@ Scenario: Row #99
     #    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
     #    And I should see the phrase "Use TrueFiling to serve your ex. Read If I am using TrueFiling, how do I serve the other side?"
     And I should see the phrase "Step 10: What to expect after you file your Motion to Modify"
-    And I should see the phrase "Step 11: What to expect after you file a Motion to Reconsider"
+    And I should see the phrase "Step 11: What to expect after you file a Motion for Reconsideration"
     And I should see the phrase "Step 12: Get more information or help"
     And I take a screenshot
     And I download "changing_divorce_order.pdf"
@@ -284,8 +284,8 @@ Scenario: Row #104
     And I should see the phrase "Step 5: Fill out the Motion to Modify Custody forms"
     And I should see the phrase "Step 6: Fill out your child support forms"
     And I should see the phrase "Step 7: Do not wait to file your Motion to Modify"
-    And I should see the phrase "Step 8: Learn about Motions to Reconsider"
-    And I should see the phrase "Step 9: Fill out the Motion to Reconsider forms"
+    And I should see the phrase "Step 8: Learn about Motions for Reconsideration"
+    And I should see the phrase "Step 9: Fill out the Motion for Reconsideration forms"
     And I should see the phrase "Step 10: Sign if you use paper forms or do not use TrueFiling"
     And I should see the phrase "Step 11: File your motion forms"
     And I tap the "#dHJ1ZWZpbGluZ19maWxlX2FuZF9zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
@@ -294,7 +294,7 @@ Scenario: Row #104
     #    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
     #    And I should see the phrase "Because the other person is not using TrueFiling and did not give an email address, you cannot serve them through TrueFiling."
     And I should see the phrase "Step 13: What to expect after you file your Motion to Modify"
-    And I should see the phrase "Step 14: What to expect after you file a Motion to Reconsider"
+    And I should see the phrase "Step 14: What to expect after you file a Motion for Reconsideration"
     And I should see the phrase "Step 15: Get more information or help"
     And I take a screenshot
     And I download "changing_divorce_order.pdf"
@@ -303,7 +303,7 @@ Scenario: Row #104
     #    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
     #    And I should see the phrase "Because the other person is not using TrueFiling and did not give an email address, you cannot serve them through TrueFiling."
     And I should see the phrase "Step 13: What to expect after you file your Motion to Modify"
-    And I should see the phrase "Step 14: What to expect after you file a Motion to Reconsider"
+    And I should see the phrase "Step 14: What to expect after you file a Motion for Reconsideration"
     And I should see the phrase "Step 15: Get more information or help"
     And I take a screenshot
     And I download "changing_divorce_order.pdf"
@@ -339,8 +339,8 @@ Scenario: Row #107
     And I should see the phrase "Step 5: Fill out the Motion to Modify Custody forms"
     And I should see the phrase "Step 6: Fill out your child support forms"
     And I should see the phrase "Step 7: Do not wait to file your Motion to Modify"
-    And I should see the phrase "Step 8: Learn about Motions to Reconsider"
-    And I should see the phrase "Step 9: Fill out the Motion to Reconsider forms"
+    And I should see the phrase "Step 8: Learn about Motions for Reconsideration"
+    And I should see the phrase "Step 9: Fill out the Motion for Reconsideration forms"
     And I should see the phrase "Step 10: Decide if you want to file an appeal"
     And I tap the "#YXBwZWFsX3N0ZXA .al_toggle" element and stay on the same page
     And I should see the phrase "Step 11: Sign if you use paper forms or do not use TrueFiling"
@@ -351,7 +351,7 @@ Scenario: Row #107
     #    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
     #    And I should see the phrase "Look at the other parent's complaint to see if they checked they were exempt."
     And I should see the phrase "Step 14: What to expect after you file your Motion to Modify"
-    And I should see the phrase "Step 15: What to expect after you file a Motion to Reconsider"
+    And I should see the phrase "Step 15: What to expect after you file a Motion for Reconsideration"
     And I should see the phrase "Step 16: Get more information or help"
     And I take a screenshot
     And I download "changing_divorce_order.pdf"
@@ -386,8 +386,8 @@ Scenario: Row #109
     And I should see the phrase "Step 5: Fill out the Motion to Modify Custody forms"
     And I should see the phrase "Step 6: Fill out your child support forms"
     And I should see the phrase "Step 7: Do not wait to file your Motion to Modify"
-    And I should see the phrase "Step 8: Learn about Motions to Reconsider"
-    And I should see the phrase "Step 9: Fill out the Motion to Reconsider forms"
+    And I should see the phrase "Step 8: Learn about Motions for Reconsideration"
+    And I should see the phrase "Step 9: Fill out the Motion for Reconsideration forms"
     And I should see the phrase "Step 10: Learn about the Motion to Set Aside Judgment or Order"
     And I should see the phrase "Step 11: Fill out forms if you want to file a Motion to Set Aside"
     And I should see the phrase "Step 12: Sign if you use paper forms or do not use TrueFiling"
@@ -398,7 +398,7 @@ Scenario: Row #109
     #    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
     #    And I should see the phrase "Use TrueFiling to serve your ex. Read If I am using TrueFiling, how do I serve the other side?"
     And I should see the phrase "Step 15: What to expect after you file your motion"
-    And I should see the phrase "Step 16: What to expect after you file a Motion to Reconsider"
+    And I should see the phrase "Step 16: What to expect after you file a Motion for Reconsideration"
     And I should see the phrase "Step 17: Get more information or help"
     And I take a screenshot
     And I download "changing_divorce_order.pdf"
@@ -432,8 +432,8 @@ Scenario: Row #112
     And I should see the phrase "Step 3: Fill out the Motion to Modify Custody forms"
     And I should see the phrase "Step 4: Fill out your child support forms"
     And I should see the phrase "Step 5: Do not wait to file your Motion to Modify"
-    And I should see the phrase "Step 6: Learn about Motions to Reconsider"
-    And I should see the phrase "Step 7: Fill out the Motion to Reconsider forms"
+    And I should see the phrase "Step 6: Learn about Motions for Reconsideration"
+    And I should see the phrase "Step 7: Fill out the Motion for Reconsideration forms"
     And I should see the phrase "Step 8: Learn about the Motion to Set Aside Judgment or Order"
     And I should see the phrase "Step 9: Fill out forms if you want to file a Motion to Set Aside"
     And I should see the phrase "Step 10: File your motion forms"
@@ -443,7 +443,7 @@ Scenario: Row #112
     #    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
     #    And I should see the phrase "Look at their complaint to see if they checked they were exempt."
     And I should see the phrase "Step 12: What to expect after you file your motion"
-    And I should see the phrase "Step 13: What to expect after you file a Motion to Reconsider"
+    And I should see the phrase "Step 13: What to expect after you file a Motion for Reconsideration"
     And I should see the phrase "Step 14: Get more information or help"
     And I take a screenshot
     And I download "changing_divorce_order.pdf"
@@ -567,8 +567,8 @@ Scenario: Row #117
     And I should see the phrase "Step 3: Fill out the Motion to Modify Custody forms"
     And I should see the phrase "Step 4: Fill out your child support forms"
     And I should see the phrase "Step 5: Do not wait to file your Motion to Modify"
-    And I should see the phrase "Step 6: Learn about Motions to Reconsider"
-    And I should see the phrase "Step 7: Fill out the Motion to Reconsider forms"
+    And I should see the phrase "Step 6: Learn about Motions for Reconsideration"
+    And I should see the phrase "Step 7: Fill out the Motion for Reconsideration forms"
     And I should see the phrase "Step 8: Decide if you want to file an appeal"
     And I tap the "#YXBwZWFsX3N0ZXA .al_toggle" element and stay on the same page
     And I should see the phrase "Step 9: Learn about the Motion to Set Aside Judgment or Order"
@@ -581,7 +581,7 @@ Scenario: Row #117
     #    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
     #    And I should see the phrase "Look at the other parent's complaint to see if they checked they were exempt."
     And I should see the phrase "Step 14: What to expect after you file your motion"
-    And I should see the phrase "Step 15: What to expect after you file a Motion to Reconsider"
+    And I should see the phrase "Step 15: What to expect after you file a Motion for Reconsideration"
     And I should see the phrase "Step 16: Get more information or help"
     And I take a screenshot
     And I download "changing_divorce_order.pdf"
@@ -606,15 +606,15 @@ Scenario: Row #118
     | ak_patience_assembling | True                     |         | 
 # And I take a screenshot
     And I should see the phrase "Your Action Plan for changing a court order from your divorce case in 7 steps"
-    And I should see the phrase "Step 1: Learn about Motions to Reconsider"
-    And I should see the phrase "Step 2: Fill out the Motion to Reconsider forms"
+    And I should see the phrase "Step 1: Learn about Motions for Reconsideration"
+    And I should see the phrase "Step 2: Fill out the Motion for Reconsideration forms"
     And I should see the phrase "Step 3: Sign if you use paper forms or do not use TrueFiling" 
     And I should see the phrase "Step 4: File your motion forms"
     And I tap the "#dHJ1ZWZpbGluZ19maWxlX2FuZF9zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
     And I should see the phrase "Step 5: Serve your ex"
     #    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
     #    And I should see the phrase "Use TrueFiling to serve your ex. Read If I am using TrueFiling, how do I serve the other side?"
-    And I should see the phrase "Step 6: What to expect after you file a Motion to Reconsider"
+    And I should see the phrase "Step 6: What to expect after you file a Motion for Reconsideration"
     And I should see the phrase "Step 7: Get more information or help"
     And I take a screenshot
     And I download "changing_divorce_order.pdf"
@@ -642,14 +642,14 @@ Scenario: Row #138
     And I should see the phrase "Step 1: Decide the steps you want to take"
     And I should see the phrase "Step 2: Find out if you and your ex agree"
     And I should see the phrase "Step 3: Tell the court about your agreement"
-    And I should see the phrase "Step 4: Learn about Motions to Reconsider"
-    And I should see the phrase "Step 5: Fill out the Motion to Reconsider forms"
+    And I should see the phrase "Step 4: Learn about Motions for Reconsideration"
+    And I should see the phrase "Step 5: Fill out the Motion for Reconsideration forms"
     And I should see the phrase "Step 6: Sign if you use paper forms or do not use TrueFiling"
-    And I should see the phrase "Step 7: File your Motion to Reconsider"
+    And I should see the phrase "Step 7: File your Motion for Reconsideration"
     And I should see the phrase "Step 8: Serve your ex"
     #    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
     #    And I should see the phrase "Look at their complaint to see if they checked they were exempt."
-    And I should see the phrase "Step 9: What to expect after you file a Motion to Reconsider"
+    And I should see the phrase "Step 9: What to expect after you file a Motion for Reconsideration"
     And I should see the phrase "Step 10: Get more information or help"
     And I take a screenshot
     And I download "changing_divorce_order.pdf"
