@@ -1,4 +1,5 @@
 comment: |
+  2026-06-09 keep option to write out agreement when responding in middle of case
   2026-06-04 Changing title from Motion to Reconsider to Motion for Reconsideration
   2026-05-22 updating to use Motion to Set aside if user wants to change Property Division judgment
   2026-05-12: Updating to use TrueFiling steps
@@ -189,8 +190,7 @@ code: |
       add_unique_step((modify_step, "modify_idx"), step_list)
     if type_of_response == 'modify' and type_of_modification.any_true('spousal support','other'):
       add_unique_step((modify_divorce_step, "modify_divorce_idx"), step_list)
-    # Rows 2 - 10
-
+    
     # Row 11
     if type_of_response == 'reconsider' and respond_to_reconsider:
       add_unique_step((respond_to_reconsider_step, "respond_to_reconsider_idx"), step_list)
@@ -198,8 +198,11 @@ code: |
     # Row 12 - 14
     if middle_of_case == 'no' and type_of_response == 'set aside':
       motion_type = 'Motion to Set Aside Judgment or Order'
-      
-      
+
+    if type_of_response == 'modify':
+      respond_to_modify
+  
+    # 2026-06-05 after talking w Abbey, Skip this step if responding in middle of case and just use response to motion 707   
     # Rows 2, 5, 8 & 12 
     if (type_of_response == 'modify' and respond_to_modify == 'agree') or ( middle_of_case == 'no' and type_of_response =='set aside' and respond_to_set_aside == 'agree'):
       add_unique_step((let_court_party_know_you_agree_step, "let_court_party_know_you_agree_idx"), step_list)
@@ -635,4 +638,39 @@ content: |
   <div class="step-subheading">Watch</div>
   
   * [Motions Part 1: How to Ask the Court For Something](https://www.youtube.com/watch?v=2irmxT0_0EA) 
+---
+comment: 
+  2026-06-05 keep option writing out an agreement for responding in middle of case. And use TF-707 response form for family law situations, not CIV-808 for civil responses. 
+  2026-06-03 more TrueFiling edits - timing for service, but also awaiting answers to filing response when other party files 706? motion to modify something 'other' than custody or support either kind. 
+  2026-05-20 some edits to accommodate TrueFiling changes
+template: let_court_party_know_you_agree_step
+subject: |
+  Step ${ let_court_party_know_you_agree_idx }:
+  Let ${ other_party_in_case } and the court know you agree with the 
+  % if type_of_response == 'modify':
+  proposed changes
+  % elif middle_of_case == 'no' and type_of_response == 'set aside':
+  Motion to Set Aside Judgment or Order
+  % endif
+content: |
+  <div class="step-subheading">Options</div>
+  
+  % if type_of_response == 'modify' and type_of_modification.any_true('child support', 'custody') and type_of_modification.all_false('spousal support','other'):
+  If ${ other_party_in_case } files a **Motion to Change Alaska Order about Parenting Plan (Custody) or Child Support**, and you agree, you have options:
+  % elif type_of_response == 'modify' and type_of_modification['spousal support'] and type_of_modification.all_false('child support', 'custody'):
+  If ${ other_party_in_case } files a **Request to Modify Order or Decree Concerning Spousal Maintenance or Property**, and you agree, you have options:
+  % elif type_of_response == 'modify' and type_of_modification.any_true('child support', 'custody') and type_of_modification.any_true('spousal support','other'):
+  If ${ other_party_in_case } files a **Motion to Modify** the parenting plan and custody order or the child support order and a **Request to Modify Order or Decree Concerning Spousal Maintenance or Property**, and you agree, you have options:
+  % elif middle_of_case == 'no' and type_of_response == 'set aside' and respond_to_set_aside  == 'agree':
+  A **Motion to Set Aside Judgment or Order** asks the trial court to set aside or "undo" a judgment or final order in a case.  If granted, the case will move ahead as if the judgment had not been made.  If you agree with what ${ other_party_in_case } asked to set aside in the motion, you have options:  
+  % endif
+  
+  * Fill out a response that states you agree. File your response with the court, and give ${ other_party_in_case } a copy. See ${ respond_in_writing_step.subject }, ${ truefiling_file_and_serve_step.subject } and ${ truefiling_serve_step.subject }.
+   
+  **Or**
+  
+    * Contact ${ other_party_in_case }, write out your agreement together, and file it with the court. See ${ contact_other_party_step.subject } and ${ file_agreement_step.subject }.
+  
+  
+  For both options, you must file all documents with the court within **10 days** from the day you were served the motion by email or hand-delivery. If you were served by mail, you have **13 days** from the day it was mailed to you, the date of the postmark on the envelope. 
 ---
