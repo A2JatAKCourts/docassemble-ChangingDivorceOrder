@@ -20,19 +20,19 @@ Scenario: Row #2a
     | other_party_exempt                    | yes                          |         | 
     | other_party_enter_email               | True                         |         | 
     | ak_patience_assembling                | True                         |         | 
-    And I should see the phrase "Your Action Plan for responding to a motion your spouse filed to change a court order in your divorce case, in 8 steps"
+    And I should see the phrase "Your Action Plan for responding to a motion your spouse filed to change a court order in your divorce case, in 9 steps"
     And I should see the phrase "Step 1: Learn about motions to modify a child support order"
     And I should see the phrase "Step 2: Let your spouse and the court know you agree with the proposed changes"
     And I should see the phrase "Step 3: Fill out a response that states you agree"
     
-    And I should see the phrase "Step 3: File and serve your response within 10 or 13 days"
-    And I should see the phrase "Step 4: Serve your spouse"
+    And I should see the phrase "Step 4: File and serve your response within 10 or 13 days"
+    And I should see the phrase "Step 5: Serve your spouse"
     #    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
     #    And I should see the phrase "Follow the TrueFiling instructions to serve them at their email address."
-    And I should see the phrase "Step 5: What to expect after you respond to the Motion to Modify"
-    And I should see the phrase "Step 6: Or, contact your spouse, and write out your agreement"
-    And I should see the phrase "Step 7: File your agreement with the court within 10 or 13 days"
-    And I should see the phrase "Step 8: Get more information or help"
+    And I should see the phrase "Step 6: What to expect after you respond to the Motion to Modify"
+    And I should see the phrase "Step 7: Or, contact your spouse, and write out your agreement"
+    And I should see the phrase "Step 8: File your agreement with the court within 10 or 13 days"
+    And I should see the phrase "Step 9: Get more information or help"
     And I take a screenshot
     And I download "changing_divorce_order.pdf"
     And I download "changing_divorce_order.docx"
