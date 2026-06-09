@@ -20,7 +20,7 @@ Scenario: Row #2a
     | other_party_exempt                    | yes                          |         | 
     | other_party_enter_email               | True                         |         | 
     | ak_patience_assembling                | True                         |         | 
-    And I should see the phrase "Your Action Plan for responding to a motion your spouse filed to change a court order in your divorce case, in 6 steps"
+    And I should see the phrase "Your Action Plan for responding to a motion your spouse filed to change a court order in your divorce case, in 8 steps"
     And I should see the phrase "Step 1: Learn about motions to modify a child support order"
     And I should see the phrase "Step 2: Let your spouse and the court know you agree with the proposed changes"
     And I should see the phrase "Step 3: Fill out a response that states you agree"
@@ -151,7 +151,7 @@ Scenario: Row #5a
     #    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
     #    And I should see the phrase "Look at their complaint to see if they checked they were exempt."
     And I should see the phrase "Step 7: What to expect after you respond to the Motion to Modify"
-    And I should see the phrase "Step 8: Contact your spouse, and write out your agreement"
+    And I should see the phrase "Step 8: Or, contact your spouse, and write out your agreement"
     And I should see the phrase "Step 9: File your agreement with the court within 10 or 13 days"
     And I should see the phrase "Step 10: Get more information or help"
     And I take a screenshot
@@ -216,7 +216,7 @@ Scenario: Row #5c
     #    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
     #    And I should see the phrase "Because the other person is not using TrueFiling and did not give an email address, you cannot serve them through TrueFiling."
     And I should see the phrase "Step 7: What to expect after you respond to the Motion to Modify"
-    And I should see the phrase "Step 8: Contact your spouse, and write out your agreement"
+    And I should see the phrase "Step 8: Or, contact your spouse, and write out your agreement"
     And I should see the phrase "Step 9: File your agreement with the court within 10 or 13 days"
     And I should see the phrase "Step 10: Get more information or help"
     And I take a screenshot
