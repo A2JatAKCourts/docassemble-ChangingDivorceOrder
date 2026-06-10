@@ -587,7 +587,7 @@ code: |
       image_list.append(new_image)
 ---
 comment: |
-  2026-05-29 sync w content.docx
+  2026-06-10 sync w content.docx
   2026-05-21 add back in a little bit of content for user_need respond to motion in divorce and type_of_response modify and type_of_mod['other'], this was empty even when it was "finished" pre-TrueFiling.
   2026-05-18 Remove CIV-735 motion to change spousal support and property and debt division in Changing Divorce Order
 template: modify_divorce_step
@@ -606,7 +606,7 @@ content: |
   % if user_need == 'respond to motion in divorce' and type_of_response == 'modify':
   If there has been a change in circumstances, either side can file a **Motion to Modify**. 
   
-  When you respond to a **Motion to Modify**, state if you agree with all, some, or none of the changes ${ other_party_in_case }'s is requesting.
+  When you respond to a **Motion to Modify**, state if you agree with all, some, or none of the changes ${ other_party_in_case } is requesting.
   % endif
   
   % if (user_need == 'change divorce order' and middle_of_case == 'no' and type_of_final_order['spousal support']) or (user_need == 'respond to motion in divorce' and type_of_response == 'modify' and type_of_modification['spousal support']):
@@ -620,7 +620,7 @@ content: |
   </div>
   % endif
 
-  % if user_need == 'change foreign custody order' or (not user_need in('respond to motion in custody', 'respond to motion in divorce') and middle_of_case == 'no'):
+  % if not user_need in('respond to motion in custody', 'respond to motion in divorce'):
   The court charges $75 to file this motion. If you cannot afford the fee, you may be able to get the court to waive it. See ${ truefiling_file_and_serve_step.subject }.
   % endif
 --- 
@@ -638,39 +638,4 @@ content: |
   <div class="step-subheading">Watch</div>
   
   * [Motions Part 1: How to Ask the Court For Something](https://www.youtube.com/watch?v=2irmxT0_0EA) 
----
-comment: 
-  2026-06-05 keep option writing out an agreement for responding in middle of case. And use TF-707 response form for family law situations, not CIV-808 for civil responses. 
-  2026-06-03 more TrueFiling edits - timing for service, but also awaiting answers to filing response when other party files 706? motion to modify something 'other' than custody or support either kind. 
-  2026-05-20 some edits to accommodate TrueFiling changes
-template: let_court_party_know_you_agree_step
-subject: |
-  Step ${ let_court_party_know_you_agree_idx }:
-  Let ${ other_party_in_case } and the court know you agree with the 
-  % if type_of_response == 'modify':
-  proposed changes
-  % elif middle_of_case == 'no' and type_of_response == 'set aside':
-  Motion to Set Aside Judgment or Order
-  % endif
-content: |
-  <div class="step-subheading">Options</div>
-  
-  % if type_of_response == 'modify' and type_of_modification.any_true('child support', 'custody') and type_of_modification.all_false('spousal support','other'):
-  If ${ other_party_in_case } files a **Motion to Change Alaska Order about Parenting Plan (Custody) or Child Support**, and you agree, you have options:
-  % elif type_of_response == 'modify' and type_of_modification['spousal support'] and type_of_modification.all_false('child support', 'custody'):
-  If ${ other_party_in_case } files a **Request to Modify Order or Decree Concerning Spousal Maintenance or Property**, and you agree, you have options:
-  % elif type_of_response == 'modify' and type_of_modification.any_true('child support', 'custody') and type_of_modification.any_true('spousal support','other'):
-  If ${ other_party_in_case } files a **Motion to Modify** the parenting plan and custody order or the child support order and a **Request to Modify Order or Decree Concerning Spousal Maintenance or Property**, and you agree, you have options:
-  % elif middle_of_case == 'no' and type_of_response == 'set aside' and respond_to_set_aside  == 'agree':
-  A **Motion to Set Aside Judgment or Order** asks the trial court to set aside or "undo" a judgment or final order in a case.  If granted, the case will move ahead as if the judgment had not been made.  If you agree with what ${ other_party_in_case } asked to set aside in the motion, you have options:  
-  % endif
-  
-  * Fill out a response that states you agree. File your response with the court, and give ${ other_party_in_case } a copy. See ${ respond_in_writing_step.subject }, ${ truefiling_file_and_serve_step.subject } and ${ truefiling_serve_step.subject }.
-   
-  **Or**
-  
-    * Contact ${ other_party_in_case }, write out your agreement together, and file it with the court. See ${ contact_other_party_step.subject } and ${ file_agreement_step.subject }.
-  
-  
-  For both options, you must file all documents with the court within **10 days** from the day you were served the motion by email or hand-delivery. If you were served by mail, you have **13 days** from the day it was mailed to you, the date of the postmark on the envelope. 
 ---
