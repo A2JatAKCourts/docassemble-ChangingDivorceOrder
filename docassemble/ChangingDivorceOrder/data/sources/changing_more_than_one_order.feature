@@ -609,7 +609,7 @@ Scenario: Row #118
     And I should see the phrase "Step 1: Learn about Motions for Reconsideration"
     And I should see the phrase "Step 2: Fill out the Motion for Reconsideration forms"
     And I should see the phrase "Step 3: Sign if you use paper forms or do not use TrueFiling" 
-    And I should see the phrase "Step 4: File your motion forms"
+    And I should see the phrase "Step 4: File your Motion for Reconsideration"
     And I tap the "#dHJ1ZWZpbGluZ19maWxlX2FuZF9zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
     And I should see the phrase "Step 5: Serve your ex"
     #    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page

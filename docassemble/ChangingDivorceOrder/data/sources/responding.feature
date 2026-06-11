@@ -1,6 +1,6 @@
 @responding
 Feature: User paths
-# 2026-05-21
+# 2026-06-08
 
 Background: 
   Given the maximum seconds for each Step is 45
@@ -30,7 +30,7 @@ Scenario: Row #2a
     #    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
     #    And I should see the phrase "Follow the TrueFiling instructions to serve them at their email address."
     And I should see the phrase "Step 6: What to expect after you respond to the Motion to Modify"
-    And I should see the phrase "Step 7: Contact your spouse, and write out your agreement"
+    And I should see the phrase "Step 7: Or, contact your spouse, and write out your agreement"
     And I should see the phrase "Step 8: File your agreement with the court within 10 or 13 days"
     And I should see the phrase "Step 9: Get more information or help"
     And I take a screenshot
@@ -62,7 +62,7 @@ Scenario: Row #2
     #    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
     #    And I should see the phrase "Because the other person is not using TrueFiling and did not give an email address, you cannot serve them through TrueFiling."
     And I should see the phrase "Step 7: What to expect after you respond to the Motion to Modify"
-    And I should see the phrase "Step 8: Contact your ex, and write out your agreement"
+    And I should see the phrase "Step 8: Or, contact your ex, and write out your agreement"
     And I should see the phrase "Step 9: File your agreement with the court within 10 or 13 days"
     And I should see the phrase "Step 10: Get more information or help"
     And I take a screenshot
@@ -151,7 +151,7 @@ Scenario: Row #5a
     #    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
     #    And I should see the phrase "Look at their complaint to see if they checked they were exempt."
     And I should see the phrase "Step 7: What to expect after you respond to the Motion to Modify"
-    And I should see the phrase "Step 8: Contact your spouse, and write out your agreement"
+    And I should see the phrase "Step 8: Or, contact your spouse, and write out your agreement"
     And I should see the phrase "Step 9: File your agreement with the court within 10 or 13 days"
     And I should see the phrase "Step 10: Get more information or help"
     And I take a screenshot
@@ -183,7 +183,7 @@ Scenario: Row #5b
     #    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
     #    And I should see the phrase "Follow the TrueFiling instructions to serve them at their email address."
     And I should see the phrase "Step 7: What to expect after you respond to the Motion to Modify"
-    And I should see the phrase "Step 8: Contact your ex, and write out your agreement"
+    And I should see the phrase "Step 8: Or, contact your ex, and write out your agreement"
     And I should see the phrase "Step 9: File your agreement with the court within 10 or 13 days"
     And I should see the phrase "Step 10: Get more information or help"
     And I take a screenshot
@@ -216,7 +216,7 @@ Scenario: Row #5c
     #    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
     #    And I should see the phrase "Because the other person is not using TrueFiling and did not give an email address, you cannot serve them through TrueFiling."
     And I should see the phrase "Step 7: What to expect after you respond to the Motion to Modify"
-    And I should see the phrase "Step 8: Contact your spouse, and write out your agreement"
+    And I should see the phrase "Step 8: Or, contact your spouse, and write out your agreement"
     And I should see the phrase "Step 9: File your agreement with the court within 10 or 13 days"
     And I should see the phrase "Step 10: Get more information or help"
     And I take a screenshot
@@ -269,7 +269,7 @@ Scenario: Row #11
     | other_party_exempt | no                           |         | 
     | ak_patience_assembling | True                     |         | 
     And I should see the phrase "Your Action Plan for responding to a motion your spouse filed to change a court order in your divorce case, in 5 steps"
-    And I should see the phrase "Step 1: If the court asks, respond in writing to the Motion to Reconsider"
+    And I should see the phrase "Step 1: If the court asks, respond in writing to the Motion for Reconsideration"
     And I should see the phrase "Step 2: Sign if you use paper forms or do not use TrueFiling"
     And I should see the phrase "Step 3: If the judge asks you to respond to the Motion to Reconsider, file your response"
     And I should see the phrase "Step 4: If the judge asks you to respond to the Motion to Reconsider, serve your spouse"
@@ -301,7 +301,7 @@ Scenario: Row #12
     #    And I tap the "#dHJ1ZWZpbGluZ19zZXJ2ZV9zdGVw .al_toggle" element and stay on the same page
     #    And I should see the phrase "Look at their complaint to see if they checked they were exempt."
     And I should see the phrase "Step 5: What to expect after you respond to the Motion to Set Aside Judgment or Order"
-    And I should see the phrase "Step 6: Contact your ex, and write out your agreement"
+    And I should see the phrase "Step 6: Or, contact your ex, and write out your agreement"
     And I should see the phrase "Step 7: File your agreement with the court within 10 or 13 days"
     And I should see the phrase "Step 8: Get more information or help"
     And I take a screenshot
