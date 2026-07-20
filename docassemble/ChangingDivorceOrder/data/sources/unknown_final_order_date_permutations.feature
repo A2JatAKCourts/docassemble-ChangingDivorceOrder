@@ -29,7 +29,7 @@ Scenario: Row #143 electronically, efiling, exempt yes True
     | ak_patience_assembling               | True                 |         | 
     And I should see the phrase "Your Action Plan for changing your custody or Parenting Plan order from your divorce case in 10 steps"
     And I should see the phrase "Step 1: Decide the steps you want to take"
-    And I should see the phrase "Step 2: Find out if you and your ex agree"
+    And I should see the phrase "Step 2: Find out if you and the other parent agree"
     And I should see the phrase "Step 3: Tell the court about your agreement"
     And I should see the phrase "Step 4: Learn about Motions for Reconsideration"
     And I should see the phrase "Step 5: Fill out the Motion for Reconsideration forms"
@@ -133,7 +133,7 @@ Scenario: Row #146 electronically, efiling, exempt no
     | ak_patience_assembling               | True                 |         | 
     And I should see the phrase "Your Action Plan for changing your custody or Parenting Plan order from your divorce case in 10 steps"
     And I should see the phrase "Step 1: Decide the steps you want to take"
-    And I should see the phrase "Step 2: Find out if you and your ex agree"
+    And I should see the phrase "Step 2: Find out if you and the other parent agree"
     And I should see the phrase "Step 3: Tell the court about your agreement"
     And I should see the phrase "Step 4: Learn about Motions for Reconsideration"
     And I should see the phrase "Step 5: Fill out the Motion for Reconsideration forms"
@@ -238,7 +238,7 @@ Scenario: Row #149 electronically, mail or in person, exempt yes False
     | ak_patience_assembling               | True                 |         | 
     And I should see the phrase "Your Action Plan for changing your custody or Parenting Plan order from your divorce case in 11 steps"
     And I should see the phrase "Step 1: Decide the steps you want to take"
-    And I should see the phrase "Step 2: Find out if you and your ex agree"
+    And I should see the phrase "Step 2: Find out if you and the other parent agree"
     And I should see the phrase "Step 3: Tell the court about your agreement"
     And I should see the phrase "Step 4: Learn about Motions for Reconsideration"
     And I should see the phrase "Step 5: Fill out the Motion for Reconsideration forms"
@@ -344,7 +344,7 @@ Scenario: Row #152 electronically, mail or in person, exempt none
     | ak_patience_assembling               | True                 |         | 
     And I should see the phrase "Your Action Plan for changing your custody or Parenting Plan order from your divorce case in 11 steps"
     And I should see the phrase "Step 1: Decide the steps you want to take"
-    And I should see the phrase "Step 2: Find out if you and your ex agree"
+    And I should see the phrase "Step 2: Find out if you and the other parent agree"
     And I should see the phrase "Step 3: Tell the court about your agreement"
     And I should see the phrase "Step 4: Learn about Motions for Reconsideration"
     And I should see the phrase "Step 5: Fill out the Motion for Reconsideration forms"
@@ -452,7 +452,7 @@ Scenario: Row #155 electronically, dunno, exempt yes None
     | ak_patience_assembling               | True                 |         | 
     And I should see the phrase "Your Action Plan for changing your custody or Parenting Plan order from your divorce case in 11 steps"
     And I should see the phrase "Step 1: Decide the steps you want to take"
-    And I should see the phrase "Step 2: Find out if you and your ex agree"
+    And I should see the phrase "Step 2: Find out if you and the other parent agree"
     And I should see the phrase "Step 3: Tell the court about your agreement"
     And I should see the phrase "Step 4: Learn about Motions for Reconsideration"
     And I should see the phrase "Step 5: Fill out the Motion for Reconsideration forms"
@@ -558,7 +558,7 @@ Scenario: Row #158 paper, efiling, exempt yes True
     | ak_patience_assembling               | True                 |         | 
     And I should see the phrase "Your Action Plan for changing your custody or Parenting Plan order from your divorce case in 11 steps"
     And I should see the phrase "Step 1: Decide the steps you want to take"
-    And I should see the phrase "Step 2: Find out if you and your ex agree"
+    And I should see the phrase "Step 2: Find out if you and the other parent agree"
     And I should see the phrase "Step 3: Tell the court about your agreement"
     And I should see the phrase "Step 4: Learn about Motions for Reconsideration"
     And I should see the phrase "Step 5: Fill out the Motion for Reconsideration forms"
@@ -665,7 +665,7 @@ Scenario: Row #161 paper, efiling, exempt no
     | ak_patience_assembling               | True                 |         | 
     And I should see the phrase "Your Action Plan for changing your custody or Parenting Plan order from your divorce case in 11 steps"
     And I should see the phrase "Step 1: Decide the steps you want to take"
-    And I should see the phrase "Step 2: Find out if you and your ex agree"
+    And I should see the phrase "Step 2: Find out if you and the other parent agree"
     And I should see the phrase "Step 3: Tell the court about your agreement"
     And I should see the phrase "Step 4: Learn about Motions for Reconsideration"
     And I should see the phrase "Step 5: Fill out the Motion for Reconsideration forms"
@@ -772,7 +772,7 @@ Scenario: Row #164 paper, mail or in person, exempt yes False
     | ak_patience_assembling               | True                 |         | 
     And I should see the phrase "Your Action Plan for changing your custody or Parenting Plan order from your divorce case in 11 steps"
     And I should see the phrase "Step 1: Decide the steps you want to take"
-    And I should see the phrase "Step 2: Find out if you and your ex agree"
+    And I should see the phrase "Step 2: Find out if you and the other parent agree"
     And I should see the phrase "Step 3: Tell the court about your agreement"
     And I should see the phrase "Step 4: Learn about Motions for Reconsideration"
     And I should see the phrase "Step 5: Fill out the Motion for Reconsideration forms"
@@ -878,7 +878,7 @@ Scenario: Row #167 paper, mail or in person, exempt none
     | ak_patience_assembling               | True                 |         | 
     And I should see the phrase "Your Action Plan for changing your custody or Parenting Plan order from your divorce case in 11 steps"
     And I should see the phrase "Step 1: Decide the steps you want to take"
-    And I should see the phrase "Step 2: Find out if you and your ex agree"
+    And I should see the phrase "Step 2: Find out if you and the other parent agree"
     And I should see the phrase "Step 3: Tell the court about your agreement"
     And I should see the phrase "Step 4: Learn about Motions for Reconsideration"
     And I should see the phrase "Step 5: Fill out the Motion for Reconsideration forms"
@@ -986,7 +986,7 @@ Scenario: Row #170 paper, dunno, exempt yes None
     | ak_patience_assembling               | True                 |         | 
     And I should see the phrase "Your Action Plan for changing your custody or Parenting Plan order from your divorce case in 11 steps"
     And I should see the phrase "Step 1: Decide the steps you want to take"
-    And I should see the phrase "Step 2: Find out if you and your ex agree"
+    And I should see the phrase "Step 2: Find out if you and the other parent agree"
     And I should see the phrase "Step 3: Tell the court about your agreement"
     And I should see the phrase "Step 4: Learn about Motions for Reconsideration"
     And I should see the phrase "Step 5: Fill out the Motion for Reconsideration forms"
@@ -1092,7 +1092,7 @@ Scenario: Row #173 dunno, efiling, exempt yes True
     | ak_patience_assembling               | True                 |         | 
     And I should see the phrase "Your Action Plan for changing your custody or Parenting Plan order from your divorce case in 11 steps"
     And I should see the phrase "Step 1: Decide the steps you want to take"
-    And I should see the phrase "Step 2: Find out if you and your ex agree"
+    And I should see the phrase "Step 2: Find out if you and the other parent agree"
     And I should see the phrase "Step 3: Tell the court about your agreement"
     And I should see the phrase "Step 4: Learn about Motions for Reconsideration"
     And I should see the phrase "Step 5: Fill out the Motion for Reconsideration forms"
@@ -1199,7 +1199,7 @@ Scenario: Row #176 dunno, efiling, exempt no
     | ak_patience_assembling               | True                 |         | 
     And I should see the phrase "Your Action Plan for changing your custody or Parenting Plan order from your divorce case in 11 steps"
     And I should see the phrase "Step 1: Decide the steps you want to take"
-    And I should see the phrase "Step 2: Find out if you and your ex agree"
+    And I should see the phrase "Step 2: Find out if you and the other parent agree"
     And I should see the phrase "Step 3: Tell the court about your agreement"
     And I should see the phrase "Step 4: Learn about Motions for Reconsideration"
     And I should see the phrase "Step 5: Fill out the Motion for Reconsideration forms"
@@ -1306,7 +1306,7 @@ Scenario: Row #179 dunno, mail or in person, exempt yes False
     | ak_patience_assembling               | True                 |         | 
     And I should see the phrase "Your Action Plan for changing your custody or Parenting Plan order from your divorce case in 11 steps"
     And I should see the phrase "Step 1: Decide the steps you want to take"
-    And I should see the phrase "Step 2: Find out if you and your ex agree"
+    And I should see the phrase "Step 2: Find out if you and the other parent agree"
     And I should see the phrase "Step 3: Tell the court about your agreement"
     And I should see the phrase "Step 4: Learn about Motions for Reconsideration"
     And I should see the phrase "Step 5: Fill out the Motion for Reconsideration forms"
@@ -1412,7 +1412,7 @@ Scenario: Row #182 dunno, mail or in person, exempt none
     | ak_patience_assembling               | True                 |         | 
     And I should see the phrase "Your Action Plan for changing your custody or Parenting Plan order from your divorce case in 11 steps"
     And I should see the phrase "Step 1: Decide the steps you want to take"
-    And I should see the phrase "Step 2: Find out if you and your ex agree"
+    And I should see the phrase "Step 2: Find out if you and the other parent agree"
     And I should see the phrase "Step 3: Tell the court about your agreement"
     And I should see the phrase "Step 4: Learn about Motions for Reconsideration"
     And I should see the phrase "Step 5: Fill out the Motion for Reconsideration forms"
@@ -1520,7 +1520,7 @@ Scenario: Row #185 dunno, dunno, exempt yes None
     | ak_patience_assembling               | True                 |         | 
     And I should see the phrase "Your Action Plan for changing your custody or Parenting Plan order from your divorce case in 11 steps"
     And I should see the phrase "Step 1: Decide the steps you want to take"
-    And I should see the phrase "Step 2: Find out if you and your ex agree"
+    And I should see the phrase "Step 2: Find out if you and the other parent agree"
     And I should see the phrase "Step 3: Tell the court about your agreement"
     And I should see the phrase "Step 4: Learn about Motions for Reconsideration"
     And I should see the phrase "Step 5: Fill out the Motion for Reconsideration forms"
