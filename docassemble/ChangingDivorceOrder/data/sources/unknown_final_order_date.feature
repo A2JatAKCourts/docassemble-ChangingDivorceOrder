@@ -1,6 +1,6 @@
 @UnkownFinalOrder
 Feature: User paths
-# 2026-06-04 
+# 2026-07-20
 
 
 Background: 
@@ -62,12 +62,14 @@ Scenario: Row #35
     | other_party_exempt                   | yes                  |         | 
     | other_party_enter_email              | False                |         | 
     | ak_patience_assembling | True                     |         | 
-    And I should see the phrase "Your Action Plan for changing your custody or Parenting Plan order from your divorce case in 5 steps"
+    And I should see the phrase "Your Action Plan for changing your custody or Parenting Plan order from your divorce case in 7 steps"
     And I should see the phrase "Step 1: Decide the steps you want to take"
     And I should see the phrase "Step 2: Find out if you and the other parent agree"
     And I should see the phrase "Step 3: Tell the court about your agreement"
     And I should see the phrase "Step 4: Decide if you want to file an appeal"
-    And I should see the phrase "Step 5: Get more information or help"
+    And I should see the phrase "Step 5: Sign if you use paper forms or do not use TrueFiling"
+    And I should see the phrase "Step 6: File your motion forms" 
+    And I should see the phrase "Step 7: Get more information or help"
     And I take a screenshot
     And I download "changing_divorce_order.pdf"
     And I download "changing_divorce_order.docx"

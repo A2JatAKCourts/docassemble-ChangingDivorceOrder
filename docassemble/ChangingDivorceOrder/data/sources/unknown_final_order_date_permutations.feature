@@ -1,6 +1,6 @@
 @UnknownFinalOrderPermutations
 Feature: User paths - reconsider + appeal permutations
-# 2026-06-30
+# 2026-07-20
 # Permutations of filling_manner, filing_method, other_party_exempt, other_party_enter_email
 # Fixed base: parents_agree=True, reconsider=True, appeal=True, set aside=False
 
@@ -35,7 +35,7 @@ Scenario: Row #143 electronically, efiling, exempt yes True
     And I should see the phrase "Step 5: Fill out the Motion for Reconsideration forms"
     And I should see the phrase "Step 6: Decide if you want to file an appeal"
     And I should see the phrase "Step 7: File your Motion for Reconsideration"
-    And I should see the phrase "Step 8: Serve your ex"
+    And I should see the phrase "Step 8: Serve the other parent"
     And I should see the phrase "Step 9: What to expect after you file a Motion for Reconsideration"
     And I should see the phrase "Step 10: Get more information or help"
     And I take a screenshot
@@ -139,7 +139,7 @@ Scenario: Row #146 electronically, efiling, exempt no
     And I should see the phrase "Step 5: Fill out the Motion for Reconsideration forms"
     And I should see the phrase "Step 6: Decide if you want to file an appeal"
     And I should see the phrase "Step 7: File your Motion for Reconsideration"
-    And I should see the phrase "Step 8: Serve your ex"
+    And I should see the phrase "Step 8: Serve the other parent"
     And I should see the phrase "Step 9: What to expect after you file a Motion for Reconsideration"
     And I should see the phrase "Step 10: Get more information or help"
     And I take a screenshot
@@ -245,7 +245,7 @@ Scenario: Row #149 electronically, mail or in person, exempt yes False
     And I should see the phrase "Step 6: Decide if you want to file an appeal"
     And I should see the phrase "Step 7: Sign if you use paper forms or do not use TrueFiling"
     And I should see the phrase "Step 8: File your Motion for Reconsideration"
-    And I should see the phrase "Step 9: Serve your ex"
+    And I should see the phrase "Step 9: Serve the other parent"
     And I should see the phrase "Step 10: What to expect after you file a Motion for Reconsideration"
     And I should see the phrase "Step 11: Get more information or help"
     And I take a screenshot
@@ -351,7 +351,7 @@ Scenario: Row #152 electronically, mail or in person, exempt none
     And I should see the phrase "Step 6: Decide if you want to file an appeal"
     And I should see the phrase "Step 7: Sign if you use paper forms or do not use TrueFiling"
     And I should see the phrase "Step 8: File your Motion for Reconsideration"
-    And I should see the phrase "Step 9: Serve your ex"
+    And I should see the phrase "Step 9: Serve the other parent"
     And I should see the phrase "Step 10: What to expect after you file a Motion for Reconsideration"
     And I should see the phrase "Step 11: Get more information or help"
     And I take a screenshot
@@ -459,7 +459,7 @@ Scenario: Row #155 electronically, dunno, exempt yes None
     And I should see the phrase "Step 6: Decide if you want to file an appeal"
     And I should see the phrase "Step 7: Sign if you use paper forms or do not use TrueFiling"
     And I should see the phrase "Step 8: File your Motion for Reconsideration"
-    And I should see the phrase "Step 9: Serve your ex"
+    And I should see the phrase "Step 9: Serve the other parent"
     And I should see the phrase "Step 10: What to expect after you file a Motion for Reconsideration"
     And I should see the phrase "Step 11: Get more information or help"
     And I take a screenshot
@@ -565,7 +565,7 @@ Scenario: Row #158 paper, efiling, exempt yes True
     And I should see the phrase "Step 6: Decide if you want to file an appeal"
     And I should see the phrase "Step 7: Sign if you use paper forms or do not use TrueFiling"
     And I should see the phrase "Step 8: File your Motion for Reconsideration"
-    And I should see the phrase "Step 9: Serve your ex"
+    And I should see the phrase "Step 9: Serve the other parent"
     And I should see the phrase "Step 10: What to expect after you file a Motion for Reconsideration"
     And I should see the phrase "Step 11: Get more information or help"
     And I take a screenshot
@@ -672,7 +672,7 @@ Scenario: Row #161 paper, efiling, exempt no
     And I should see the phrase "Step 6: Decide if you want to file an appeal"
     And I should see the phrase "Step 7: Sign if you use paper forms or do not use TrueFiling"
     And I should see the phrase "Step 8: File your Motion for Reconsideration"
-    And I should see the phrase "Step 9: Serve your ex"
+    And I should see the phrase "Step 9: Serve the other parent"
     And I should see the phrase "Step 10: What to expect after you file a Motion for Reconsideration"
     And I should see the phrase "Step 11: Get more information or help"
     And I take a screenshot
@@ -779,7 +779,7 @@ Scenario: Row #164 paper, mail or in person, exempt yes False
     And I should see the phrase "Step 6: Decide if you want to file an appeal"
     And I should see the phrase "Step 7: Sign if you use paper forms or do not use TrueFiling"
     And I should see the phrase "Step 8: File your Motion for Reconsideration"
-    And I should see the phrase "Step 9: Serve your ex"
+    And I should see the phrase "Step 9: Serve the other parent"
     And I should see the phrase "Step 10: What to expect after you file a Motion for Reconsideration"
     And I should see the phrase "Step 11: Get more information or help"
     And I take a screenshot
@@ -885,7 +885,7 @@ Scenario: Row #167 paper, mail or in person, exempt none
     And I should see the phrase "Step 6: Decide if you want to file an appeal"
     And I should see the phrase "Step 7: Sign if you use paper forms or do not use TrueFiling"
     And I should see the phrase "Step 8: File your Motion for Reconsideration"
-    And I should see the phrase "Step 9: Serve your ex"
+    And I should see the phrase "Step 9: Serve the other parent"
     And I should see the phrase "Step 10: What to expect after you file a Motion for Reconsideration"
     And I should see the phrase "Step 11: Get more information or help"
     And I take a screenshot
@@ -993,7 +993,7 @@ Scenario: Row #170 paper, dunno, exempt yes None
     And I should see the phrase "Step 6: Decide if you want to file an appeal"
     And I should see the phrase "Step 7: Sign if you use paper forms or do not use TrueFiling"
     And I should see the phrase "Step 8: File your Motion for Reconsideration"
-    And I should see the phrase "Step 9: Serve your ex"
+    And I should see the phrase "Step 9: Serve the other parent"
     And I should see the phrase "Step 10: What to expect after you file a Motion for Reconsideration"
     And I should see the phrase "Step 11: Get more information or help"
     And I take a screenshot
@@ -1099,7 +1099,7 @@ Scenario: Row #173 dunno, efiling, exempt yes True
     And I should see the phrase "Step 6: Decide if you want to file an appeal"
     And I should see the phrase "Step 7: Sign if you use paper forms or do not use TrueFiling"
     And I should see the phrase "Step 8: File your Motion for Reconsideration"
-    And I should see the phrase "Step 9: Serve your ex"
+    And I should see the phrase "Step 9: Serve the other parent"
     And I should see the phrase "Step 10: What to expect after you file a Motion for Reconsideration"
     And I should see the phrase "Step 11: Get more information or help"
     And I take a screenshot
@@ -1206,7 +1206,7 @@ Scenario: Row #176 dunno, efiling, exempt no
     And I should see the phrase "Step 6: Decide if you want to file an appeal"
     And I should see the phrase "Step 7: Sign if you use paper forms or do not use TrueFiling"
     And I should see the phrase "Step 8: File your Motion for Reconsideration"
-    And I should see the phrase "Step 9: Serve your ex"
+    And I should see the phrase "Step 9: Serve the other parent"
     And I should see the phrase "Step 10: What to expect after you file a Motion for Reconsideration"
     And I should see the phrase "Step 11: Get more information or help"
     And I take a screenshot
@@ -1313,7 +1313,7 @@ Scenario: Row #179 dunno, mail or in person, exempt yes False
     And I should see the phrase "Step 6: Decide if you want to file an appeal"
     And I should see the phrase "Step 7: Sign if you use paper forms or do not use TrueFiling"
     And I should see the phrase "Step 8: File your Motion for Reconsideration"
-    And I should see the phrase "Step 9: Serve your ex"
+    And I should see the phrase "Step 9: Serve the other parent"
     And I should see the phrase "Step 10: What to expect after you file a Motion for Reconsideration"
     And I should see the phrase "Step 11: Get more information or help"
     And I take a screenshot
@@ -1419,7 +1419,7 @@ Scenario: Row #182 dunno, mail or in person, exempt none
     And I should see the phrase "Step 6: Decide if you want to file an appeal"
     And I should see the phrase "Step 7: Sign if you use paper forms or do not use TrueFiling"
     And I should see the phrase "Step 8: File your Motion for Reconsideration"
-    And I should see the phrase "Step 9: Serve your ex"
+    And I should see the phrase "Step 9: Serve the other parent"
     And I should see the phrase "Step 10: What to expect after you file a Motion for Reconsideration"
     And I should see the phrase "Step 11: Get more information or help"
     And I take a screenshot
@@ -1527,7 +1527,7 @@ Scenario: Row #185 dunno, dunno, exempt yes None
     And I should see the phrase "Step 6: Decide if you want to file an appeal"
     And I should see the phrase "Step 7: Sign if you use paper forms or do not use TrueFiling"
     And I should see the phrase "Step 8: File your Motion for Reconsideration"
-    And I should see the phrase "Step 9: Serve your ex"
+    And I should see the phrase "Step 9: Serve the other parent"
     And I should see the phrase "Step 10: What to expect after you file a Motion for Reconsideration"
     And I should see the phrase "Step 11: Get more information or help"
     And I take a screenshot
