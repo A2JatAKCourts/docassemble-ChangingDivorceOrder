@@ -1,4 +1,6 @@
 comment: |
+  2026-07-20 file step heading when unknown date, appeal exclusive and parents_agree
+  2026-07-02 appeal with unknown date  and parents_agree was still getting serve other party step. 
   2026-06-30 added template fill_modify_divorce_step back in check w Jeannie later today about this. 
   2026-06-09 keep option to write out agreement when responding in middle of case
   2026-06-04 Changing title from Motion to Reconsider to Motion for Reconsideration
@@ -490,7 +492,8 @@ code: |
             if unknown_final_date.all_true('set aside', exclusive=True) \
               or unknown_final_date.all_true('appeal','set aside', exclusive=True):
               file_step_heading = 'File your Motion to Set Aside'
-              motion_type = 'Motion to Set Aside'
+            if unknown_final_date.all_true('appeal', exclusive=True) and parents_agree:
+              file_step_heading = 'File your motion forms with the court'
             if unknown_final_date['set aside'] :
               motion_type = 'Motion to Set Aside'
 
@@ -499,11 +502,13 @@ code: |
             # add_unique_step((cert_of_service_step, "cert_of_service_idx"), step_list)
             if filling_manner in('paper', 'dunno') or filing_method in('mail or in person', 'dunno'):
               add_unique_step((sign_step, "sign_idx"), step_list)
-            other_party_exempt
+            if not unknown_final_date.all_true('appeal', exclusive=True) or unknown_final_date.any_true('reconsider', 'set aside'):
+              other_party_exempt
             # add_unique_step((file_motion_step, "file_motion_idx"), step_list)
             add_unique_step((truefiling_file_and_serve_step, "truefiling_file_and_serve_idx"), step_list)
+            if not unknown_final_date.all_true('appeal', exclusive=True) or unknown_final_date.any_true('reconsider', 'set aside'):
             # add_unique_step((serve_motion_step, "serve_motion_idx"), step_list)
-            add_unique_step((truefiling_serve_step, "truefiling_serve_idx"), step_list)
+              add_unique_step((truefiling_serve_step, "truefiling_serve_idx"), step_list)
           if unknown_final_date['set aside'] or (type_of_final_order['custody order'] and why_change in('review','schedule')) \
           or (type_of_final_order['spousal support'] and why_change_divorce_order == 'changed circumstances'):
             # add_unique_step((expect_after_motion_step, "expect_after_motion_idx"), step_list)
