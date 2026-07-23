@@ -166,7 +166,8 @@ code: |
     
     if filling_manner in('paper', 'dunno') or filing_method in('mail or in person', 'dunno'):
       add_unique_step((sign_step, "sign_idx"), step_list)
-    other_party_exempt
+    other_party_exempt = 'yes'
+    other_party_enter_email = False
       
     file_step_heading = 'File your Motion to Modify'
     file_modify_filing_fee = 'Pay the $75 fee to file your Motion to Modify.'
