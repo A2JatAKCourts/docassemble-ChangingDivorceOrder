@@ -1,4 +1,5 @@
 comment: |
+  2026-07-23 skip other_party_exempt and enter_email if changing foreign order
   2026-07-20 file step heading when unknown date, appeal exclusive and parents_agree
   2026-07-02 appeal with unknown date  and parents_agree was still getting serve other party step. 
   2026-06-30 added template fill_modify_divorce_step back in check w Jeannie later today about this. 
