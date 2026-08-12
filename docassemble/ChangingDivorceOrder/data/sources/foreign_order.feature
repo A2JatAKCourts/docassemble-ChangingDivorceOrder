@@ -11,7 +11,7 @@ Scenario: Row #1c
     And I get to the question id "final screen" with this data:
     | var                     | value                        | trigger | 
     | user_need               | change foreign custody order |         | 
-    | foreign_court_type      | out of state                 |         | 
+    | foreign_court_type      | other state                  |         | 
     | filling_manner          | electronically               |         | 
     | filing_method           | efiling                      |         | 
     | other_party_exempt      | yes                          |         | 

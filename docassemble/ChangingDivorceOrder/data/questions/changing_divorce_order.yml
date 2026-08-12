@@ -1,4 +1,5 @@
 comment: |
+  2026-08-12 replace Motion to Reconsider with Motion for Reconsideration
   2026-08-04 ask if foreign order is a tribal order or from another state
   2026-05-18 updating to use Motion to Set aside if user wants to change Property Division judgment
   2026-05-12 updating to include TrueFiling steps
@@ -248,7 +249,7 @@ fields:
       #### <i class="fa-regular fa-lightbulb"></i> Learn more ####
       You have different ways to ask the court to change your child support order when your situation changes.  It can depend on when the court sent you the order.
   
-      For the first 10 days after {the court sent the order to you}, you can file a **Motion to Reconsider**.  It asks the trial judge to fix something they overlooked or misunderstood.
+      For the first 10 days after {the court sent the order to you}, you can file a **Motion for Reconsideration**.  It asks the trial judge to fix something they overlooked or misunderstood.
        
         After 10 days, you can file a **Motion to Modify**.
        
@@ -425,7 +426,7 @@ id: get information about choices if user does not know final order date
 question: |
   What do you want information about?
 subquestion: |
-  For the first 10 days after {the court sent your custody or parenting plan order to you}, you can file a **Motion to Reconsider**.  It asks the trial judge to fix something they overlooked or misunderstood.
+  For the first 10 days after {the court sent your custody or parenting plan order to you}, you can file a **Motion for Reconsideration**.  It asks the trial judge to fix something they overlooked or misunderstood.
 
   For the first 15 days after {the court sent your custody or parenting plan order to you}, you can file an **Appeal**.  An appeal asks the Alaska Supreme Court to change a mistake made by the trial judge.
 
@@ -437,7 +438,7 @@ fields:
   - I want information about: unknown_final_date
     datatype: checkboxes
     choices:
-      - "Motions to Reconsider.": reconsider
+      - "Motions for Reconsideration.": reconsider
       - "Appeals.": appeal
       - "Motions to Set Aside.": set aside
     none of the above: False
@@ -476,7 +477,7 @@ subquestion: |
   
   The next questions discuss each option to help you narrow down the most appropriate thing to file.
   % elif final_order_date_within_10_days:
-  For 10 days after the court’s final written decision in your custody case, you can file a Motion to Reconsider and ask the same judge to change part or all of the decision. There are limited reasons a court might reconsider a decision it just made, which are listed below. Be aware that just because you do not like the decision does not mean the judge made a mistake.
+  For 10 days after the court’s final written decision in your custody case, you can file a Motion for Reconsideration and ask the same judge to change part or all of the decision. There are limited reasons a court might reconsider a decision it just made, which are listed below. Be aware that just because you do not like the decision does not mean the judge made a mistake.
   % endif
   % if not final_order_date_within_10_days and not final_order_date_within_15_days:
   If more than 15 days have passed since the court’s final written decision, you have different options to try to change the decision. What you file depends on your situation. The next questions discuss each option to help you narrow down the most appropriate thing to file.
@@ -523,11 +524,11 @@ code: |
                     {'modify other change': 'I have another major change that gives the judge good reason to change the custody order.'}
                   ]
 ---
-id: Do you want information about filing a Motion to Reconsider
+id: Do you want information about filing a Motion for Reconsideration
 question: |
-  Do you want information about filing a Motion to Reconsider?
+  Do you want information about filing a Motion for Reconsideration?
 subquestion: |
-  For 10 days after the court’s **final** written decision in your custody case, you can file a **Motion to Reconsider** and ask the same judge to change part or all of the decision. 
+  For 10 days after the court’s **final** written decision in your custody case, you can file a **Motion for Reconsideration** and ask the same judge to change part or all of the decision. 
   
   There are limited reasons a court might reconsider a decision it just made, which are listed below. 
   
@@ -535,7 +536,7 @@ subquestion: |
   
   If it has been less than 10 days since the court’s final decision.
   
-  Do you want your Action Plan to include information on filing a **Motion to Reconsider**?
+  Do you want your Action Plan to include information on filing a **Motion for Reconsideration**?
 yesno: motion_for_reconsideration
 under: |
       #### <i class="fa-regular fa-lightbulb"></i> Learn more ####
@@ -661,12 +662,12 @@ code: |
   if middle_of_case == 'yes':
     type_of_response_choices = [
       {'modify': "a motion to change an order."},
-      {'reconsider': "a Motion to Reconsider."}
+      {'reconsider': "a Motion for Reconsideration."}
       ]
   else:
     type_of_response_choices = [
       {'modify': "a motion to change an order."},
-      {'reconsider': "a Motion to Reconsider."},
+      {'reconsider': "a Motion for Reconsideration."},
       {'set aside': "a Motion to Set Aside Judgment or Order."},
       {'appeal': "an Appeal."}
       ]
@@ -687,11 +688,11 @@ fields:
       - "How to respond if I agree with **some** of the proposed changes.": some
       - "How to respond if I agree with **none** of the proposed changes.": none
 ---
-id: Motion to Reconsider
+id: Motion for Reconsideration
 question: |
-  Motion to Reconsider
+  Motion for Reconsider
 subquestion: |
-  A **Motion to Reconsider** asks the trial court to reconsider all or part of a decision. Unless the court asks, do not file a response. Information about responding if the court asks has been added to your Action Plan.
+  A **Motion for Reconsiderationation** asks the trial court to reconsider all or part of a decision. Unless the court asks, do not file a response. Information about responding if the court asks has been added to your Action Plan.
 continue button field: respond_to_reconsider
 ---
 id: Add response to set aside to your Action Plan
