@@ -1,4 +1,5 @@
 comment: |
+  2026-08-04 ask if foreign order is a tribal order or from another state
   2026-05-18 updating to use Motion to Set aside if user wants to change Property Division judgment
   2026-05-12 updating to include TrueFiling steps
 include:
@@ -154,6 +155,16 @@ fields:
       - "change a divorce court order from an Alaskan court.": change divorce order
       - "change a Custody or Parenting Plan order from another state or tribal court.": change foreign custody order
       - "respond to a motion that my spouse or ex filed to change a divorce court order.": respond to motion in divorce
+---
+id: Tribal or out of state
+question: |
+  Where is your order from?
+fields:
+  - "My order is from": foreign_court_type
+    input type: radio
+    choices:
+      - "a Tribal court.": tribal
+      - "a court in another state.": other state
 ---
 id: Are you in the middle of your case now
 question: |

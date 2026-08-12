@@ -1,5 +1,6 @@
 comment: |
-  2026-07-23 skip other_party_exempt and enter_email if changing foreign order
+  2026-08-05 replaced dont wait modify child support, in foreign order, with dont wait modify custody divorce
+  2026-07-23 skip other_party_exempt and enter_email screen if changing foreign custody order
   2026-07-20 file step heading when unknown date, appeal exclusive and parents_agree
   2026-07-02 appeal with unknown date  and parents_agree was still getting serve other party step. 
   2026-06-30 added template fill_modify_divorce_step back in check w Jeannie later today about this. 
@@ -155,13 +156,14 @@ code: |
   # Row 1
   if user_need == 'change foreign custody order':
     other_party_in_case  = 'the other parent'
+    foreign_court_type
     add_unique_step((foreign_order_step, "foreign_order_idx"), step_list)
     add_unique_step((ak_jurisdiction_step, "ak_jurisdiction_idx"), step_list)
     add_unique_step((register_order_step, "register_order_idx"), step_list)
     add_unique_step((modify_step, "modify_idx"), step_list)
     add_unique_step((fill_modify_step, "fill_modify_idx"), step_list)
     add_unique_step((calculate_child_support_step, "calculate_child_support_idx"), step_list)
-    add_unique_step((dont_wait_modify_child_support_step, "dont_wait_modify_child_support_idx"), step_list)
+    add_unique_step((dont_wait_modify_custody_divorce_step, "dont_wait_modify_custody_divorce_idx"), step_list)
     #  add_unique_image({'image': service_cert_modify_image, 'text': "Certificate of Service at the bottom of a Motion to Modify."}, images_list)
     # add_unique_step((cert_of_service_step, "cert_of_service_idx"), step_list)
     
@@ -302,7 +304,7 @@ code: |
         add_unique_step((pick_a_step_step, "pick_a_step_idx"), step_list)
         add_unique_step((parents_agree_step, "parents_agree_idx"), step_list)
         add_unique_step((tell_the_court_step, "tell_the_court_idx"), step_list)
-      add_unique_step((standing_order_step, "standing_order_idx"), step_list) 
+      add_unique_step((change_standing_order_step, "change_standing_order_idx"), step_list) 
       add_unique_step((motion_forms_step, "motion_forms_idx"), step_list)
       # add_unique_image({'image': service_cert_motion_shc_1300_image, 'text': "Certificate of Service at the bottom of a motion."}, images_list)
       if filling_manner in('paper', 'dunno') or filing_method in('mail or in person', 'dunno'):
@@ -649,3 +651,26 @@ content: |
   
   * [Motions Part 1: How to Ask the Court For Something](https://www.youtube.com/watch?v=2irmxT0_0EA) 
 ---
+template: appeal_contact_parent_step
+subject: |
+  Step ${ appeal_contact_parent_idx }:
+  Contact ${ other_party_in_case }
+content: |
+  If you agree with the appeal, you can contact and tell ${ other_party_in_case }. You can both do the following:
+  <div class="step-subheading">In the Alaska Supreme Court appeal case</div>
+  <ul>
+  <li>${capitalize(other_party_in_case)} can file:</li>
+  <ul>
+  <li><strong>Motion, SHS-AP 400</strong> [<a href="https://ak-courts.info/shsap400">Word document</a>]<br>
+  Name it "Motion to Dismiss because of Settlement Agreement" </li>
+  <li><strong>Affidavit &amp; Memorandum, SHS-AP 410</strong> [<a href="https://ak-courts.info/shsap410">Word document</a>], and </li>
+  <li><strong>Order, SHS-AP 420</strong> [<a href="https://ak-courts.info/shsap420">Word document</a>] telling the court the case can be dismissed. </li>
+  </ul>
+  <li>You can file a <strong>Response, SHS-AP 440</strong>, [<a href="https://ak-courts.info/shsap440">Word document</a>], telling the court you agree.<br>
+  </li>
+  </ul>
+  <div class="step-subheading">In the trial court, where you had your ${ case_type } case</div>
+  If your agreement about the appeal changes the current court order, you both should fill out and file:
+  <ul>
+  <li><strong>Request to Put Agreement on Record, DR-264</strong> [<a href="https://ak-courts.info/dr264">Fill in PDF</a>]</li>
+  </ul>
