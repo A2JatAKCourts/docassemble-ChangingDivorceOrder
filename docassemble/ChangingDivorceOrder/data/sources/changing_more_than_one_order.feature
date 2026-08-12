@@ -1,6 +1,6 @@
 @morethan1order
 Feature: User paths
-# 2026-06-04
+# 2026-08-12
 
 Background: 
   Given the maximum seconds for each Step is 90
@@ -680,7 +680,7 @@ Scenario: Row #140
     And I should see the phrase "Step 3: Tell the court about your agreement"
     And I should see the phrase "Step 4: Decide if you want to file an appeal"
     And I tap the "#YXBwZWFsX3N0ZXA .al_toggle" element and stay on the same page
-    And I should see the phrase "You have only 30 days from the day the court sent the order to you."
+    And I should see the phrase "You have only 15 days from the day the court sent the order to you."
     And I should see the phrase "Step 5: Learn about the Motion to Set Aside Judgment or Order"
     And I should see the phrase "Step 6: Fill out forms if you want to file a Motion to Set Aside"
     And I should see the phrase "Step 7: Sign if you use paper forms or do not use TrueFiling"
