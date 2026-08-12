@@ -651,26 +651,4 @@ content: |
   
   * [Motions Part 1: How to Ask the Court For Something](https://www.youtube.com/watch?v=2irmxT0_0EA) 
 ---
-template: appeal_contact_parent_step
-subject: |
-  Step ${ appeal_contact_parent_idx }:
-  Contact ${ other_party_in_case }
-content: |
-  If you agree with the appeal, you can contact and tell ${ other_party_in_case }. You can both do the following:
-  <div class="step-subheading">In the Alaska Supreme Court appeal case</div>
-  <ul>
-  <li>${capitalize(other_party_in_case)} can file:</li>
-  <ul>
-  <li><strong>Motion, SHS-AP 400</strong> [<a href="https://ak-courts.info/shsap400">Word document</a>]<br>
-  Name it "Motion to Dismiss because of Settlement Agreement" </li>
-  <li><strong>Affidavit &amp; Memorandum, SHS-AP 410</strong> [<a href="https://ak-courts.info/shsap410">Word document</a>], and </li>
-  <li><strong>Order, SHS-AP 420</strong> [<a href="https://ak-courts.info/shsap420">Word document</a>] telling the court the case can be dismissed. </li>
-  </ul>
-  <li>You can file a <strong>Response, SHS-AP 440</strong>, [<a href="https://ak-courts.info/shsap440">Word document</a>], telling the court you agree.<br>
-  </li>
-  </ul>
-  <div class="step-subheading">In the trial court, where you had your ${ case_type } case</div>
-  If your agreement about the appeal changes the current court order, you both should fill out and file:
-  <ul>
-  <li><strong>Request to Put Agreement on Record, DR-264</strong> [<a href="https://ak-courts.info/dr264">Fill in PDF</a>]</li>
-  </ul>
+
