@@ -1,6 +1,6 @@
 @morethan1order
 Feature: User paths
-# 2026-08-12
+# 2026-08-21
 
 Background: 
   Given the maximum seconds for each Step is 90
@@ -28,7 +28,7 @@ Scenario: Row #92
     And I should see the phrase "Step 2: Find out if you and your ex agree"
     And I should see the phrase "Step 3: Tell the court about your agreement"
     And I should see the phrase "Step 4: Learn about a Motion to Modify your Parenting Plan"
-    And I should see the phrase "Step 5: Fill out the Motion to Modify Custody forms"
+    And I should see the phrase "Step 5: Fill out the Motion to Modify forms"
     And I should see the phrase "Step 6: Fill out your child support forms"
     And I should see the phrase "Step 7: Do not wait to file your Motion to Modify"
     And I should see the phrase "Step 8: Learn about the Motion to Modify Spousal Support"
@@ -107,7 +107,7 @@ Scenario: Row #97
 # And I take a screenshot
     And I should see the phrase "Your Action Plan for changing a court order from your divorce case in 14 steps"
     And I should see the phrase "Step 1: Learn about a Motion to Modify your Parenting Plan"
-    And I should see the phrase "Step 2: Fill out the Motion to Modify Custody forms"
+    And I should see the phrase "Step 2: Fill out the Motion to Modify forms"
     And I should see the phrase "Step 3: Fill out your child support forms"
     And I should see the phrase "Step 4: Do not wait to file your Motion to Modify"
     And I should see the phrase "Step 5: Learn about the Motion to Modify Spousal Support"
@@ -150,7 +150,7 @@ Scenario: Row #99
 # And I take a screenshot
     And I should see the phrase "Your Action Plan for changing a court order from your divorce case in 12 steps"
     And I should see the phrase "Step 1: Learn about a Motion to Modify your Parenting Plan"
-    And I should see the phrase "Step 2: Fill out the Motion to Modify Custody forms"
+    And I should see the phrase "Step 2: Fill out the Motion to Modify forms"
     And I should see the phrase "Step 3: Fill out your child support forms"
     And I should see the phrase "Step 4: Do not wait to file your Motion to Modify"
     And I should see the phrase "Step 5: Learn about Motions for Reconsideration"
@@ -192,7 +192,7 @@ Scenario: Row #100
     And I should see the phrase "Step 2: Find out if you and your ex agree"
     And I should see the phrase "Step 3: Tell the court about your agreement"
     And I should see the phrase "Step 4: Learn about a Motion to Modify your Parenting Plan"
-    And I should see the phrase "Step 5: Fill out the Motion to Modify Custody forms"
+    And I should see the phrase "Step 5: Fill out the Motion to Modify forms"
     And I should see the phrase "Step 6: Fill out your child support forms"
     And I should see the phrase "Step 7: Do not wait to file your Motion to Modify"
     And I should see the phrase "Step 8: Decide if you want to file an appeal"
@@ -237,7 +237,7 @@ Scenario: Row #102
     And I should see the phrase "Step 2: Find out if you and your ex agree"
     And I should see the phrase "Step 3: Tell the court about your agreement"
     And I should see the phrase "Step 4: Learn about a Motion to Modify your Parenting Plan"
-    And I should see the phrase "Step 5: Fill out the Motion to Modify Custody forms"
+    And I should see the phrase "Step 5: Fill out the Motion to Modify forms"
     And I should see the phrase "Step 6: Fill out your child support forms"
     And I should see the phrase "Step 7: Do not wait to file your Motion to Modify"
     And I should see the phrase "Step 8: Learn about the Motion to Set Aside Judgment or Order"
@@ -281,7 +281,7 @@ Scenario: Row #104
     And I should see the phrase "Step 2: Find out if you and your ex agree"
     And I should see the phrase "Step 3: Tell the court about your agreement"
     And I should see the phrase "Step 4: Learn about a Motion to Modify your Parenting Plan"
-    And I should see the phrase "Step 5: Fill out the Motion to Modify Custody forms"
+    And I should see the phrase "Step 5: Fill out the Motion to Modify forms"
     And I should see the phrase "Step 6: Fill out your child support forms"
     And I should see the phrase "Step 7: Do not wait to file your Motion to Modify"
     And I should see the phrase "Step 8: Learn about Motions for Reconsideration"
@@ -336,7 +336,7 @@ Scenario: Row #107
     And I should see the phrase "Step 2: Find out if you and your ex agree"
     And I should see the phrase "Step 3: Tell the court about your agreement"
     And I should see the phrase "Step 4: Learn about a Motion to Modify your Parenting Plan"
-    And I should see the phrase "Step 5: Fill out the Motion to Modify Custody forms"
+    And I should see the phrase "Step 5: Fill out the Motion to Modify forms"
     And I should see the phrase "Step 6: Fill out your child support forms"
     And I should see the phrase "Step 7: Do not wait to file your Motion to Modify"
     And I should see the phrase "Step 8: Learn about Motions for Reconsideration"
@@ -383,7 +383,7 @@ Scenario: Row #109
     And I should see the phrase "Step 2: Find out if you and your ex agree"
     And I should see the phrase "Step 3: Tell the court about your agreement"
     And I should see the phrase "Step 4: Learn about a Motion to Modify your Parenting Plan"
-    And I should see the phrase "Step 5: Fill out the Motion to Modify Custody forms"
+    And I should see the phrase "Step 5: Fill out the Motion to Modify forms"
     And I should see the phrase "Step 6: Fill out your child support forms"
     And I should see the phrase "Step 7: Do not wait to file your Motion to Modify"
     And I should see the phrase "Step 8: Learn about Motions for Reconsideration"
@@ -429,7 +429,7 @@ Scenario: Row #112
     And I should see the phrase "Your Action Plan for changing a court order from your divorce case in 14 steps"
     And I should see the phrase "Step 1: Decide the steps you want to take"
     And I should see the phrase "Step 2: Learn about a Motion to Modify your Parenting Plan"
-    And I should see the phrase "Step 3: Fill out the Motion to Modify Custody forms"
+    And I should see the phrase "Step 3: Fill out the Motion to Modify forms"
     And I should see the phrase "Step 4: Fill out your child support forms"
     And I should see the phrase "Step 5: Do not wait to file your Motion to Modify"
     And I should see the phrase "Step 6: Learn about Motions for Reconsideration"
@@ -474,7 +474,7 @@ Scenario: Row #113
 # And I take a screenshot
     And I should see the phrase "Your Action Plan for changing a court order from your divorce case in 11 steps"
     And I should see the phrase "Step 1: Learn about a Motion to Modify your Parenting Plan"
-    And I should see the phrase "Step 2: Fill out the Motion to Modify Custody forms"
+    And I should see the phrase "Step 2: Fill out the Motion to Modify forms"
     And I should see the phrase "Step 3: Fill out your child support forms"
     And I should see the phrase "Step 4: Do not wait to file your Motion to Modify"
     And I should see the phrase "Step 5: Learn about the Motion to Set Aside Judgment or Order"
@@ -517,7 +517,7 @@ Scenario: Row #115
     And I should see the phrase "Your Action Plan for changing a court order from your divorce case in 13 steps"
     And I should see the phrase "Step 1: Decide the steps you want to take"
     And I should see the phrase "Step 2: Learn about a Motion to Modify your Parenting Plan"
-    And I should see the phrase "Step 3: Fill out the Motion to Modify Custody forms"
+    And I should see the phrase "Step 3: Fill out the Motion to Modify forms"
     And I should see the phrase "Step 4: Fill out your child support forms"
     And I should see the phrase "Step 5: Do not wait to file your Motion to Modify"
     And I should see the phrase "Step 6: Decide if you want to file an appeal"
@@ -564,7 +564,7 @@ Scenario: Row #117
     And I should see the phrase "Your Action Plan for changing a court order from your divorce case in 16 steps"
     And I should see the phrase "Step 1: Decide the steps you want to take"
     And I should see the phrase "Step 2: Learn about a Motion to Modify your Parenting Plan"
-    And I should see the phrase "Step 3: Fill out the Motion to Modify Custody forms"
+    And I should see the phrase "Step 3: Fill out the Motion to Modify forms"
     And I should see the phrase "Step 4: Fill out your child support forms"
     And I should see the phrase "Step 5: Do not wait to file your Motion to Modify"
     And I should see the phrase "Step 6: Learn about Motions for Reconsideration"
